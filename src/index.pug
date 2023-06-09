@@ -37,6 +37,13 @@ append body
 
     .noprint: textarea#abc(spellcheck="false")
     .noprint: #warnings
+    .noprint
+        label
+            span Transpose
+            input#transpose(type="number" min="-24" max="24" step="1" value="0")
+        span#fromKey
+        span &nbsp;-&gt;&nbsp;
+        span#toKey
     #paper
 
     script.
@@ -45,6 +52,7 @@ append body
     script
         :coffeescript
             window.onload = ->
+                prevStep = 0
                 window.editor = new ABCJS.Editor 'abc',
                     canvas_id: 'paper',
                     warnings_id: 'warnings'
@@ -52,3 +60,9 @@ append body
                 $('.dropdown-menu a').click ->
                     s = songs[$(this).text()]
                     window.editor.editarea.setString(s)
+                $('#transpose').on 'change', ->
+                    tv = +$('#transpose').val()
+                    newTune = ABCJS.strTranspose $('#abc').val(), window.editor.tunes, tv - prevStep
+                    window.editor.editarea.setString(newTune)
+                    prevStep = tv
+
