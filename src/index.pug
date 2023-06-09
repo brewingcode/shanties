@@ -39,8 +39,9 @@ append body
     .noprint: #warnings
     .noprint
         label
-            span Transpose
+            span Transpose:
             input#transpose(type="number" min="-24" max="24" step="1" value="0")
+        span &nbsp;
         span#fromKey
         span &nbsp;-&gt;&nbsp;
         span#toKey
@@ -51,18 +52,39 @@ append body
     script: include abcjs-basic-min.js
     script
         :coffeescript
+            displayKey = ->
+                k = window.editor.tunes[0].getKeySignature()
+                if k.acc is 'b'
+                    k.root + '♭'
+                else if k.acc is ''
+                    k.root
+                else
+                    console.error 'getKeySignature():', tunes, k
+                    k.root
+
             window.onload = ->
                 prevStep = 0
                 window.editor = new ABCJS.Editor 'abc',
                     canvas_id: 'paper',
                     warnings_id: 'warnings'
                     abcjsParams: responsive: 'resize'
+
                 $('.dropdown-menu a').click ->
                     s = songs[$(this).text()]
                     window.editor.editarea.setString(s)
+                    setTimeout ->
+                        k = displayKey()
+                        $('#fromKey').text(k)
+                        $('#toKey').text(k)
+                    , 500
+
                 $('#transpose').on 'change', ->
                     tv = +$('#transpose').val()
-                    newTune = ABCJS.strTranspose $('#abc').val(), window.editor.tunes, tv - prevStep
-                    window.editor.editarea.setString(newTune)
+                    $('#fromKey').text $('#toKey').text()
+                    newTunes = ABCJS.strTranspose $('#abc').val(), window.editor.tunes, tv - prevStep
+                    window.editor.editarea.setString(newTunes)
                     prevStep = tv
+                    setTimeout ->
+                        $('#toKey').text displayKey()
+                    , 500
 
