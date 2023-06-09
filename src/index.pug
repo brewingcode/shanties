@@ -45,10 +45,10 @@ append body
     script
         :coffeescript
             window.onload = ->
-                window.abc = new ABCJS.Editor 'abc',
+                window.editor = new ABCJS.Editor 'abc',
                     canvas_id: 'paper',
                     warnings_id: 'warnings'
+                    abcjsParams: responsive: 'resize'
                 $('.dropdown-menu a').click ->
-                    $(this).addClass 'active'
                     s = songs[$(this).text()]
-                    window.abc.editarea.setString(s)
+                    window.editor.editarea.setString(s)
