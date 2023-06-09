@@ -1,0 +1,49 @@
+extends ../node_modules/pug-pack/src/_base
+
+append head
+    title YEEAAARGH
+    meta(name="google" content="notranslate")
+    script: include jquery.slim.min.js
+    script: include bootstrap.bundle.min.js
+    style: include bootstrap.min.css
+    style.
+        #abc {
+            resize: both;
+            height: 20em;
+            width: 100%;
+        }
+        body { padding: 1em }
+        #paper { width: 100% }
+
+        @media print {
+            .noprint { display: none !important }
+        }
+
+append body
+    .noprint.d-flex.flex-row.align-items-center
+        div Enter some &nbsp;
+        a(href="https://abcnotation.com/wiki/abc:standard:v2.1" target="_blank") abcnotation
+        div , or &nbsp;
+        .dropdown
+            button.btn.dropdown-toggle(type="button" id="songFile" data-toggle="dropdown") Pick a file
+            .dropdown-menu(aria-labelledby="songFile")
+                each content, filename in src['songs.json']
+                    a.dropdown-item(href="#")= filename
+
+    .noprint: textarea#abc
+    .noprint: #warnings
+    #paper
+
+    script.
+        var songs = !{JSON.stringify(src['songs.json'])};
+    script: include abcjs-basic-min.js
+    script
+        :coffeescript
+            window.onload = ->
+                window.abc = new ABCJS.Editor 'abc',
+                    canvas_id: 'paper',
+                    warnings_id: 'warnings'
+                $('.dropdown-menu a').click ->
+                    $(this).addClass 'active'
+                    s = songs[$(this).text()]
+                    window.abc.editarea.setString(s)

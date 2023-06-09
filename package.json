@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "build": "./songs-to-json && pug-pack src && mv dist/index.html .",
+        "dev": "nodemon -w src -w songs -i src/songs.json -e '*' -x npm run build"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22",
+        "pug-pack": "brewingcode/pug-pack"
+    }
+}

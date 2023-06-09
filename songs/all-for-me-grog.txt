@@ -1,0 +1,17 @@
+X: 1
+T: All For Me Grog
+M: 4/4
+L: 1/8
+K: C
+"C"e2 edc3 B            | "F"ABcA "C"G4 |            
+w: All for me  grog     me jol-ly jol-ly grog
+w: Where is me shirt me nogg-in nogg-in shirt
+"C"g2 gg g2 fe | "G"e (d3d2) ef | 
+w: All for me beer and to-bac-co _ For I
+w: All gone for beer and to-bac-co _ For the
+"C"g2 ge c2 cB | "F"AccA "C"G2 cd |
+w: spent all me tin on the las-sies drin-kin' gin And ac-
+w: col-lar is wore out and the front is knocked about And the
+egfe edcB       |"G7"d4 "C"c4        y4 ||
+w: ross the west-ern o-cean I must wan-der
+w: tail is look-in out for bet-ter wea-ther
