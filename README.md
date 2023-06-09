@@ -1,3 +1,5 @@
+https://brewingcode.github.io/shanties
+
 ```
 # to build
 npm run build
