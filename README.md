@@ -8,9 +8,12 @@ npm run build
 npm run dev
 ```
 
-# Resources
-[learn abc](https://abcnotation.com/learn)
+[Learn ABC](https://abcnotation.com/learn)
 
-[abc quick reference](./ABCquickRefv0_6.pdf)
+[Current ABC standard](https://abcnotation.com/wiki/abc:standard:v2.1)
 
-[transpose abc](https://paulrosen.github.io/abcjs/examples/output-transpose.html)
+[ABC quick reference](./ABCquickRefv0_6.pdf)
+
+[abc.js](https://github.com/paulrosen/abcjs)
+
+[Transpose ABC](https://paulrosen.github.io/abcjs/examples/output-transpose.html)

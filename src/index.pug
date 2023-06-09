@@ -9,34 +9,49 @@ append head
     style.
         #abc {
             resize: both;
-            height: 20em;
+            height: 10em;
             width: 100%;
         }
         body { padding: 1em }
         #paper { width: 100% }
+        .item {
+            margin-left: 1em;
+            white-space: nowrap;
+        }
 
         @media print {
             .noprint { display: none !important }
         }
 
 append body
-    .noprint.d-flex.flex-row.align-items-center
-        div Enter some &nbsp;
-        a(href="https://abcnotation.com/wiki/abc:standard:v2.1" target="_blank") abcnotation
-        div , or &nbsp;
-        .dropdown
-            button.btn.dropdown-toggle(type="button" id="songFile" data-toggle="dropdown") Pick a file
-            .dropdown-menu(aria-labelledby="songFile")
-                each content, filename in src['songs.json']
-                    a.dropdown-item(href="#")= filename
-        div or &nbsp;
-        a(href="https://github.com/brewingcode/shanties")
-            svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16")
-                path(d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z")
-            span &nbsp;add a song
+    .noprint.d-flex.flex-wrap.align-items-center
+        .item
+            span Enter some &nbsp;
+            a(href="https://github.com/brewingcode/shanties/blob/master/README.md" target="_blank") ABC notation
+        .item
+            span or &nbsp;
+            .dropdown.d-inline-block
+                button.btn.dropdown-toggle(type="button" id="songFile" data-toggle="dropdown") Pick a file
+                .dropdown-menu(aria-labelledby="songFile")
+                    each content, filename in src['songs.json']
+                        a.dropdown-item(href="#")= filename
+        .item
+            span or &nbsp;
+            a(href="https://github.com/brewingcode/shanties/tree/master/songs")
+                svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                    path(d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z")
+                span &nbsp;add a song
 
-    .noprint: textarea#abc
+    .noprint: textarea#abc(spellcheck="false")
     .noprint: #warnings
+    .noprint
+        label
+            span Transpose:
+            input#transpose(type="number" min="-24" max="24" step="1" value="0")
+        span &nbsp;
+        span#fromKey
+        span &nbsp;-&gt;&nbsp;
+        span#toKey
     #paper
 
     script.
@@ -44,11 +59,42 @@ append body
     script: include abcjs-basic-min.js
     script
         :coffeescript
+            displayKey = ->
+                k = window.editor.tunes[0].getKeySignature()
+                if k.acc is 'b'
+                    k.root + '♭'
+                else if k.acc is ''
+                    k.root
+                else
+                    console.error 'getKeySignature():', tunes, k
+                    k.root
+
+            setSong = (s) ->
+                window.editor.editarea.setString(s)
+                setTimeout ->
+                    k = displayKey()
+                    $('#fromKey').text(k)
+                    $('#toKey').text(k)
+                , 500
+
             window.onload = ->
-                window.abc = new ABCJS.Editor 'abc',
+                prevStep = 0
+                window.editor = new ABCJS.Editor 'abc',
                     canvas_id: 'paper',
                     warnings_id: 'warnings'
+                    abcjsParams: responsive: 'resize'
+                setSong songs['row-your-boat.txt']
+
                 $('.dropdown-menu a').click ->
-                    $(this).addClass 'active'
-                    s = songs[$(this).text()]
-                    window.abc.editarea.setString(s)
+                    setSong songs[$(this).text()]
+
+                $('#transpose').on 'change', ->
+                    tv = +$('#transpose').val()
+                    $('#fromKey').text $('#toKey').text()
+                    newTunes = ABCJS.strTranspose $('#abc').val(), window.editor.tunes, tv - prevStep
+                    window.editor.editarea.setString(newTunes)
+                    prevStep = tv
+                    setTimeout ->
+                        $('#toKey').text displayKey()
+                    , 500
+

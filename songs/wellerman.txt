@@ -1,0 +1,13 @@
+X: 1
+T: Wellerman
+M: 4/4
+L: 1/8
+K: Eb
+G2 | "Cm"C2 CC C2 E2 | G2 G2 G2 GG | "Fm"A2 F2 F2 AB | "Cm"c2 G2 G4 |
+w:There once was a ship that put to sea the name of the ship was the Billy o Tea
+C2 C2 C2 CE | G2 G2 G2 GG | "G"G2 F2 E2 D2 | "Cm"C6 z2 |
+w: The winds blew hard her bow dipped down Blow my bul-ly boys blow (HUH)
+"Ab"c4 c3 A | "Eb"BB G G3 G | "Fm"A2 F2 FG A2 | "Cm"G2 E2 C4 |
+w: Soon may the Wel-ler-man come to bring us su-gar and tea and rum
+"Ab"c4 c3 A | "Eb"BB G2 G3 G | "G"G2 F2 E2 D2 | "Cm"C6 z2 |
+w: One day the ton-guin is done we'll take our leave and go

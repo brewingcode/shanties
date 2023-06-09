@@ -1,0 +1,7 @@
+T: Row Row Row Your Boat
+K: C
+M: 6/8
+| C3 C3 | C2 D E3 | E2 D E2 F | G6 |
+w: Row row row your boat gen-tly down the stream
+| ccc GGG | EEE CCC | G2 F E2 D | C6 |
+w: Mer-ri-ly mer-ri-ly mer-ri-ly mer-il-ly life is but a dream
