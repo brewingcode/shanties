@@ -1,0 +1,25 @@
+T: Leave Her Johnny
+%%vocalfont times 10
+K: C
+g2 | e2 e2 e2 e2 | e2 d2  c4 | c2 d2 d3 d | c2 e6 |
+w: I thought I heard the old man say \
+w: Leave her John-ny leave her
+g2 a2 a2 g2 | e2 f2 f2 e2 | cd e3 e | e3 c d2 (c2 | c2) y
+w: To-mor-row ye will get yer pay \
+w: and it's time for us to leave her
+d2 d2 d3 c | e2 g4 c'b | a2 a2 a3 g | (ag) e4  (c'b) |
+w: Leave her John-ny leave her Oh_ leave her, John-ny leave _ her For the
+a2 a2 g2 (ee) | f2 f2 e2 (cd) | e3 e e3 c | d2 c4 |
+w: voyage is long and the winds don't blow and it's time for us to leave her
+
+# I thought I heard the old man say
+# Tomorow ye will get yer pay
+
+# Oh the wind was foul and the sea was high
+# She shipped it green and none went by
+
+# I hate to sail on this rotten tub
+# No grog allowed and rotten grub
+
+# We swear by rote for want of more
+# But now we're through so we'll go on shore

@@ -1,0 +1,26 @@
+T: Randy Dandy-O
+%%vocalfont times 10
+K: Eb
+L: 1/16
+e4 ee d2e2d2 | c3dc2 G6 | c3 d3 | c4 B2 G4 GA |
+w: Now we are read-dy to sail for the Horn, \
+w: Way hey roll and go Our _
+B3cB2 B2A2G2 | F2F2F2 B,4 EF | G3AG2 G4 F2 | E4 C2 C6 |
+w: boots an' our clothes, boys, are all in the pawn \
+w: To me rol-lick-in' ran-dy dan-dy O
+e4 e2 d4 d2 | c4 c2 G6 | c6 d6 | c4 B2 G4 G2 | B3cB2 B2A2G2 |
+w: Heave a pawl oh heave a-way \
+w: Way hey roll and go The an-chor's on board and the
+F2F2F2 B,4  EF | G3AG2 G4 F2 | E4 C2 C6 
+w: cab-le's all stored To me rol-lick-ing ran-dy dan-dy O
+
+# Now we are ready to sail for the Horn
+# Our boots an' our clothes, boys, are all in the pawn
+
+# Soon we'll be warping her out through the locks
+# Where the pretty young girls all come down in their frocks
+
+# Come breast the bar bullies heave with a will
+# Soon we'll be rolling her down through the bay
+
+
