@@ -1,0 +1,8 @@
+T: Roll the Old Chariot Along
+%%vocalfont times 10
+K: Dm
+fg | a2 af d2 fg | aaaf d2 aa | g2 ge c2 eg | ggge c2 g2 |
+a2 af d2 fg | aaaf d2 fg | a2 g2 f2 e2 | d4 f2 g2 |
+a3 f d4 | aaaf d2 fa | g3 e c4 | ggge c2 g2 |
+a3 f d4 | aaaf d2 fa |a2 g2 f2 e2 | d6 z2 |
+c

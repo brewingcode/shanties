@@ -1,0 +1,7 @@
+T: Drunken Sailor
+%%vocalfont times 10
+K: Dm
+a2 aa a2  aa | a2 d2 f2 a2 | g2 gg g2 gg | g2 c2 e2 g2 |
+a2 aa a2 aa | a2 =b2 c'2 d'2 | c'2 a2 g2 e2 | d4 d2 z2 |
+a4 a3 a | a2 d2 f2 a2 | g4 g3 g | g2 c2 e2 g2 | 
+a4 a3 a | a2 =b2 c'2 d'2 | c'2 a2 g2 e2 | d4 d2 z2 |
