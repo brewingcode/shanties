@@ -2,6 +2,7 @@ X: 1
 T: Wellerman
 M: 4/4
 L: 1/8
+%%vocalfont times 10
 K: Eb
 G2 | "Cm"C2 CC C2 E2 | G2 G2 G2 GG | "Fm"A2 F2 F2 AB | "Cm"c2 G2 G4 |
 w:There once was a ship that put to sea the name of the ship was the Billy o Tea
