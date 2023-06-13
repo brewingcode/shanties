@@ -56,7 +56,7 @@ append body
 
     script.
         var songs = !{JSON.stringify(src['songs.json'])};
-    script: include abcjs-basic-min.js
+    script: include abcjs-basic.js
     script
         :coffeescript
             displayKey = ->
@@ -82,8 +82,10 @@ append body
                 window.editor = new ABCJS.Editor 'abc',
                     canvas_id: 'paper',
                     warnings_id: 'warnings'
-                    abcjsParams: responsive: 'resize'
-                setSong songs['row-your-boat.txt']
+                    abcjsParams:
+                        responsive: 'resize'
+                        add_classes: true
+                setSong '=d'
 
                 $('.dropdown-menu a').click ->
                     setSong songs[$(this).text()]
