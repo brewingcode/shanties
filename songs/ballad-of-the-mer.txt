@@ -1,0 +1,12 @@
+T: Ballad of the Mer
+L:1/4
+K: Eb
+.B | (c g) (f/2e/2) | (d B) .G/2.G/2 | (c g) (f/2e/2) | d2 z/2 B/2 |
+(c b) (c'/2g/2) | (f b) (d/2B/2) | (c f) (d/2B/2) | c2 G | (c g) (f/2e/2) | (d B) .G/2.G/2 |
+(c g) (f/2e/2) | d2 .B/2.B/2 | (c b) (c'/2g/2) | (f b) (d/2B/2) | (c/2d/2e/2d/2) (c/2B/2) |
+(c3 | c3) | c3 | c3 | d3 | e3 | d3 |
+c3 | d3 | e2 d | c2 G | (c g) (f/2e/2) | (d/2B/2) G |
+(c g) (f/2e/2) | d2 z/2 B/2 | (c b) (c'/2g/2) | (f b) (d/2B/2) | (c/2d/2e/2d/2) (c/2B/2) | c3 |
+C3 | E3 | F3 | D3 | C3 | E3 | G2 B |
+c3 | (c3 | c3 ) | (c3 | c) d3/2 B/2 | c b c'/2g/2 | f (b2 |
+b) d B | (c/2d/2 e/2d/2) (c/2B/2) | c3 |
