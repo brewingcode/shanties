@@ -2700,6 +2700,9 @@ var Parse = function Parse() {
       metaText: tune.metaText,
       metaTextInfo: tune.metaTextInfo,
       version: tune.version,
+      notelabels: multilineVars.notelabels,
+      notecolors: multilineVars.notecolors,
+      notescaling: multilineVars.notescaling,
       addElementToEvents: tune.addElementToEvents,
       addUsefulCallbackInfo: tune.addUsefulCallbackInfo,
       getTotalTime: tune.getTotalTime,
@@ -2779,6 +2782,7 @@ var Parse = function Parse() {
       this.openSlurs = [];
       this.freegchord = false;
       this.endingHoldOver = {};
+      this.notescaling = 1.0;
     },
     differentFont: function differentFont(type, defaultFonts) {
       if (this[type].decoration !== defaultFonts[type].decoration) return true;
@@ -3520,6 +3524,13 @@ var parseDirective = {};
       face: "\"Arial\"",
       size: 8,
       weight: "normal",
+      style: "normal",
+      decoration: "none"
+    };
+    tune.formatting.notelabelfont = {
+      face: "\"Arial\"",
+      size: 7,
+      weight: "bold",
       style: "normal",
       decoration: "none"
     };
@@ -4638,6 +4649,15 @@ var parseDirective = {};
       case "nobarcheck":
         // TODO-PER: Actually handle the parameters of these
         tune.formatting[cmd] = restOfString;
+        break;
+      case "notelabels":
+        scratch = addMultilineVarBool('notelabels', cmd, tokens);
+        multilineVars['notescaling'] = 1.3;
+        if (scratch !== null) return scratch;
+        break;
+      case "notecolors":
+        scratch = addMultilineVarBool('notecolors', cmd, tokens);
+        if (scratch !== null) return scratch;
         break;
       default:
         return "Unknown directive: " + cmd;
@@ -20723,6 +20743,9 @@ var Glyphs = {
   printSymbol: function printSymbol(x, y, symb, paper, attrs) {
     if (!glyphs[symb]) return null;
     var pathArray = pathClone(glyphs[symb].d);
+    if (symb.match(/^noteheads/) && attrs.notescaling) {
+      pathScale(pathArray, attrs.notescaling, attrs.notescaling);
+    }
     pathArray[0][1] += x;
     pathArray[0][2] += y;
     var path = "";
@@ -20734,7 +20757,6 @@ var Glyphs = {
   },
   printCircle: function printCircle(x, y, r, paper, attrs) {
     attrs.path = [sprintf("M %0.2f, %0.2f", x, y), sprintf("a %0.2f,%0.2f 0 1,0 %0.2f,0", r, r, r * 2), sprintf("a %0.2f,%0.2f 0 1,0 -%0.2f,0", r, r, r * 2)].join(" ");
-    console.log('Glyphs.printCircle:', paper, attrs);
     return paper.path(attrs);
   },
   getPathForSymbol: function getPathForSymbol(x, y, symb, scalex, scaley) {
@@ -20748,8 +20770,8 @@ var Glyphs = {
     return pathArray;
   },
   getSymbolWidth: function getSymbolWidth(symbol) {
-    if (glyphs[symbol]) return glyphs[symbol].w;
-    throw new Error('symbol not found: ' + symbol);
+    if (!glyphs[symbol]) throw new Error('symbol not found: ' + symbol);
+    return glyphs[symbol].w;
   },
   symbolHeightInPitches: function symbolHeightInPitches(symbol) {
     var height = glyphs[symbol] ? glyphs[symbol].h : 0;
@@ -20894,6 +20916,7 @@ function drawAbsolute(renderer, params, bartop, selectables, staffPos) {
   if (params.invisible) return;
   var isTempo = params.children.length > 0 && params.children[0].type === "TempoElement";
   params.elemset = [];
+  var deferSymbols = [];
   elementGroup.beginGroup(renderer.paper, renderer.controller);
   for (var i = 0; i < params.children.length; i++) {
     var child = params.children[i];
@@ -20901,9 +20924,15 @@ function drawAbsolute(renderer, params, bartop, selectables, staffPos) {
       case "TempoElement":
         drawTempo(renderer, child);
         break;
+      case "symbol":
+        deferSymbols.push(child);
+        break;
       default:
         drawRelativeElement(renderer, child, bartop);
     }
+  }
+  for (var i = 0; i < deferSymbols.length; i++) {
+    drawRelativeElement(renderer, deferSymbols[i], bartop);
   }
   var klass = params.type;
   if (params.type === 'note' || params.type === 'rest') {
@@ -21724,16 +21753,16 @@ function printSymbol(renderer, x, offset, symbol, options) {
   } else {
     ycorr = glyphs.getYCorr(symbol);
     if (elementGroup.isInGroup()) {
-      el = glyphs.printSymbol(x, renderer.calcY(offset + ycorr), symbol, renderer.paper, {
-        "data-name": options.name
-      });
-      console.log('printSymbol(symbol):', symbol);
-      if (symbol.match(/^noteheads/)) {
-        var r = 3;
-        glyphs.printCircle(x + glyphs.getSymbolWidth(symbol) / 2 - r, renderer.calcY(offset + ycorr), r, renderer.paper, {
-          fill: "green"
-        });
+      var attrs = {
+        'data-name': options.name
+      };
+      if (options.color) {
+        attrs.fill = options.color;
       }
+      if (symbol.match(/^noteheads/) && options.notescaling) {
+        attrs.notescaling = options.notescaling;
+      }
+      el = glyphs.printSymbol(x, renderer.calcY(offset + ycorr), symbol, renderer.paper, attrs);
     } else {
       el = glyphs.printSymbol(x, renderer.calcY(offset + ycorr), symbol, renderer.paper, {
         klass: options.klass,
@@ -21778,33 +21807,48 @@ var renderText = __webpack_require__(/*! ./text */ "./src/write/draw/text.js");
 var printStem = __webpack_require__(/*! ./print-stem */ "./src/write/draw/print-stem.js");
 var printStaffLine = __webpack_require__(/*! ./staff-line */ "./src/write/draw/staff-line.js");
 var printSymbol = __webpack_require__(/*! ./print-symbol */ "./src/write/draw/print-symbol.js");
+function getColor(note, renderer) {
+  var colors = {
+    A: 'red',
+    B: 'orange',
+    C: 'yellowgreen',
+    D: 'green',
+    E: 'blue',
+    F: 'indigo',
+    G: 'darkviolet'
+  };
+  return renderer.notecolors ? colors[note] : undefined;
+}
 function drawRelativeElement(renderer, params, bartop) {
   if (params.pitch === undefined) window.console.error(params.type + " Relative Element y-coordinate not set.");
   var y = renderer.calcY(params.pitch);
-  console.log('drawRelativeElement(params):', params);
   switch (params.type) {
     case "symbol":
       if (params.c === null) return null;
       var klass = "symbol";
+      var note = params.name.replace(/[^abcdefg]/gi, '').toUpperCase();
       if (params.klass) klass += " " + params.klass;
       params.graphelem = printSymbol(renderer, params.x, params.pitch, params.c, {
         scalex: params.scalex,
         scaley: params.scaley,
         klass: renderer.controller.classes.generate(klass),
-        //				fill:"none",
-        //				stroke: renderer.foregroundColor,
-        name: params.name
+        color: getColor(note, renderer),
+        name: params.name,
+        notescaling: renderer.notelabels ? 1.33 : undefined
       });
-      if (params.c.match(/^noteheads/)) {
+      if (params.c.match(/^noteheads/) && renderer.notelabels) {
+        var x = params.x + 3.3;
+        var y = renderer.calcY(params.pitch) + 3.3;
+        var color = params.parent.duration >= 0.5 ? "black" : "white";
         renderText(renderer, {
-          x: params.x,
-          y: params.pitch,
-          text: params.name,
-          type: 'annotationfont',
-          klass: renderer.controller.classes.generate('annotation'),
-          anchor: "middle",
+          x: x,
+          y: y,
+          text: note,
+          color: color,
+          type: 'notelabelfont',
+          klass: renderer.controller.classes.generate('notelabelfont'),
+          anchor: "start",
           centerVertically: true,
-          dim: params.dim,
           cursor: 'default'
         }, false);
       }
@@ -22452,6 +22496,9 @@ module.exports = drawStaffGroup;
 var printLine = __webpack_require__(/*! ./print-line */ "./src/write/draw/print-line.js");
 function printStaffLine(renderer, x1, x2, pitch, klass, name, dy) {
   var y = renderer.calcY(pitch);
+  if (name == 'ledger' && renderer.notelabels) {
+    x2 = x1 + (x2 - x1) * 1.33;
+  }
   return printLine(renderer, x1, x2, y, klass, name, dy);
 }
 module.exports = printStaffLine;
@@ -22610,6 +22657,9 @@ function renderText(renderer, params, alreadyInGroup) {
   if (params.cursor) {
     hash.attr.cursor = params.cursor;
   }
+  if (params.color) {
+    hash.attr.fill = params.color;
+  }
   var text = params.text.replace(/\n\n/g, "\n \n");
   text = text.replace(/^\n/, "\xA0\n");
   if (hash.font.box) {
@@ -22630,6 +22680,10 @@ function renderText(renderer, params, alreadyInGroup) {
   hash.attr.x = roundNumber(hash.attr.x);
   hash.attr.y = roundNumber(hash.attr.y);
   if (params.name) hash.attr["data-name"] = params.name;
+  if (params.type == 'notelabelfont' && params.color != 'white') {
+    hash.attr.stroke = 'white';
+    hash.attr['stroke-width'] = 0.5;
+  }
   var elem = renderer.paper.text(text, hash.attr);
   if (hash.font.box) {
     var size = elem.getBBox();
@@ -25093,6 +25147,9 @@ Renderer.prototype.newTune = function (abcTune) {
   //this.noteNumber = null;
   this.isPrint = abcTune.media === 'print';
   this.setPadding(abcTune);
+  this.notelabels = abcTune.notelabels;
+  this.notecolors = abcTune.notecolors;
+  this.notescaling = abcTune.notescaling;
 };
 Renderer.prototype.setLineThickness = function (lineThickness) {
   this.lineThickness = lineThickness;
