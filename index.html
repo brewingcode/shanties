@@ -25775,7 +25775,7 @@ module.exports = version;
   };
 
   window.onload = function() {
-    var prevStep;
+    var file, params, prevStep;
     prevStep = 0;
     window.editor = new ABCJS.Editor('abc', {
       canvas_id: 'paper',
@@ -25785,11 +25785,10 @@ module.exports = version;
         add_classes: true
       }
     });
-    setSong('=d');
     $('.dropdown-menu a').click(function() {
       return setSong(songs[$(this).text()]);
     });
-    return $('#transpose').on('change', function() {
+    $('#transpose').on('change', function() {
       var newTunes, tv;
       tv = +$('#transpose').val();
       $('#fromKey').text($('#toKey').text());
@@ -25800,6 +25799,13 @@ module.exports = version;
         return $('#toKey').text(displayKey());
       }, 500);
     });
+    params = new URLSearchParams(window.location.search);
+    file = params.get('file');
+    if (file && songs[file]) {
+      return setSong(songs[file]);
+    } else {
+      return setSong("B c d e | ff | c'd' | EE");
+    }
   };
 
 }).call(this);

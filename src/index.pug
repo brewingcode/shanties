@@ -85,7 +85,6 @@ append body
                     abcjsParams:
                         responsive: 'resize'
                         add_classes: true
-                setSong '=d'
 
                 $('.dropdown-menu a').click ->
                     setSong songs[$(this).text()]
@@ -99,4 +98,12 @@ append body
                     setTimeout ->
                         $('#toKey').text displayKey()
                     , 500
+
+                params = new URLSearchParams(window.location.search)
+                file = params.get('file')
+                if file and songs[file]
+                    setSong songs[file]
+                else
+                    setSong "B c d e | ff | c'd' | EE"
+
 
