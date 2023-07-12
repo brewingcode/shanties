@@ -21000,6 +21000,10 @@ function drawBeam(renderer, params) {
   var pathString = "";
   for (var i = 0; i < params.beams.length; i++) {
     var beam = params.beams[i];
+    if (renderer.notelabels && params.stemsUp) {
+      beam.startX += 3.5;
+      beam.endX += 3.5;
+    }
     if (beam.split) {
       var slope = getSlope(renderer, beam.startX, beam.startY, beam.endX, beam.endY);
       var xes = [];
@@ -21664,6 +21668,9 @@ function printStem(renderer, x, dx, y1, y2, klass, name) {
   } else {
     y1 = roundNumber(y1);
     y2 = roundNumber(y2);
+  }
+  if (renderer.notelabels && dx < 0) {
+    x += 3.5;
   }
   x = roundNumber(x);
   var x2 = roundNumber(x + dx);
