@@ -8,17 +8,25 @@ L: 1/8
 K: C
 "C"e2 edc3 B            | "F"ABcA "C"G4 |            
 w: All for me  grog     me jol-ly jol-ly grog
+w: Where are me boots, me nogg-in', nog-gin' boots,
 w: Where is me shirt me nogg-in nogg-in shirt
+w: I'm sick in~the head and~I have-n't been to bed,
 w: 2 2 12 13 123 2 123 13 2 12
 "C"g2 gg g2 fe | "G"e (d3d2) ef | 
-w: All for me beer and to-bac-co _ For I
-w: All gone for beer and to-bac-co _ For the
+w: All for me beer and to-bac-co ~ For I
+w: They're~all gone for beer and to-bac-co ~ For the
+w: All gone for beer and to-bac-co ~ For the
+w: Since~first I~came a-shore from me slumb-er, ~ For I
 w: 12 12 12 12 0 2 2 12 ~ 2 0
 "C"g2 ge c2 cB | "F"ABcA "C"G2 cd |
 w: spent all me tin on the las-sies drin-kin' gin And ac-
+w: heels they are worn out and the toes are kicked about And the
 w: col-lar is wore out and the front is knocked about And the
+w: spent all me dough on the las-sies don't you know, Far ac-
 w: 12 12 2 13 13 123 2 123 13 2 12 13 12
 egfe edcB       |"G7"d4 "C"c4        y4 ||
 w: ross the west-ern o-cean I must wan-der
+w: soles are look-ing out for bet-ter wea-ther.
 w: tail is look-in out for bet-ter wea-ther
+w: ross the west-ern o-cean I must wan-der
 w: 2 12 0 2 2 12 13 123 12 13
