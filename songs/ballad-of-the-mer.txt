@@ -2,11 +2,34 @@ T: Ballad of the Mer
 L:1/4
 K: Eb
 .B | (c g) (f/2e/2) | (d B) .G/2.G/2 | (c g) (f/2e/2) | d2 z/2 B/2 |
-(c b) (c'/2g/2) | (f b) (d/2B/2) | (c f) (d/2B/2) | c2 G | (c g) (f/2e/2) | (d B) .G/2.G/2 |
-(c g) (f/2e/2) | d2 .B/2.B/2 | (c b) (c'/2g/2) | (f b) (d/2B/2) | (c/2d/2e/2d/2) (c/2B/2) |
-(c3 | c3) | c3 | c3 | d3 | e3 | d3 |
-c3 | d3 | e2 d | c2 G | (c g) (f/2e/2) | (d/2B/2) G |
-(c g) (f/2e/2) | d2 z/2 B/2 | (c b) (c'/2g/2) | (f b) (d/2B/2) | (c/2d/2e/2d/2) (c/2B/2) | c3 |
-C3 | E3 | F3 | D3 | C3 | E3 | G2 B |
-c3 | (c3 | c3 ) | (c3 | c) d3/2 B/2 | c b c'/2g/2 | f (b2 |
-b) d B | (c/2d/2 e/2d/2) (c/2B/2) | c3 |
+w: Don't lin-ger in the wa-ters \
+w: Where the mer-folk are at play \
+w: The
+w: Though ma-ny is the sail-or \
+w: Who has found them-selves on land \
+w: After
+w: It~seems they care for no re-ward \
+w: For ten-der min-is-tra-tion \
+w: When
+w: But if it's you they've cho-sen \
+w: They'll sur-round you with their kin \
+w: Your
+w: Soon you'll be un-der-stand-ing \
+w: All that pass-es from their tongues \
+w: No
+w: And~they'll take you as their bro-ther \
+w: Or their sis-ter as they please \
+w: And
+(c b) (c'/2g/2) | (f b) (d/2B/2) | (c f) (d/2B/2) | c2 z1 | 
+w: o-cean's sons and daugh-ters \
+w: Will _lead our kind a-stray. ~
+w: meet-ing with a strange Mer \
+w: That they could not un-der-stand,
+w: we have top-pled over-board \
+w: In our in-e-bri-a-tion. ~
+w: legs are bound and fro-zen \
+w: In a wrap of sil-ver skin,
+w: food you'll be de-mand-ing \
+w: Nor fresh air to fill your lungs,
+w: you'll be just a-no-ther \
+w: Of the mer-folk in the seas. ~
