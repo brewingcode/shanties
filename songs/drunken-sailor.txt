@@ -16,6 +16,7 @@ w: Put~him in the bed with the cap-tains daugh-ter \
 w: Put~him in the bed with the cap-tains daugh-ter
 w: That's what we do with a drunk-en sail-or \
 w: That's what we do with a drunk-en sail-or
+w: 2 2 2 2 2 2 2 12 0 2 12 12 12 12 12 12 12 13 2 12
 a2 aa a2 aa | a2 =b2 c'2 d'2 | c'2 a2 g2 e2 | d4 d2 z2 |
 w: What will we do with a drunk-en sail-or? \
 w: Ear-ly in the morn-ing!
@@ -29,9 +30,12 @@ w: Put~him in the bed with the cap-tains daugh-ter \
 w: Ear-ly in the morn-ing!
 w: That's what we do with a drunk-en sail-or \
 w: Ear-ly in the morn-ing!
+w: 2 2 2 2 2 2 2 ? 13? 23? 13? 2 12 2 12 12
 a4 a3 a | a2 d2 f2 a2 | g4 g3 g | g2 c2 e2 g2 | 
 w: Way hay and up she ris-es \
 w: Way hay and up she ris-es
+w: 2 2 2 2 12 0 2 12 12 12 12 13 2 12
 a4 a3 a | a2 =b2 c'2 d'2 | c'2 a2 g2 e2 | d4 d2 z2 |
 w: Way hay and up she ris-es \
 w: Ear-ly in the morn-ing!
+w: 2 2 2 2 ? 13? 23? 13? 2 12 2 12 12
