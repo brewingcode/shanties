@@ -1,8 +1,19 @@
 T: Roll the Old Chariot Along
 %%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
 K: Dm
 fg | a2 af d2 fg | aaaf d2 aa | g2 ge c2 eg | ggge c2 g2 |
+w: Oh, we'd be _al-right if the wind was in our sails \
+w: ~ We'd be _al-right if the wind was in our sails ~
 a2 af d2 fg | aaaf d2 fg | a2 g2 f2 e2 | d4 f2 g2 |
+w: We'd be al-right if the wind was in our sails \
+w: And we'll all hang on be-hind \
+w: And we'll
 a3 f d4 | aaaf d2 fa | g3 e c4 | ggge c2 g2 |
+w: roll the old char-i-ot a-long \
+w: ~ We'll roll the old char-i-ot a-long \
+w: We'll
 a3 f d4 | aaaf d2 fa |a2 g2 f2 e2 | d6 z2 |
-c
+w: roll the old cha-r-iot a-long \
+w: And we'll all hang on be-hind
