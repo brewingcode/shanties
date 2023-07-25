@@ -1,10 +1,10 @@
-%%notecolors 1
-%%notelabels 1
 X: 1
 T: All For Me Grog
+%%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
 M: 4/4
 L: 1/8
-%%vocalfont times 10
 K: C
 "C"e2 edc3 B            | "F"ABcA "C"G4 |            
 w: All for me  grog     me jol-ly jol-ly grog

@@ -1,6 +1,7 @@
+T: Ballad of the Mer
+%%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
-T: Ballad of the Mer
 L:1/4
 K: Eb
 .B | (c g) (f/2e/2) | (d B) .G/2.G/2 | (c g) (f/2e/2) | d2 z/2 B/2 |

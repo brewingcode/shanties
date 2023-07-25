@@ -1,7 +1,7 @@
-%%notecolors 1
-%%notelabels 1
 T: Leave Her Johnny
 %%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
 K: C
 g2 | e2 e2 e2 e2 | e2 d2  c4 | c2 d2 d3 d | c2 e6 |
 w: I thought I heard the old man say \
