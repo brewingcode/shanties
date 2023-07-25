@@ -1,7 +1,17 @@
 T: Drunken Sailor
 %%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
 K: Dm
 a2 aa a2  aa | a2 d2 f2 a2 | g2 gg g2 gg | g2 c2 e2 g2 |
+w: What will we do with a drunk-en sail-or? \
+w: What will we do with a drunk-en sail-or?
 a2 aa a2 aa | a2 =b2 c'2 d'2 | c'2 a2 g2 e2 | d4 d2 z2 |
+w: What will we do with a drunk-en sail-or? \
+w: Ear-ly in the morn-ing!
 a4 a3 a | a2 d2 f2 a2 | g4 g3 g | g2 c2 e2 g2 | 
+w: Way hay and up she ris-es \
+w: Way hay and up she ris-es
 a4 a3 a | a2 =b2 c'2 d'2 | c'2 a2 g2 e2 | d4 d2 z2 |
+w: Way hay and up she ris-es \
+w: Ear-ly in the morn-ing!
