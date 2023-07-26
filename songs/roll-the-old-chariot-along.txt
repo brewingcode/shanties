@@ -3,7 +3,7 @@ T: Roll the Old Chariot Along
 %%notecolors 1
 %%notelabels 1
 K: Dm
-fg | a2 af d2 fg | aaaf d2 aa | g2 ge c2 eg | ggge c2 g2 |
+"Dm"fg | a2 af d2 fg | aaaf d2 aa | "C"g2 ge c2 eg | ggge c2 g2 |
 w: Oh, we'd be _al-right if the wind was in our sails \
 w: ~ We'd be _al-right if the wind was in our sails ~
 w: Oh, we'd be _al-right if we make it round The Horn \
@@ -11,7 +11,7 @@ w: ~ We'd be _al-right if we make it round The Horn
 w: ~ Well a nice wash bе-low would-n't do us any harm \
 w: ~ Well a nice wash bе-low would-n't do us any harm
 w: 0 12 2 2 0 12 0 12 2 2 2 0 12 2 2 12 12 2 13 2 12 12 12 12 2 13 12
-a2 af d2 fg | aaaf d2 fg | a2 g2 f2 e2 | d4 f2 g2 |
+"Dm"a2 af d2 fg | aaaf d2 fg | "F"a2 g2 "G7" f2 e2 | "Dm"d4 f2 g2 |
 w: We'd be al-right if the wind was in our sails \
 w: And we'll all hang on be-hind \
 w: And we'll
@@ -22,12 +22,12 @@ w: Well~a nice wash bе-low would-n't do us any harm \
 w: And we'll all hang on be-hind \
 w: And we'll
 w: 2 2 0 12 0 12 2 2 2 0 12 0 12 2 12 0 2 12 0 12
-a3 f d4 | aaaf d2 fa | g3 e c4 | ggge c2 g2 |
+a3 f d4 | aaaf d2 fa | "C" g3 e c4 | ggge c2 g2 |
 w: roll the old char-i-ot a-long \
 w: ~ We'll roll the old char-i-ot a-long \
 w: We'll
 w: 2 0 12 2 2 2 0 12 0 2 12 2 13 12 12 12 2 13 12
-a3 f d4 | aaaf d2 fa |a2 g2 f2 e2 | d6 z2 |
+"Dm"a3 f d4 | aaaf d2 fa | "F"a2 g2 "G7"f2 e2 | "Dm"d6 z2 |
 w: roll the old cha-r-iot a-long \
 w: And we'll all hang on be-hind
 w: 2 0 12 2 2 2 0 12 0 2 2 12 0 2 12
