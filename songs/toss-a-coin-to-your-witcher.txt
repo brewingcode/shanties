@@ -1,14 +1,18 @@
 T: Toss a Coin to Your Witcher
-%%notecolors 0
+%%notecolors 1
 %%notelabels 1
 K: Dm
 M:4/4
 z4 | z4 | "Bbm" z4 DCB,A, | "Eb" B,2 z2 DEDC |
 w: When a hum-ble bard \
 w: graced a ride a-
+w: While the de-vil's horns \
+w: minced our tend-er 
 "Ebm" B,2 z B, EEF(D | "Fm/Ab" D)B, z B, EDE(F | "Eb/G" F2) z2 z | "Fm/Ab" z4 "F" y |
 w: long with Ger-alt of Ri- \-  via \
 w: a-long came this song \___
+w: meat and so cried the Witch- _er \
+w: ~ he can't be bleat \___
 "Bbm" z2 z "<(" ">)" F, DCB,A, | "Eb/G" B,2 z "<(" ">)" F, DE D2 | "Ebm/Gb" A,/2B,/2 z z B, EEF(D
 w: From when the White Wolf fought \
 w: a sil-ver tongued de-vil \
