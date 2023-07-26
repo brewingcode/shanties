@@ -8,12 +8,12 @@ L: 1/8
 K: Eb
 G2 | "Cm"C2 CC C2 E2 | G2 G2 G2 GG | "Fm"A2 F2 F2 AB | "Cm"c2 G2 G4 |
 w:There once was a ship that put to sea ~ The name of the ship was the Billy o~Tea
-w: She'd not _ been ~ two weeks from shore ~ When down on her ~ a right whale bore
+w: She'd not _ been ~ ~ two weeks from shore When down on her ~ a right whale bore
 w: Be-fore the boat had hit the wa-ter ~ The whale's tail came up ~ and caught her
 w: No line ~ was cut, no whale was freed ~ The cap-tain's mind ~ was not of greed
 C2 C2 C2 CE | G2 G2 G2 GG | "G"G2 F2 E2 D2 | "Cm"C6 z2 | 
 w: The winds blew hard ~ her bow dipped down _Blow my bully boys blow (huh)
-w: The cap-tain called ~ all hands and swore _He'd take that whale in tow (huh)
+w: The cap-tain called ~ all hands and swore _He'd~take that whale in tow (huh)
 w: All hands to~the side, ~ har-pooned and fought her When she dived down low (huh)
 w: And he be-longed to the Whale-man's creed * She~took that ship in tow (huh)
 "Ab"c4 c3 A | "Eb"BB G G3 G | "Fm"A2 F2 FG A2 | "Cm"G2 E2 C4 |
