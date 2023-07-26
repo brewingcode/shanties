@@ -1,8 +1,23 @@
 T: Toss a Coin to Your Witcher
-K: Db
+%%notecolors 0
+%%notelabels 1
+K: Dm
 M:4/4
 z4 | z4 | "Bbm" z4 DCB,A, | "Eb" B,2 z2 DEDC |
+w: When a hum-ble bard \
+w: graced a ride a-
 "Ebm" B,2 z B, EEF(D | "Fm/Ab" D)B, z B, EDE(F | "Eb/G" F2) z2 z | "Fm/Ab" z4 "F" y |
+w: long with Ger-alt of Ri- \-  via \
+w: a-long came this song \___
 "Bbm" z2 z "<(" ">)" F, DCB,A, | "Eb/G" B,2 z "<(" ">)" F, DE D2 | "Ebm/Gb" A,/2B,/2 z z B, EEF(D
+w: From when the White Wolf fought \
+w: a sil-ver tongued de-vil \
+w: his ar-my of elves
 "Ab" D) B,2 B, EE (F | "Eb/G" F5) D(B, | "Ab" B,2) z2 z4 "F/A" y| "Bbm" z4 dcBA |
+w: \_ at his hooves did they re-vel \_ \
+w: They came af-ter 
 "Eb/G" B2 z "<(" ">)" F dedc | "Ebm/Gb" B2 z2 eef(d | "Ab" d)B z B af"F/A"d(e |
+w: me \
+w: With mast-er-ful de-ceit \
+w: broke down my lute \
+w: _and they kicked in my teeth
