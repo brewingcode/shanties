@@ -11,12 +11,16 @@ w:There once was a ship that put to sea ~ The name of the ship was the Billy o~T
 w: She'd not _ been ~ ~ two weeks from shore When down on her ~ a right whale bore
 w: Be-fore the boat had hit the wa-ter ~ The whale's tail came up ~ and caught her
 w: No line ~ was cut, no whale was freed ~ The cap-tain's mind ~ was not of greed
+w: 2 13 13 13 13 1 12 12 12 12 12 2 0 0 2 ? ? 12 12
 C2 C2 C2 CE | G2 G2 G2 GG | "G"G2 F2 E2 D2 | "Cm"C6 z2 | 
 w: The winds blew hard ~ her bow dipped down _Blow my bully boys blow (huh)
 w: The cap-tain called ~ all hands and swore _He'd~take that whale in tow (huh)
 w: All hands to~the side, ~ har-pooned and fought her When she dived down low (huh)
 w: And he be-longed to the Whale-man's creed * She~took that ship in tow (huh)
+w: 13 13 13 13 1 12 12 12 12 12 12 0 1 12 13
 "Ab"c4 c3 A | "Eb"BB G G3 G | "Fm"A2 F2 FG A2 | "Cm"G2 E2 C4 |
 w: Soon may the Wel-ler-man come to bring us su-gar and tea and rum
+w: 13? 13? 2 0? 0? 12 12 12 2 0 0 12 2 12 1 13
 "Ab"c4 c3 A | "Eb"BB G2 G3 G | "G"G2 F2 E2 D2 | "Cm"C6 z2 |
 w: One day the ton-guin is done we'll take our leave and go
+w: 13? 13? 2 0? 0? 12 12 12 12 0 1 12 13
