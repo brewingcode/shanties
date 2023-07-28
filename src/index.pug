@@ -33,8 +33,10 @@ append body
             .dropdown.d-inline-block
                 button.btn.dropdown-toggle(type="button" id="songFile" data-toggle="dropdown") Pick a file
                 .dropdown-menu(aria-labelledby="songFile")
-                    each content, filename in src['songs.json']
-                        a.dropdown-item(href="#")= filename
+                    - var keys = Object.keys(src['songs.json'])
+                    - keys.sort()
+                    each k in keys
+                        a.dropdown-item(href="#")= k
         .item
             span or &nbsp;
             a(href="https://github.com/brewingcode/shanties/tree/master/songs")
