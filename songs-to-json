@@ -1,9 +1,19 @@
 #!/usr/bin/env python3
 
-import os, json
+import os, json, re
 songs = {}
 for f in os.listdir('songs'):
-    with open('songs/' + f) as fh:
-        songs[f] = fh.read()
+    try:
+        with open('songs/' + f) as fh:
+            song = fh.read()
+    except:
+        with open('songs/' + f, encoding='latin-1') as fh:
+            song = fh.read()
+    m = re.search(r'^T: (.*)', song, re.MULTILINE)
+    if m:
+        title = m.group(1)
+        songs[title] = song
+    else:
+        print('weird song:', f)
 with open('src/songs.json', 'w') as fh:
     fh.write(json.dumps(songs))
