@@ -24,6 +24,7 @@ append head
         }
 
 append body
+    #paper
     .noprint.d-flex.flex-wrap.align-items-center
         .item
             span Enter some &nbsp;
@@ -54,7 +55,6 @@ append body
         span#fromKey
         span &nbsp;-&gt;&nbsp;
         span#toKey
-    #paper
 
     script.
         var songs = !{JSON.stringify(src['songs.json'])};
