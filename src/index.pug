@@ -34,7 +34,7 @@ append body
             .dropdown.d-inline-block
                 button.btn.dropdown-toggle(type="button" id="songFile" data-toggle="dropdown") Pick a song
                 .dropdown-menu(aria-labelledby="songFile")
-                    - var keys = Object.keys(src['songs.json'])
+                    - var keys = Object.keys(src['by-title.json'])
                     - keys.sort()
                     each k in keys
                         a.dropdown-item(href="#")= k
@@ -58,6 +58,7 @@ append body
 
     script.
         var songs = !{JSON.stringify(src['songs.json'])};
+        var byTitle = !{JSON.stringify(src['by-title.json'])};
     script: include abcjs-basic.js
     script
         :coffeescript
@@ -103,8 +104,11 @@ append body
 
                 params = new URLSearchParams(window.location.search)
                 file = params.get('file')
+                title = params.get('title')
                 if file and songs[file]
                     setSong songs[file]
+                else if title and byTitle[title]
+                    setSong byTitle[title]
                 else
                     setSong "%%notelabels 1\nB c d e | ff | c'd' | EE E | =D^D"
 

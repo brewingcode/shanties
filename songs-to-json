@@ -2,6 +2,7 @@
 
 import os, json, re
 songs = {}
+byTitle = {}
 for f in os.listdir('songs'):
     try:
         with open('songs/' + f) as fh:
@@ -9,11 +10,17 @@ for f in os.listdir('songs'):
     except:
         with open('songs/' + f, encoding='latin-1') as fh:
             song = fh.read()
+
+    songs[f] = song
+
     m = re.search(r'^T: (.*)', song, re.MULTILINE)
     if m:
         title = m.group(1)
-        songs[title] = song
+        byTitle[title] = song
+
     else:
         print('weird song:', f)
 with open('src/songs.json', 'w') as fh:
     fh.write(json.dumps(songs))
+with open('src/by-title.json', 'w') as fh:
+    fh.write(json.dumps(byTitle))
