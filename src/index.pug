@@ -80,6 +80,11 @@ append body
                     $('#toKey').text(k)
                 , 500
 
+            updateUrl = (title) ->
+                params = new URLSearchParams(window.location.search)
+                params.set 'title', title
+                window.history.replaceState {}, '', "#{window.location.pathname}?#{params}"
+
             window.onload = ->
                 prevStep = 0
                 window.editor = new ABCJS.Editor 'abc',
@@ -91,6 +96,7 @@ append body
 
                 $('.dropdown-menu a').click ->
                     setSong byTitle[$(this).text()]
+                    updateUrl $(this).text()
 
                 $('#transpose').on 'change', ->
                     tv = +$('#transpose').val()
