@@ -90,7 +90,7 @@ append body
                         add_classes: true
 
                 $('.dropdown-menu a').click ->
-                    setSong songs[$(this).text()]
+                    setSong byTitle[$(this).text()]
 
                 $('#transpose').on 'change', ->
                     tv = +$('#transpose').val()
