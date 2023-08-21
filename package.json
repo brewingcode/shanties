@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": "./songs-to-json && pug-pack src && mv dist/index.html .",
+        "build": "./songs-to-json && pug-pack src",
         "dev": "nodemon -w src -w songs -i src/songs.json -i src/by-title.json -e '*' -x npm run build"
     },
     "devDependencies": {
