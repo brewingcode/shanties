@@ -55,7 +55,8 @@ append body
         span#fromKey
         span &nbsp;-&gt;&nbsp;
         span#toKey
-
+    .noprint
+        a(href="https://github.com/brewingcode/shanties/commit/" + src['GIT_HEAD'])= src['GIT_HEAD']
     script.
         var songs = !{JSON.stringify(src['songs.json'])};
         var byTitle = !{JSON.stringify(src['by-title.json'])};
