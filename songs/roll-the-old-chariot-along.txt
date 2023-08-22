@@ -3,6 +3,7 @@ T: Roll the Old Chariot Along
 %%notecolors 1
 %%notelabels 1
 K: Dm
+M: 4/4
 "Dm"fg | a2 af d2 fg | aaaf d2 aa | "C"g2 ge c2 ef | ggge c2 gg |
 w: We'd be al- ~ ~ right if the wind was in our sails. \
 w: We'd be al- ~ ~ right if the wind was in our sails. We'd be

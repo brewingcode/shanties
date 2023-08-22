@@ -3,6 +3,7 @@ T: Drunken Sailor
 %%notecolors 1
 %%notelabels 1
 K: Dm
+M: 4/4
 a2 aa a2  aa | a2 d2 f2 a2 | g2 gg g2 gg | g2 c2 e2 g2 |
 w: What will we do with a drunk-en sail-or? \
 w: What will we do with a drunk-en sail-or?

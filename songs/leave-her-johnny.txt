@@ -3,6 +3,7 @@ T: Leave Her Johnny
 %%notecolors 1
 %%notelabels 1
 K: C
+M: 4/4
 g2 | e2 e2 e2 e2 | e2 d2  c4 | c2 d2 d3 d | c2 e6 |
 w: I thought I heard the old man say \
 w: Leave her John-ny leave her
