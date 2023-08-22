@@ -9,14 +9,18 @@ K: Eb
 G2 | "Cm"C2 CC C2 E2 | G2 G2 G3 G | "Fm"A2 FF F2 AB | "Cm"cc G2 G3 G |
 w:There once was a ship that put to sea, the name of the ship was the Bil- ly o Tea. The
 w: She had not ~ been two weeks from shore, when down on ~ her a ~ right ~ whale bore. The
-w: Be-fore the boat had hit the wa-ter, the whale's tail ~ came up ~ and caught ~ her. All
+w: Be-fore the boat had hit the wa-ter, the whale's tail ~ came up ~ and caught her. ~ All
 w: No line ~ was cut, no whale was freed, The cap-tain's ~ mind ~ was not ~ of greed. But
+w: For fort-y ~ days or ev-en more, The line went ~ slack then ~ tight ~ once more. All
+w: As far as I've heard, the fight's still on The line's not ~ cut and the whale's ~ not gone. The
 w: 2 13 13 13 13 1 12 12 12 12 2 0 0 0 2 ? ? ? 12 12 12
 C2 C2 C2 E2 | G2 G2 G2 G2 | "G"G2 F2 E2 D2 | "Cm"C6 z2 | 
 w: winds blew up, her bow dipped down. Oh  blow my bully boys blow.
 w: cap-tain called all hands and swore: "We'll take that whale in tow".
-w: hands to~the~side, har-pooned and fought her When she dived down be-low
-w: he be-longed to the Whaleman's creed. She took that ship in tow
+w: hands to~the~side, har-pooned and fought her, when she dived down be-low.
+w: he be-longed to the Whaleman's creed. She took that ship in tow.
+w: boats were lost, there were only four, but still that whale did go.
+w: Weller-man makes his regular call To encourage the captain crew and all.
 w: 13 13 13 1 12 12 12 12 12 0 1 12 13
 "Ab"c4 c3 A | "Eb"BB G G3 G | "Fm"A2 F2 FG A2 | "Cm"G2 E2 C4 |
 w: Soon may the Wel-ler-man come to bring us su-gar and tea and rum
