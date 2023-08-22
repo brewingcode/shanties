@@ -55,7 +55,8 @@ append body
         span#fromKey
         span &nbsp;-&gt;&nbsp;
         span#toKey
-
+    .noprint
+        a(href="https://github.com/brewingcode/shanties/commit/" + src['GIT_HEAD'])= src['GIT_HEAD']
     script.
         var songs = !{JSON.stringify(src['songs.json'])};
         var byTitle = !{JSON.stringify(src['by-title.json'])};
@@ -80,6 +81,11 @@ append body
                     $('#toKey').text(k)
                 , 500
 
+            updateUrl = (title) ->
+                params = new URLSearchParams(window.location.search)
+                params.set 'title', title
+                window.history.replaceState {}, '', "#{window.location.pathname}?#{params}"
+
             window.onload = ->
                 prevStep = 0
                 window.editor = new ABCJS.Editor 'abc',
@@ -91,6 +97,7 @@ append body
 
                 $('.dropdown-menu a').click ->
                     setSong byTitle[$(this).text()]
+                    updateUrl $(this).text()
 
                 $('#transpose').on 'change', ->
                     tv = +$('#transpose').val()

@@ -3,6 +3,7 @@ T: Randy Dandy-O
 %%notecolors 1
 %%notelabels 1
 K: Eb
+M: 6/8
 L: 1/16
 M: 6/8
 "Eb"e4 ee d3ed2 | c3dc2 G6 | "Bb"c6 d6 | c4 B2 G4 GA |

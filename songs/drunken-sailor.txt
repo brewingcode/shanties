@@ -32,7 +32,7 @@ w: Ear-ly in the morn-ing!
 w: That's what we do with a drunk-en sail-or \
 w: Ear-ly in the morn-ing!
 w: 2 2 2 2 2 2 2 ? 13? 23? 13? 2 12 2 12 12
-"Am"a4 a3 a | a2 d2 f2 a2 | "C"g4 g3 g | g2 c2 e2 g2 | 
+"Am"a4 a3 a | a2 d2 f2 a2 | "C"g4 g3 g | g2 c2 e2 g2 |
 w: Way hay and up she ris-es \
 w: Way hay and up she ris-es
 w: 2 2 2 2 12 0 2 12 12 12 12 13 2 12
