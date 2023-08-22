@@ -3,22 +3,20 @@ T: Roll the Old Chariot Along
 %%notecolors 1
 %%notelabels 1
 K: Dm
-"Dm"fg | a2 af d2 fg | aaaf d2 aa | "C"g2 ge c2 eg | ggge c2 g2 |
-w: Oh, we'd be _al-right if the wind was in our sails \
-w: ~ We'd be _al-right if the wind was in our sails ~
-w: Oh, we'd be _al-right if we make it round The Horn \
-w: ~ We'd be _al-right if we make it round The Horn
-w: ~ Well a nice wash bе-low would-n't do us any harm \
-w: ~ Well a nice wash bе-low would-n't do us any harm
+"Dm"fg | a2 af d2 fg | aaaf d2 aa | "C"g2 ge c2 ef | ggge c2 gg |
+w: We'd be al- ~ ~ right if the wind was in our sails. \
+w: We'd be al- ~ ~ right if the wind was in our sails. We'd be
+w: We'll be al- ~ ~ right if we make it round The Horn. \
+w: We'll be al-~ ~ right if we make it round The Horn. We'll be
+w: Well a nice wash bе-low would-n't do us an-y harm \
+w: Well a nice wash bе-low would-n't do us an-y harm. Well a
 w: 0 12 2 2 0 12 0 12 2 2 2 0 12 2 2 12 12 2 13 2 12 12 12 12 2 13 12
-"Dm"a2 af d2 fg | aaaf d2 fg | "F"a2 g2 "G7" f2 e2 | "Dm"d4 f2 g2 |
-w: We'd be al-right if the wind was in our sails \
-w: And we'll all hang on be-hind \
-w: And we'll
-w: We'd be al-right if we make it round The Horn \
-w: And we'll all hang on be-hind \
-w: And we'll
-w: Well~a nice wash bе-low would-n't do us any harm \
+"Dm"a2 af d2 fg | aaaf d2 fg | "C"a2 g2 f2 e2 | "Dm"d4 f2 g2 |
+w: al- ~ ~ right if the wind was in our sails \
+w: And we'll all hang on be-hind. And we'll
+w: al- ~ ~ right if we make it round The Horn \
+w: And we'll all hang on be-hind. And we'll
+w: nice wash bе-low would-n't do us an-y harm \
 w: And we'll all hang on be-hind \
 w: And we'll
 w: 2 2 0 12 0 12 2 2 2 0 12 0 12 2 12 0 2 12 0 12
@@ -27,7 +25,7 @@ w: roll the old char-i-ot a-long \
 w: ~ We'll roll the old char-i-ot a-long \
 w: We'll
 w: 2 0 12 2 2 2 0 12 0 2 12 2 13 12 12 12 2 13 12
-"Dm"a3 f d4 | aaaf d2 fa | "F"a2 g2 "G7"f2 e2 | "Dm"d6 z2 |
+"Dm"a3 f d4 | aaaf d2 fa | "C"a2 g2 f2 e2 | "Dm"d6 z2 |
 w: roll the old cha-r-iot a-long \
 w: And we'll all hang on be-hind
 w: 2 0 12 2 2 2 0 12 0 2 2 12 0 2 12
