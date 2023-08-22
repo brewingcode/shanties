@@ -5,35 +5,35 @@ T: Randy Dandy-O
 K: Eb
 L: 1/16
 M: 6/8
-"Eb"e4 ee d3ed2 | c3dc2 G6 | c6 d6 | c4 B2 G4 GA |
+"Eb"e4 ee d3ed2 | c3dc2 G6 | "Bb"c6 d6 | c4 B2 G4 GA |
 w: Now we are read-dy to sail for the Horn, \
-w: Way hey roll and go 
+w: Way hey roll and go Our _
 w: Man the stout caps-'n and heave with a will \
-w: Way hey roll and go
+w: Way hey roll and go For _
 w: Heave a-way, bull-ies, ye par-ish-rigged bums \
-w: Way hey roll and go
+w: Way hey roll and go Take your
 w: We are out-ward bound for Vall-ip-o Bay \
-w: Way hey roll and go
+w: Way hey roll and go Get _
 w: Soon we'll be warp-ing her out through the locks \
-w: Way hey roll and go
+w: Way hey roll and go Where the
 w: Come breast the bar bull-ies heave with a will \
-w: Way hey roll and go
-"Eb"B3cB2 B2A2G2 | F2F2F2 B,4 EF | G3AG2 G4 F2 | E4 C2 C6 |
-w: Our _boots an' our clothes, boys, are all in the pawn \
+w: Way hey roll and go Oh _
+"Eb"B3cB2 B2A2G2 | "Bb"F2F2F2 B,4 EF | "Eb"G3AG2 G4 F2 | "Cm"E4 C2 C6 |
+w: boots an' our clothes, boys, are all in the pawn \
 w: To me rol-lick-in' ran-dy dan-dy O
-w: For _soon we'll be driv-in' a-way up the hill \
+w: soon we'll be driv-in' a-way up the hill \
 w: To me rol-lick-in' ran-dy dan-dy O
-w: Take your hands from your pock-ets and don't suck your thumbs \
+w: hands from your pock-ets and don't suck your thumbs \
 w: To me rol-lick-in' ran-dy dan-dy O
-w: Get _crack-in', me lads, it's a hell of a way! \
+w: crack-in', me lads, it's a hell of a way! \
 w: To me rol-lick-in' ran-dy dan-dy O
-w: Where the pret-ty young girls all come down in their frocks \
+w: pret-ty young girls all come down in their frocks \
 w: To me rol-lick-in' ran-dy dan-dy O
-w: ~ Soon _we'll be roll-ing her down through the bay \
+w: soon we'll be roll-ing her down through the bay \
 w: To me rol-lick-in' ran-dy dan-dy O
-"Eb"e4 e2 d4 d2 | c4 c2 G6 | c6 d6 | c4 B2 G4 G2 | 
+"Eb"e4 e2 d4 d2 | c4 c2 G6 | "Bb"c6 d6 | c4 B2 G4 G2 | 
 w: Heave a pawl oh heave a-way \
 w: Way hey roll and go The
-"Bb"B3cB2 B2A2G2 | F2F2F2 B,4  EF | "Eb"G3AG2 G4 F2 | E4 C2 C6 
+"Eb"B3cB2 B2A2G2 | "Bb"F2F2F2 B,4  EF | "Eb"G3AG2 G4 F2 | "Cm"E4 C2 C6 |
 w: an-chor's on board and the \
 w: cab-le's all stored To me rol-lick-ing ran-dy dan-dy O
