@@ -1,0 +1,16 @@
+T: Mercy, Mercy, Mercy
+%%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
+K: F
+M: 4/4
+"C"z2 A g,2 e,e,c, | d,c,c,a,, c,2 d,2
+w: It seems life has played a game on me
+w: I'm lost in a sea of misery
+w: My love has turned her back on me
+w: Heart-ache why won't you let me be
+"F"g,2 g,2 A A2 B | B2 B A A2 g, g,
+w: Baby have some mercy please don't
+w: Make me beg on bended knees oh please
+w: Mercy, Mercy,Mercy Please have mercy on me
+w: Mercy ,Mercy , Mercy Please
