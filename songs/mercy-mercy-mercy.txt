@@ -4,13 +4,14 @@ T: Mercy, Mercy, Mercy
 %%notelabels 1
 K: F
 M: 4/4
-"C"z2 A g,2 e,e,c, | d,c,c,a,, c,2 d,2
-w: It seems life has played a game on me
-w: I'm lost in a sea of misery
-w: My love has turned her back on me
-w: Heart-ache why won't you let me be
-"F"g,2 g,2 A A2 B | B2 B A A2 g, g,
-w: Baby have some mercy please don't
-w: Make me beg on bended knees oh please
-w: Mercy, Mercy,Mercy Please have mercy on me
-w: Mercy ,Mercy , Mercy Please
+"C7" z2 A G2 "C7/E" EEC | "F" DCCA, "G7sus" C2 D2
+w: It seems ~ life has played a game on me
+w: I'm lost ~ in a sea of mis-er-y
+w: My love ~ has turned her ~ back on me
+w: Heart-ache ~ why won't you ~ let me be
+"C"G2 G2 "F/C" A A2 "F7" B | -B2 B "F/C" A A2 G G
+""z2 "F"CC "G7sus"EEFF | "F"G z2 c3 cAc
+w: 'Cause she knocks me off my feet have mercy on me
+""z2 "F"CC "G7sus"EEFF | "F"G z2 z1 CA,C
+w: Ba-by have some mer-cy please mercy on me
+"Dm"d,3 d, z2 z1 c, | "Em"e,3 e, z1 d,e,g, | "Am"A3 "G"g, "Am"A3 "G"g, | "Am"A2 z2 z4
