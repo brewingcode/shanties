@@ -24,7 +24,7 @@ w: No
 w: And~they'll take you as their bro-ther \
 w: Or their sis-ter as they please \
 w: And
-w: 123 13 12 0 2 12 123 12 12 13 12 0 2 12 123
+w: 0 13 12 0 1 12 0 12 12 13 12 0 1 12 0
 (c b) (c'/2g/2) | (f b) (d/2B/2) | (c f) (d/2B/2) | c2 z1 | 
 w: o-cean's sons and daugh-ters \
 w: Will _lead our kind a-stray. ~
@@ -38,4 +38,4 @@ w: food you'll be de-mand-ing \
 w: Nor fresh air to fill your lungs,
 w: you'll be just a-no-ther \
 w: Of the mer-folk in the seas. ~
-w: 13 123? 13? 12 0 123? 12 123 13 0 12 123 13
+w: 13 0 13 12 0 0 12 0 13 0 12 0 13
