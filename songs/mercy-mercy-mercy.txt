@@ -5,13 +5,18 @@ T: Mercy, Mercy, Mercy
 K: F
 M: 4/4
 "C7" z2 A G2 "C7/E" EEC | "F" DCCA, "G7sus" C2 D2
-w: It seems ~ life has played a game on me
-w: I'm lost ~ in a sea of mis-er-y
-w: My love ~ has turned her ~ back on me
-w: Heart-ache ~ why won't you ~ let me be
+w: It seems ~ life has played a game on me ~
+w: I'm lost ~ in a sea of mis-er-y ~
+w: My love ~ has turned her ~ back on me ~
+w: Heart-ache ~ why won't you ~ let me be ~
+w: 2 12 2 2 13 12 13 13 2 13 12
 "C"G2 G2 "F/C" A A2 "F7" B | -B2 B "F/C" A A2 G G
+w: 12 12 2 2 123 123 123 2 2 12 12
 ""z2 "F"CC "G7sus"EEFF | "F"G z2 c3 cAc
 w: 'Cause she knocks me off my feet have mercy on me
+w: 13 13 2 2 0 0 12 13 13 2 13
 ""z2 "F"CC "G7sus"EEFF | "F"G z2 z1 CA,C
 w: Ba-by have some mer-cy please mercy on me
+w: 13 13 2 2 0 0 12 13 2 13
 "Dm"d,3 d, z2 z1 c, | "Em"e,3 e, z1 d,e,g, | "Am"A3 "G"g, "Am"A3 "G"g, | "Am"A2 z2 z4
+w: 12 12 13 2 2 12 2 12 2 12 2 12 2
