@@ -5,6 +5,7 @@ die = ->
     console.error "error:", arguments...
     process?.exit(1)
 
+# regex replacer function, m is the RegExp match object, and returns the replacement string
 scale = (factor, m) ->
     frac = m[2].replace /// ^/ ///, '1/' # no numerator implies 1
     if frac is ''
