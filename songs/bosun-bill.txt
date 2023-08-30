@@ -6,8 +6,8 @@ T: Bosun Bill
 M: 2/4
 L: 1/16
 K: Eb
-G8 |: .c4 .G4 | c6 G2 | .A3.A ABA2 | G6 E2 | .F3.F FGF2 | E3D C3_D | D3D         | D2_D2=D2      |
-G8 | .c4 .G4 | c6 G2 | AGA2 B3A   | G6 E2 | FGA2 G3F   | Gcd2 e3c      | .[^F4d2] .[=F4G2] | c4 B3A |
+G8 |: .c4 .G4 | c6 G2 | .A3.A A2B2A2 | G6 E2 | .F3.F F2G2F2 | E3D C3_D | D3D         | D2_D2=D2      |
+G8 | .c4 .G4 | c6 G2 | A2G2A2 B3A   | G6 E2 | F2G2A2 G3F   | G2c2d2 e3c      | .[^F4d2] .[=F4G2] | c4 B3A |
 G4 G3A | B4 G3E | F3E D3C | B,6 B,2 | E4 E3F | G4 E4  | F6 FG | F6 G2  | A4 A3B | G4 E4       |
 F4 G4      | E8         | F6 FG       | =A4 c4 | B8         | A8 .B,2 | G6 GA | B4 G4 | (F8 | F8)  | (E6 E)F | G4 E4 |
 (D8 | D8)  | C4 C3D | E4 A4           | G4 F3G | E6 E2   | G3E B,3G   | F3E D3F    | E8    | D8  :|

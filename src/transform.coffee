@@ -12,6 +12,7 @@ scale = (factor, m) ->
     expr = "#{factor} * #{frac}"
     try
         r = math.fraction(math.evaluate(expr)).toFraction()
+        #console.warn m[0], expr, r
         if r is '1'
             r = ''
         return m[1] + r
@@ -28,7 +29,7 @@ module.exports =
             if m = line.match /// ^ (\s* L: \s* )(.*) ///i
                 console.log m[1] + math.fraction(math.evaluate("#{m[2]} / #{factor}")).toFraction()
             else if line.match(/\S/) and not line.match(/// ^ \s* ( % | \w+: | \# ) ///)
-                console.log line.replace /// ([ abcdefg,' ]+) ([ \d / ]*) ///gi, (m...) -> scale factor, m
+                console.log line.replace /// ([ abcdefg ] [,']? ) ([ \d / ]*) ///gi, (m...) -> scale factor, m
             else
                 console.log line
 
