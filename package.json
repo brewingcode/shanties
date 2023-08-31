@@ -1,10 +1,15 @@
 {
     "scripts": {
         "build": "./songs-to-json && pug-pack src",
+        "scaleL": "coffee src/transform.coffee scaleL",
         "dev": "nodemon -w src -w songs -i src/songs.json -i src/by-title.json -e '*' -x npm run build"
     },
     "devDependencies": {
+        "coffeescript": "^2.7.0",
         "nodemon": "^2.0.22",
         "pug-pack": "brewingcode/pug-pack"
+    },
+    "dependencies": {
+        "mathjs": "^11.10.0"
     }
 }
