@@ -1,0 +1,35 @@
+X: 1
+T: Joli Rouge
+%%notecolors 1
+%%notelabels 1
+M: 6/8
+K: Dm
+"Dm" D3 [F2A] [FA] | "Am" A,3 [C3E] | "Dm" D3 [F2A] [FA] | "Am" A,3 [C3E] | "Dm" D3 [F2A] [FA] | "Am" A,3 [C3EG] |
+"Dm" A2 A A2 G | "Am" A2 (A A2) A | "Dm" A2 G F2 G | "Am" (A3 A2) z |
+w: From France we get the Bran-dy, from Mar-ti-nique the rum
+w: She's called the Dread-nought Ci-der, she's pro-per and she's fine
+w: So turn your sails over ~ ~ and bring her hard to port
+w: So you can have a Mag-ners and pour it o-ver ice
+"Dm" f3 (f2 f) | "C" ed(c c2) d | "Dm" c d2 d2 c | "Am" (d3 d)de |
+w: Sweet red ~ Cab-er-net ~ from I- ta- ly does come. ~ But the fair
+w: And when the day is over sure I wish that she were mine. ~ ~ Or
+w: Find ~ ~ that lit-tle star and fly straight into the North ~ ~ ~
+w: Or you can have a Strongbow if it's sad-ness that you like. ~ ~ Or
+"Dm" f2 e d2 f | "C" e2 d c2 d | "F" A2 G F2 A | "C" (c3 (c3) | c4) z c |
+w: fair-est of them all, me boys the one to beat the day, ~ ~ is
+w: in the dark of win-ter, ~ or on a sum-mer's eve ~ ~ ~
+w: wild ~ sun up-on your back the wind a-blow-ing free ~ ~ You're
+w: join us up the ri-ver and we'll set your heart a-glow ~ ~ And
+"Dm" d3 (c2 c) | "Am" A G2 F2 A | "Bb" G2 G F2 E | "D" F3 "C" A3 |
+w: made from ~ ap-ples up the migh-ty Sa-gue-nay. So
+w: One hand ~ giv-eth and the oth-er does re-ceive. So
+w: roll-ing up the river boys to old Chi-cou-ti-mi. So
+w: how you'll feel when the real ~ ci-der starts to flow. So
+"Dm" AAA A3 | z3 A2 A | A2 G F2 G | "Am" A3 z3 |
+w: fol-low me lads cause this ain't no grog or ale
+"Dm" f3 (f2 f) | "C" e3 d2 c | "Dm" Ad(d d2) c | "D" d3 z3 |
+w: One pint ~ down you'll be swing-in' in ~ the gale
+"Dm" f3 (f2 f) | "C" e d2 c2 d | "F" A2 G F2 A | "C" (c3 (c3) | c4) z c |
+w: Five pints ~ bul-ly you'll be shak-in' in your shoes ~ ~ We're
+"Dm" d3 (c2c) | "F" A G2 F2 A | "C" G3 C3 | "Dm" D6 ||
+w: half- seas ~ ov-er on the Jo-li Rogue.
