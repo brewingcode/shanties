@@ -13,7 +13,7 @@ w: Be-fore the ~ boat had hit the water, the whale's tail came up ~ and caught h
 w: No line was ~ cut, no whale was freed, The cap-tain's mind was ~ not of greed. But
 w: For fort-y ~ days or ev-en more, The line went slack then ~ tight once more. All
 w: As far as I've heard, the fight's still on The line's not cut and the whale's not gone. The
-w: 2 13 13 13 13 1 12 12 12 12 2 0 0 0 2 ? ? ? 12 12 12
+w: 12 13 13 13 13 1 12 12 12 12 2 0 0 0 2 ? ? ? 12 12 12
 C2 C2 C2 E2 | G2 G2 G2 G2 | "G"G2 F2 E2 D2 | "Cm"C6 z2 | 
 w: winds blew up, her bow dipped down. Oh  blow my bully boys blow.
 w: cap-tain called all hands and swore: "We'll take that whale in tow".
