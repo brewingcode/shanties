@@ -1,27 +1,32 @@
 T: Toss a Coin to Your Witcher
 %%notecolors 1
 %%notelabels 1
-K: Dm
+K: Db
 M:4/4
-z4 | z4 | "Bbm" z4 DCB,A, | "Eb" B,2 z2 DEDC |
+"Bbm" z4 DCB,A, | "Eb" B,4 DEDC |
 w: When a hum-ble bard \
 w: graced a ride a-
 w: While the de-vil's horns \
 w: minced our tend-er 
-"Ebm" B,2 z B, EEF(D | "Fm/Ab" D)B, z B, EDE(F | "Eb/G" F2) z2 z | "Fm/Ab" z4 "F" y |
-w: long with Ger-alt of Ri- \-  via \
+w: 12 13 123 2 123 12 2 12 13
+"Ebm" B,3 B, EEF| D "Fm/Ab" B,2 B, EDE | "Eb/G" F4 z2  | "Fm/Ab" z4 "F" y |
+w: long with Ger-alt of Riv-ia \
 w: a-long came this song \___
 w: meat and so cried the Witch- _er \
 w: ~ he can't be bleat \___
-"Bbm" z2 z "<(" ">)" F, DCB,A, | "Eb/G" B,2 z "<(" ">)" F, DE D2 | "Ebm/Gb" A,/2B,/2 z z B, EEF(D
+w: 123 123 2 2 0 12 123 123 2 12 2 0
+"Bbm" z2 z "<(" ">)" F, DCB,A, | "Eb/G" B,3 "<(" ">)" F, DE D2 | "Ebm/Gb" A,B,2 B, EEF(D
 w: From when the White Wolf fought \
 w: a sil-ver tongued de-vil \
 w: his ar-my of elves
+w: 0 12 13 123 2 123 0 12 2 12 2 123 123 2 2 0 12
 "Ab" D) B,2 B, EE (F | "Eb/G" F5) D(B, | "Ab" B,2) z2 z4 "F/A" y| "Bbm" z4 dcBA |
 w: \_ at his hooves did they re-vel \_ \
 w: They came af-ter 
+w: 12 123 123 2 2 0 0 12 123 123 12 13 123 2
 "Eb/G" B2 z "<(" ">)" F dedc | "Ebm/Gb" B2 z2 eef(d | "Ab" d)B z B af"F/A"d(e |
 w: me \
 w: With mast-er-ful de-ceit \
 w: broke down my lute \
 w: _and they kicked in my teeth
+w: 123 0 12 2 12 13 123 2 2 0 12 12 123 123 2 0 12 2
