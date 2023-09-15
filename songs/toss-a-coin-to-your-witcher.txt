@@ -1,4 +1,5 @@
 T: Toss a Coin to Your Witcher
+%%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
 K: Db

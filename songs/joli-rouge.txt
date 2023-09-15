@@ -1,5 +1,6 @@
 X: 1
 T: Joli Rouge
+%%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
 M: 6/8
