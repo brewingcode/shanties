@@ -21,7 +21,7 @@ w: From when the White Wolf fought \
 w: a sil-ver tongued de-vil \
 w: his ar-my of elves
 w: 0 12 13 123 2 123 0 12 2 12 2 123 123 2 2 0 12
-"Ab" D) B,2 B, EE (F | "Eb/G" F5) D(B, | "Ab" B,2) z2 z4 "F/A" y| "Bbm" z4 dcBA |
+"Ab" D) B,2 B, EE (F | "Eb/G" F6) D(B, | "Ab" B,2) z2 z4 "F/A" y| "Bbm" z4 dcBA |
 w: \_ at his hooves did they re-vel \_ \
 w: They came af-ter 
 w: 12 123 123 2 2 0 0 12 123 123 12 13 123 2
