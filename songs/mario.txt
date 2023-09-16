@@ -2,7 +2,9 @@ X: 1
 T: Mario
 M: 4/4
 L: 1/16
-K: G
-FF2F z DF2 A4 A,4 | D3A, z2 F,2 z B,_D2 z CB,2 | 
-A,3/2F3/2A B2GA z F2D E2_D3/2 | D3A, z2 F,2 z B,2_D z CB,2
-A,3/2F3/2A B2GA z F2D E2_D3/2 
+K: Em
+FF2F z DF2 A4 A,4 | D3A, z2 F,2 z B,2_D z CB,2 | 
+A,3/2F3/2A B2GA z F2D E_D3 | D3A, z2 F,2 z B,2_D z CB,2
+A,3/2F3/2A B2GA z F2D E_D3 |: z2 A_A G=F2^F z _B,=B,D z B,DE
+z2 A_A G=F2^F z d2d d4 | z2 A_A G=F2$^F z _B,=B,D z B,DE
+z2 =F2 z E3 D2 z2 z2 z z :|
