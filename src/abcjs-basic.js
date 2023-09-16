@@ -3443,8 +3443,8 @@ var parseDirective = {};
     };
     multilineVars.vocalfont = {
       face: "\"Times New Roman\"",
-      size: 13,
-      weight: "bold",
+      size: 10,
+      weight: "normal",
       style: "normal",
       decoration: "none"
     };
