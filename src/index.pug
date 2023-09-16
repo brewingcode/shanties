@@ -76,6 +76,9 @@ append body
 
             setSong = (s) ->
                 window.editor.editarea.setString(s)
+                document.title = Object.entries(byTitle)
+                    .find ([k,v]) -> v is s
+                    .at(0)
                 setTimeout ->
                     k = displayKey()
                     $('#fromKey').text(k)
@@ -119,5 +122,3 @@ append body
                     setSong byTitle[title]
                 else
                     setSong "%%notelabels 1\nB c d e | ff | c'd' | EE E | =D^D"
-
-
