@@ -1,6 +1,5 @@
 X: 1
 T: All For Me Grog
-%%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
 M: 4/4

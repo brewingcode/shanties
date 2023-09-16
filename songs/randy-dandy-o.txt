@@ -1,5 +1,4 @@
 T: Randy Dandy-O
-%%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
 K: Eb
