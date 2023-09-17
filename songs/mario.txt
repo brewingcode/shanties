@@ -1,5 +1,5 @@
 X: 1
-T: Mario
+T: Mario Bros. Theme
 %%notecolors 1
 %%notelabels 1
 M: 4/4
