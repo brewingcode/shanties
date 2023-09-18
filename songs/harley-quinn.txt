@@ -1,19 +1,11 @@
-X:1
-T:Harley Queen
-Z:Jefferson Friedman
-%%score { 1 | 2 }
-L:1/8
-M:3/4
-I:linebreak $
-K:C
-V:1 treble nm="Piano" snm="Pno."
-V:2 bass 
-L:1/4
-V:1
-!<(! A6!<)! | F6 | A6 | F6 | E6 | D6 |:$ (3EAc (3ecA (3ecA |$ (3FAc (3fcA (3fcA |$ %8
- (3EAc (3ecA (3ecA |$ (3DFA (3fcA (3fc=A |$ (3EGc (3ecG (3ecG |$ (3E^GB (3eB^G (3eB^G :|$ %12
- (3EAc e2 (3Ace | (3[Aa] z z (2:2:2z z z2 |] %14
-V:2
- z3 | z3 | z3 | z3 | z3 | z z2 |:$ A,, [A,E] [A,E] |$ F,, [F,A,F] [F,A,F] |$ A,, [A,E] [A,E] |$ %9
- D,, [A,F] [A,F] |$ G,, [G,E] [G,E] |$ ^G,, [^G,E] [^G,E] :|$ A,, [A,E] (3A,/C/E/ | z3 |] %14
-
+X: 1
+T: Harley Quinn
+%%notecolors 1
+%%notelabels 1
+M: 3/4
+K: C
+A6 | F6 | A6 | F6 | E6 | D6 |
+|: "Am" EAc | ecA | ecA | "Fm" FAc fcA fcA |
+"Am" EAc | ecA | ecA | "Fm" FAc fcA fcA |
+"Dm" DFA | fcA | fc=A | "E" EGc | ecG | ecG |
+"E#" E^GB | eB^G :| "Fm" EAC e2 ACe | [Aa] |
