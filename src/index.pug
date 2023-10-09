@@ -50,6 +50,10 @@ append body
     .noprint: #warnings
     .noprint
         label
+            span Show lyrics
+            input#show-lyrics(type="checkbox" checked)
+        span &nbsp;&nbsp;&nbsp;
+        label
             span Transpose:
             input#transpose(type="number" min="-24" max="24" step="1" value="0")
         span &nbsp;
@@ -74,8 +78,11 @@ append body
                     console.error 'getKeySignature():', tunes, k
                     k.root
 
-            setSong = (s) ->
-                window.editor.editarea.setString(s)
+            setSong = (song) ->
+                s = song
+                if not $('#show-lyrics').is(':checked')
+                    song = stripLyrics(song)
+                window.editor.editarea.setString(song)
                 document.title = Object.entries(byTitle)
                     .find ([k,v]) -> v is s
                     .at(0)
@@ -89,6 +96,18 @@ append body
                 params = new URLSearchParams(window.location.search)
                 params.set 'title', title
                 window.history.replaceState {}, '', "#{window.location.pathname}?#{params}"
+
+            stripLyrics = (s) ->
+                s.split /\n/
+                    .filter (line) ->
+                        if m = line.match /^\s*w:(.*)/i
+                            lyrics = m[1]
+                            if lyrics.match /^[\s\d\?]+$/
+                                # all digits are trumpet fingering, keep those
+                                return true
+                            return false
+                        return true
+                    .join('\n')
 
             window.onload = ->
                 prevStep = 0
@@ -112,6 +131,9 @@ append body
                     setTimeout ->
                         $('#toKey').text displayKey()
                     , 500
+
+                $('#show-lyrics').on 'change', ->
+                    setSong byTitle[document.title]
 
                 params = new URLSearchParams(window.location.search)
                 file = params.get('file')
