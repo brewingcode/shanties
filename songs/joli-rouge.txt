@@ -11,7 +11,7 @@ w: From France we get the Bran-dy, from Mar-ti-nique the rum
 w: She's called the Dread-nought Ci-der, she's pro-per and she's fine
 w: So turn your sails over ~ ~ and bring her hard to port
 w: So you can have a Mag-ners and pour it o-ver ice
-w: 2 2 2 12 2 2 2 2 2 12 0 12 2 2
+w: 2 2 2 12 2 2 2 2 2 12 0 12 2
 "Dm" f3 (f2 f) | "C" ed(c c2) d | "Dm" c d2 d2 c | "Am" (d3 d)de |
 w: Sweet red ~ Cab-er-net ~ from I- ta- ly does come. ~ But the fair
 w: And when the day is over sure I wish that she were mine. ~ ~ Or
