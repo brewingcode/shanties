@@ -12,3 +12,11 @@ A, D D D D D A, A, A, D D D F A
 w: But now I've joined the na-vy I'm a-board a man-o-war
 A, D D D F A A A F =G E F C D
 w: And now I've found a sai-lor ain't a sai-lor a-ny-more
+F D D E D A, D D E D
+w: Don't haul on the rope, don't climb up the mast
+D D D D D E F E F A, A, A,
+w: If you see a sai-ling ship it might be your last
+A, D D D D D A, A, A, D D D F A
+w: Just get your civ-vies rea-dy for a-no-ther run a-shore
+A, D D D F A A A F =G E F C D
+w: A sai-lor ain't a sai-lor, ain't a sai-lor a-ny-more
