@@ -54,6 +54,10 @@ append body
             input#show-lyrics(type="checkbox" checked)
         span &nbsp;&nbsp;&nbsp;
         label
+            span Show guitar tab
+            input#show-gtab(type="checkbox")
+        span &nbsp;&nbsp;&nbsp;
+        label
             span Transpose:
             input#transpose(type="number" min="-24" max="24" step="1" value="0")
         span &nbsp;
@@ -68,6 +72,10 @@ append body
     script: include abcjs-basic.js
     script
         :coffeescript
+            abcjsParams =
+                responsive: 'resize'
+                add_classes: true
+
             displayKey = ->
                 k = window.editor.tunes[0].getKeySignature()
                 if k.acc is 'b'
@@ -114,9 +122,7 @@ append body
                 window.editor = new ABCJS.Editor 'abc',
                     canvas_id: 'paper',
                     warnings_id: 'warnings'
-                    abcjsParams:
-                        responsive: 'resize'
-                        add_classes: true
+                    abcjsParams: abcjsParams
 
                 $('.dropdown-menu a').click ->
                     setSong byTitle[$(this).text()]
@@ -134,6 +140,17 @@ append body
 
                 $('#show-lyrics').on 'change', ->
                     setSong byTitle[document.title]
+
+                $('#show-gtab').on 'change', ->
+                    window.editor.paramChanged {
+                        ...abcjsParams
+                        tablature: if $(this).is(':checked')
+                            [{
+                                instrument: "guitar",
+                                label: "Guitar (%T)",
+                                tuning: ["E,", "A,", "D", "G", "B", "e"],
+                            }]
+                    }
 
                 params = new URLSearchParams(window.location.search)
                 file = params.get('file')
