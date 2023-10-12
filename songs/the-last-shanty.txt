@@ -1,0 +1,14 @@
+X: 1
+T: The Last Shanty
+%%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
+K: A
+F E D D D E D A, A, D D D E D
+w: Well me fa-ther oft-en told me when I was just a lad
+A, D D D D D E F D E A, A, A, A,
+w: A sai-lor's life is ve-ry hard, the food is al-ways bad
+A, D D D D D A, A, A, D D D F A
+w: But now I've joined the na-vy I'm a-board a man-o-war
+A, D D D F A A A F =G E F C D
+w: And now I've found a sai-lor ain't a sai-lor a-ny-more
