@@ -1,0 +1,20 @@
+X: 1
+T: Bully Boys
+%%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
+K: C
+E F G G G F E F F F F E D E E E E D C D
+w: And it's row me bul-ly boys we're in a hur-ry boys we've got a long way to go
+G, G, C C C C D E F E D E G E F E D C
+w: And we'll sing and we'll dance and bid fare-well to France, blow me bul-ly boys blow
+G, C C C C D E F E D E D F F F E D G
+w: And we sailed a-way in the rough-est of wa-ter, blow me bul-ly boys blow
+w: See, now, how we feast on phea-sants by a flock, ~ blow me bul-ly boys blow
+w: A wee dram of whis-key for e-ver-y man, ~ blow me bul-ly boys blow
+w: And we sailed a-way in the rough-est of wa-ter, blow me bul-ly boys blow
+E F F F F E D E E E E D G E F E D C
+w: But now we re-turn in the most ro-yal quar-ters, blow me bul-ly boys blow
+w: It's a long, ~ long way from the gruel and the stocks, blow me bul-ly boys blow
+w: And a bar-rel of rum for the shan- ~ ty man, blow me bul-ly boys blow
+w: And now we re-turn and so lock up your daugh-ters, blow me bul-ly boys blow
