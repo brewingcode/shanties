@@ -9,12 +9,12 @@ w: Well me fa-ther oft-en told me when I was just a lad
 w: Well ~ the kil-lick of our mess he says we had it soft
 w: They gave ~ us an en- ~ gine that first went up and down
 w: They gave ~ us an Al- ~ diss Lamp so we could it right
-A, D D D D D E F D E A, A, A, A,
+A, D D D D D E F D E E A, A, A,
 w: A sai-lor's life is ve-ry hard, the food is al-ways bad
 w: It was-n't like that in his day when we were up a-loft
 w: ~ Then with more tech-nol-o-gy the en-gine went a-round
 w: ~ They gave us a ra-di-o, we sig-nalled day and night
-A, D D D D D A, A, A, D D D F A
+A, D D D D D D A, A, D D D F A
 w: But now I've joined the na-vy I'm a-board a man-o-war
 w: We like our bunks and sleep-ing bags, but what's a ham-mock for?
 w: We know our steam and die-sels ~ but what's a main-yard for?
@@ -26,9 +26,9 @@ w: A sto-ker ain't a sto-ker with a sho-vel a-ny-more
 w: A bunt-ing tos-ser does-n't toss the bunt-ing a-ny-more
 F D D E D A, D D E D
 w: Don't haul on the rope, don't climb up the mast
-D D D D D E F E F A, A, A,
+D D D D D E F D E A, A, A,
 w: If you see a sai-ling ship it might be your last
-A, D D D D D A, A, A, D D D F A
+A, D D D D D D A, A, D D D F A
 w: Just get your civ-vies rea-dy for a-no-ther run a-shore
 A, D D D F A A A F =G E F C D
 w: A sai-lor ain't a sai-lor, ain't a sai-lor a-ny-more
