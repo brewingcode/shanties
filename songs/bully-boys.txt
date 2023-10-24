@@ -6,15 +6,15 @@ T: Bully Boys
 K: F#
 A B c c c B A B B B B A G A A A A G F G
 w: And it's row me bul-ly boys we're in a hur-ry boys we've got a long way to go
-C C F F F F G A B A G A c A B A G F
-w: And we'll sing and we'll dance and bid fare-well to France, blow me bul-ly boys blow
-C F F F F G A B A G A G B B B A G c
-w: And we sailed a-way in the rough-est of wa-ter, blow me bul-ly boys blow
-w: See, now, how we feast on phea-sants by a flock, ~ blow me bul-ly boys blow
-w: A wee dram of whis-key for e-ver-y man, ~ blow me bul-ly boys blow
-w: And we sailed a-way in the rough-est of wa-ter, blow me bul-ly boys blow
-A B B B B A G A A A A G c A B A G F
-w: But now we re-turn in the most ro-yal quar-ters, blow me bul-ly boys blow
-w: It's a long, ~ long way from the gruel and the stocks, blow me bul-ly boys blow
-w: And a bar-rel of rum for the shan- ~ ty man, blow me bul-ly boys blow
-w: And now we re-turn and so lock up your daugh-ters, blow me bul-ly boys blow
+C C C F F F G A B A G G c A B A G F
+w: And we'll sing and we'll dance and bid fare-well to France, row me bul-ly boys row
+C C F F F G A B A G A G A A A G F G
+w: And we sailed a-way in the rough-est of wa-ter, row me bul-ly boys row
+w: See, now, how we feast on phea-sants by a flock, ~ row me bul-ly boys row
+w: A wee dram of whis-key for e-ver-y man, ~ row me bul-ly boys row
+w: And we sailed a-way in the rough-est of wa-ter, row me bul-ly boys row
+A c c c c B A B A G G F c A B A G F
+w: But now we re-turn in the most ro-yal quar-ters, row me bul-ly boys row
+w: It's a long, ~ long way from the gruel and the stocks, row me bul-ly boys row
+w: And a bar-rel of rum for the shan- ~ ty man, row me bul-ly boys row
+w: And now we re-turn and so lock up your daugh-ters, row me bul-ly boys row
