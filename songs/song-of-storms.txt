@@ -1,0 +1,14 @@
+T: Song of Storms
+%%notecolors 1
+%%notelabels 1
+K: C
+L: 1/4
+M: 6/8
+V:t clef=treble
+V:b clef=bass
+[V:t] z3 | z3 | z3 | z3 | z3 | z3 | z3 | z3 |
+[V:b]D, "D"[F,A,] [F,A,] | D, "E"[G,2B,2] | D, "F"[A,c,][A,c,] | D, "E"[G,2B,2] | D, "D"[F,A,] [F,A,] | D, "E"[G,2B,2]  |D, "F"[A,c,][A,c,] | D, "E"[G,2B,2] |
+[V:t] |: D/2A/2 d2 | D/2A/2 d2 | e3/2 f/2e/2f/2 | e/2c/2A2 | A D F/2G/2 | A3 | A D F/2G/2 | E3 | 
+[V:b] |: D, "D"[F,A,] [F,A,] | D, "E"[G,2B,2] | D, "F"[A,c,][A,c,] | D, "E"[G,2B,2] | D, "D"[F,A,] [F,A,] | D, "E"[G,2B,2]  |D, "F"[A,c,][A,c,] | D, "E"[G,2B,2] |
+[V:t] D/2A/2 d2 | D/2A/2 d2 | e3/2 f/2e/2f/2 | e/2c/2A2 | A D F/2G/2 | A2 A | (D3 | D3) :|
+[V:b]D, "D"[F,A,] [F,A,] | D, "E"[G,2B,2] | D, "F"[A,c,][A,c,] | D, "E"[G,2B,2] | D, "D"[F,A,] [F,A,] | D, "E"[G,2B,2]  |D, "F"[A,c,][A,c,] | D, "E"[G,2B,2] :|
