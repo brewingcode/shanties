@@ -3,17 +3,18 @@ T: Bully Boys
 %%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
+M: 6/8
 K: F#
-A B "F#"c c c B A "B"B B B B A G "F#"A A A A G F "C#"G
+A B "F#"c c c B A "B"B B B B A G "F#"A A A A G F "C7"G
 w: And it's row me bul-ly boys we're in a hur-ry boys we've got a long way to go
-C C "F#"C F F F G A "B"B A G F "C#"c A B A G "F#"F
+C C "F#"C F F F G A "B"B A G G "C7"c A B A G "F#"F
 w: And we'll sing and we'll dance and bid fare-well to France, row me bul-ly boys row
-C C F F F G A "B"B A G G F "F#"A A A G F "C#"G
+C C F F F G A "B"B A G G F "F#"A A A G F "C7"G
 w: And we sailed a-way in the rough-est of wa-ter, row me bul-ly boys row
 w: See, now, how we feast on phea-sants by a flock, ~ row me bul-ly boys row
 w: A wee dram of whis-key for e-ver-y man, ~ row me bul-ly boys row
 w: And we sailed a-way in the rough-est of wa-ter, row me bul-ly boys row
-A c"F#" c c c B A "B"B A G G F "C#"c A B A G "F#"F
+A c"F#" c c c B A "B"B A G G F "C7"c A B A G "F#"F
 w: But now we re-turn in the most ro-yal quar-ters, row me bul-ly boys row
 w: It's a long, ~ long way from the gruel and the stocks, row me bul-ly boys row
 w: And a bar-rel of rum for the shan- ~ ty man, row me bul-ly boys row
