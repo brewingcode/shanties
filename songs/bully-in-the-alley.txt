@@ -1,0 +1,21 @@
+X: 1
+T: Bully in the Alley
+%%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
+K: G
+M: 4/4
+"G"GGGD G2 A2 | B2 d2 B2 G2 | "C"c4 "G"B4 | "D"AAAB A2 D2 |
+w: Sal-ly is the girl that I love dear-ly way hey bul-ly in the al-ley
+w: Se-ven long years I-'ve court-ed Sal-ly way hey bul-ly in the al-ley
+w: Sal- ~ ly ~ Brown I took a no-tion way hey bul-ly in the al-ley
+w: Well ~ I'll leave Sal and I'll go sail-in' way hey bul-ly in the al-ley
+"G"GGGD G2 A2 | B2 d2 B2 G2 | "C"cccc "G"B2 G2 | "D"D2 F2 "G"G4 |
+w: Sal-ly is the girl that I spliced nearl-ly bul-ly down in ~ shin-bone al-ley
+w: All she did was dil-ly and dal- ~ ly bul-ly down in ~ shin-bone al-ley
+w: To sail ~ ac-ross this wide damn oc-ean bul-ly down in ~ shin-bone al-ley
+w: Leave ~ my ~ gal and I'll go whale-in' bul-ly down in ~ shin-bone al-ley
+"G"G2 D2 G2 GA | BBBd B2 G2 | "C"c4 "G"B4 | "D"AAAB A2 D2 |
+w: So help me pump ~ bul-ly in the al-ley way hey bul-ly in the al-ley
+"G"G2 D2 G2 GA | BBBd B2 G2 | "C"cccc "G"B2 G2 | "D"D2 F2 "G"G4 |
+w: So help me pump ~ bul-ly in the al-ley bul-ly down in ~ shin-bone al-ley
