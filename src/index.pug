@@ -161,3 +161,12 @@ append body
                     setSong byTitle[title]
                 else
                     setSong "%%notelabels 1\nB c d e | ff | c'd' | EE E | =D^D"
+
+                if navigator.userAgent.match /i(Pad|Phone)/i
+                    $('#abc').prop 'readonly', true
+                    $('#abc').on 'click', ->
+                        $(this).prop 'readonly', false
+                        setTimeout =>
+                            $(this).focus()
+                        , 0
+                    $('#abc').on 'blur', -> $(this).prop 'readonly', true
