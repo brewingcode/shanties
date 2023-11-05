@@ -93,7 +93,7 @@ append body
                 window.editor.editarea.setString(song)
                 document.title = Object.entries(byTitle)
                     .find ([k,v]) -> v is s
-                    .at(0)
+                    ?.at(0) or 'YEEAAARGH'
                 setTimeout ->
                     k = displayKey()
                     $('#fromKey').text(k)
