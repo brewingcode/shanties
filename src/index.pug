@@ -20,6 +20,8 @@ append head
             white-space: nowrap;
         }
 
+        button { margin-right: 1ex }
+
         @media print {
             .noprint { display: none !important }
         }
@@ -48,7 +50,7 @@ append body
 
     .noprint: textarea#abc(spellcheck="false")
     .noprint: #warnings
-    .noprint
+    .noprint#settings
         label
             span Show lyrics
             input#show-lyrics(type="checkbox" checked)
@@ -118,6 +120,18 @@ append body
                         return true
                     .join('\n')
 
+            addEditButton = ->
+                $('#settings > button').remove()
+                $('#settings').prepend """
+                    <button type="button" class="btn btn-primary btn-sm">Edit</button>"""
+                $('#settings > button').on 'click', (e) ->
+                    $(e.target).remove()
+                    $('#abc').prop('disabled', false)
+                        .focus()
+                        .on 'blur', (e) ->
+                            $('#abc').prop 'disabled', true
+                            addEditButton()
+
             window.onload = ->
                 prevStep = 0
                 window.editor = new ABCJS.Editor 'abc',
@@ -164,10 +178,5 @@ append body
                     setSong "%%notelabels 1\nB c d e | ff | c'd' | EE E | =D^D"
 
                 if navigator.userAgent.match /i(Pad|Phone)/i
-                    $('#abc').prop 'readonly', true
-                    $('#abc').on 'click', ->
-                        $(this).prop 'readonly', false
-                        setTimeout =>
-                            $(this).focus()
-                        , 0
-                    $('#abc').on 'blur', -> $(this).prop 'readonly', true
+                    $('#abc').prop 'disabled', true
+                    addEditButton()
