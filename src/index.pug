@@ -77,13 +77,14 @@ append body
                 add_classes: true
 
             displayKey = ->
-                k = window.editor.tunes[0].getKeySignature()
+                { tunes } = window.editor
+                k = tunes?[0].getKeySignature()
+                return unless k
                 if k.acc is 'b'
                     k.root + '♭'
-                else if k.acc is ''
-                    k.root
+                else if k.acc is '#'
+                    k.root + '#'
                 else
-                    console.error 'getKeySignature():', tunes, k
                     k.root
 
             setSong = (song) ->
