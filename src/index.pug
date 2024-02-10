@@ -56,6 +56,10 @@ append body
             input#show-lyrics(type="checkbox" checked)
         span &nbsp;&nbsp;&nbsp;
         label
+            span Show trumpet fingering
+            input#show-trumpet(type="checkbox" checked)
+        span &nbsp;&nbsp;&nbsp;
+        label
             span Show guitar tab
             input#show-gtab(type="checkbox")
         span &nbsp;&nbsp;&nbsp;
@@ -91,11 +95,21 @@ append body
 
             setSong = (song) ->
                 s = song
-                if not $('#show-lyrics').is(':checked')
-                    song = stripLyrics(song)
-                window.editor.editarea.setString(song)
+                    .split /\n/
+                    .filter (line) ->
+                        if m = line.match /^\s*w:(.*)/i
+                            lyrics = m[1]
+                            if lyrics.match /^[\s\d\?]+$/
+                                # all digits are trumpet fingering, keep those
+                                return $('#show-trumpt').is(':checked')
+                            else 
+                                return $('#show-lyrics').is(':checked')
+                        else
+                            return true
+                    .join('\n')
+                window.editor.editarea.setString s
                 document.title = Object.entries(byTitle)
-                    .find ([k,v]) -> v is s
+                    .find ([k,v]) -> v is song
                     ?.at(0) or 'YEEAAARGH'
                 setTimeout ->
                     k = displayKey()
@@ -107,18 +121,6 @@ append body
                 params = new URLSearchParams(window.location.search)
                 params.set 'title', title
                 window.history.replaceState {}, '', "#{window.location.pathname}?#{params}"
-
-            stripLyrics = (s) ->
-                s.split /\n/
-                    .filter (line) ->
-                        if m = line.match /^\s*w:(.*)/i
-                            lyrics = m[1]
-                            if lyrics.match /^[\s\d\?]+$/
-                                # all digits are trumpet fingering, keep those
-                                return true
-                            return false
-                        return true
-                    .join('\n')
 
             addEditButton = ->
                 $('#settings > button').remove()
@@ -153,7 +155,7 @@ append body
                         $('#toKey').text displayKey()
                     , 500
 
-                $('#show-lyrics').on 'change', ->
+                $('#show-lyrics, #show-trumpet').on 'change', ->
                     setSong byTitle[document.title]
 
                 $('#show-gtab').on 'change', ->
