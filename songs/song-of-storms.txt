@@ -1,7 +1,7 @@
 T: Song of Storms
 %%notecolors 1
 %%notelabels 1
-K: C
+K: Dm
 L: 1/4
 M: 6/8
 V:t clef=treble
