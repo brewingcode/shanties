@@ -12,7 +12,7 @@ npm run dev
 
 [Current ABC standard](https://abcnotation.com/wiki/abc:standard:v2.1)
 
-[ABC quick reference](./ABCquickRefv0_6.pdf)
+[ABC quick reference](./misc/ABCquickRefv0_6.pdf)
 
 [abc.js](https://github.com/paulrosen/abcjs)
 
