@@ -1,0 +1,9 @@
+T: Deck the Halls
+%%notecolors 1
+%%notelabels 1
+K: D
+L: 1/8
+"D"A3 G "A"F2 E2 | "D"D2 E2 "D_"F2 D2 | "A7"EFGE "D"F3 E | "A7"D2 C2 "D"D4 |
+"D"A3 G "A"F2 E2 | "D"D2 E2 "D_"F2 D2 | "A7"EFGE "D"F3 E | "A7"D2 C2 "D"D4 |
+"A7"E3 F G2 E2 | "D"F3 G "A"A2 E2 | "D"F^G A2 "B7"Bc d2 | "E7"c2 B2 "A"A4 |
+"D"A3 G "A"F2 E2 | "D"D2 E2 "D_"F2 D2 | "G"BBBB "D"A3 G | "A7" F2 E2 "D"D4
