@@ -5,7 +5,7 @@ T: Randy Dandy-O
 K: Eb
 M: 6/8
 L: 1/16
-M: 6/8
+Q: 1/4=140
 "Eb"e4 ee "Dm"d3ed2 | "Cm"c3dc2 "Gm"G6 | "Cm"c6 "Dm"d6 | c4 B2 "Gm"G4 GA |
 w: Now we are read-dy to sail for the Horn, \
 w: Way hey roll and go Our _
@@ -42,7 +42,7 @@ w: 2 2 12 12 13 13 12 13 12 13 123 12 12
 w: an-chor's on board and the \
 w: cab-le's all stored To me rol-lick-ing ran-dy dan-dy O
 w: 123 13 123 123 2 12 0 0 0 123 2 0 12 2 12 12 0 2 13 13
-W: Now we are readdy to sail for the Horn \ Our boots an' our clothes, boys, are all in the pawn
+W: Now we are ready to sail for the Horn \ Our boots an' our clothes, boys, are all in the pawn
 W: Man the stout caps'n and heave with a will \ For soon we'll be drivin' away up the hill
 W: Heave away, bullies, ye parish rigged bums \ Take your hands from your pockets and don't suck your thumbs
 W: We are outward bound for Vallipo Bay \ Get crackin', me lads, it's a hell of a way!

@@ -5,6 +5,7 @@ T: Bully in the Alley
 %%notelabels 1
 K: G
 M: 4/4
+Q: 1/4=150
 "G"GGGD G2 A2 | B2 d2 B2 G2 | "C"c4 "G"B4 | "D"AAAB A2 D2 |
 w: Sal-ly is the girl that I love dear-ly way hey bul-ly in the al-ley
 w: Se-ven long years I-'ve court-ed Sal-ly way hey bul-ly in the al-ley
