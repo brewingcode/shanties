@@ -10,12 +10,16 @@ w: Sal-ly is the girl that I love dear-ly way hey bul-ly in the al-ley
 w: Se-ven long years I-'ve court-ed Sal-ly way hey bul-ly in the al-ley
 w: Sal- ~ ly ~ Brown I took a no-tion way hey bul-ly in the al-ley
 w: Well ~ I'll leave Sal and I'll go sail-in' way hey bul-ly in the al-ley
-"G"GGGD G2 A2 | B2 d2 B2 G2 | "C"cccc "G"B2 G2 | "D"D2 F2 "G"G4 |
-w: Sal-ly is the girl that I spliced nearl-ly bul-ly down in ~ shin-bone al-ley
-w: All she did was dil-ly and dal- ~ ly bul-ly down in ~ shin-bone al-ley
-w: To sail ~ ac-ross this wide damn oc-ean bul-ly down in ~ shin-bone al-ley
-w: Leave ~ my ~ gal and I'll go whale-in' bul-ly down in ~ shin-bone al-ley
+"G"GGGD G2 A2 | B2 d2 B2 G2 | "C"cccB2 | "G"D2 "D7"F2 "G"G4 |
+w: Sal-ly is the girl that I spliced near-ly bul-ly down in shin-bone al
+w: All she did was dil-ly and dal- ~ ly bul-ly down in shin-bone al
+w: To sail ~ a-cross this wide damn oc-ean bul-ly down in shin-bone al
+w: Leave ~ my ~ gal and I'll go whale-in' bul-ly down in shin-bone al
 "G"G2 D2 G2 GA | BBBd B2 G2 | "C"c4 "G"B4 | "D"AAAB A2 D2 |
-w: So help me pump ~ bul-ly in the al-ley way hey bul-ly in the al-ley
-"G"G2 D2 G2 GA | BBBd B2 G2 | "C"cccc "G"B2 G2 | "D"D2 F2 "G"G4 |
-w: So help me pump ~ bul-ly in the al-ley bul-ly down in ~ shin-bone al-ley
+w: So help me ba ba bul-ly in the al-ley way hey bul-ly in the al-ley
+"G"G2 D2 G2 GA | BBBd B2 G2 | "C"cccB2 | "G"D2 "D7"F2 "G"G4 |
+w: So help me ba ba bul-ly in the al-ley bul-ly down in shin-bone al
+W: Sally is the girl that I love dearly / Sally is the girl that I spliced nearly
+W: Seven long years I've courted Sally / All she did was dilly and dally
+W: Sally Brown I took a notion / To sail across this wide damn ocean
+W: Well I'll leave Sal and I'll go sailin' / Leave my gal and I'll go whalein'

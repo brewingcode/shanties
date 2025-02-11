@@ -30,3 +30,9 @@ w: soles are look-ing out for bet-ter wea-ther.
 w: tail is look-in out for bet-ter wea-ther
 w: ross the west-ern o-cean I must wan-der
 w: 2 12 0 2 2 12 13 123 12 13
+W: Where are me boots?
+W: For the heels they are worn out and the toes are kicked about and the soles are looking out for better weather.
+W: Where is me shirt? 
+W: For the collar is wore out and the front is knocked about and the tail is looking out for better weather.
+W: I'm sick in the head and I haven't been to bed
+W: Since first I came ashore from me slumber, for I spent all me dough on the lassies don't you know

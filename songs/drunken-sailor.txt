@@ -4,7 +4,7 @@ T: Drunken Sailor
 %%notelabels 1
 K: Dm
 M: 4/4
-"Am"a2 aa a2  aa | a2 d2 f2 a2 | "C"g2 gg g2 gg | g2 c2 e2 g2 |
+"Dm"a2 aa a2  aa | a2 d2 f2 a2 | "C"g2 gg g2 gg | g2 c2 e2 g2 |
 w: What will we do with a drunk-en sail-or? \
 w: What will we do with a drunk-en sail-or?
 w: Shave his bel-ly with a rust-y ra-zor \
@@ -18,7 +18,7 @@ w: Put~him in the bed with the cap-tains daugh-ter
 w: That's what we do with a drunk-en sail-or \
 w: That's what we do with a drunk-en sail-or
 w: 2 2 2 2 2 2 2 12 0 2 12 12 12 12 12 12 12 13 2 12
-"Am"a2 aa a2 aa | a2 =b2 c'2 d'2 | "F"c'2 a2 "C"g2 e2 | "Am"d4 d2 z2 |
+"Dm"a2 aa a2 aa | a2 =b2 c'2 d'2 | "F"c'2 a2 "C"g2 e2 | "Dm"d4 d2 z2 |
 w: What will we do with a drunk-en sail-or? \
 w: Ear-ly in the morn-ing!
 w: Shave his bel-ly with a rust-y ra-zor \
@@ -32,11 +32,17 @@ w: Ear-ly in the morn-ing!
 w: That's what we do with a drunk-en sail-or \
 w: Ear-ly in the morn-ing!
 w: 2 2 2 2 2 2 2 ? 13? 23? 13? 2 12 2 12 12
-"Am"a4 a3 a | a2 d2 f2 a2 | "C"g4 g3 g | g2 c2 e2 g2 |
+"Dm"a4 a3 a | a2 d2 f2 a2 | "C"g4 g3 g | g2 c2 e2 g2 |
 w: Way hay and up she ris-es \
 w: Way hay and up she ris-es
 w: 2 2 2 2 12 0 2 12 12 12 12 13 2 12
-"Am"a4 a3 a | a2 =b2 c'2 d'2 | "F"c'2 a2 "C"g2 e2 | "Am"d4 d2 z2 |
+"Dm"a4 a3 a | a2 =b2 c'2 d'2 | "F"c'2 a2 "C"g2 e2 | "Dm"d4 d2 z2 |
 w: Way hay and up she ris-es \
 w: Ear-ly in the morn-ing!
 w: 2 2 2 2 ? 13? 23? 13? 2 12 2 12 12
+W: What will we do with a drunken sailor?
+W: Shave his belly with a rusty razor
+W: Put him in a long boat till he's sober
+W: Stick him in a scupper with a hose-pipe bottom
+W: Put him in the bed with the captains daughter
+W: That's what we do with a drunken sailor

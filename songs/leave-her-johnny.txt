@@ -32,3 +32,7 @@ w: 12 12 12 13 2 12 1 0 2 2 2 12 2 12 2 1 0
 "F"a2 a2 "C"g2 (ee) | "G"f2 f2 "C"e2 (cd) | e3 e e3 c | "G7"d2 "C"c6 |
 w: voyage is long and the winds don't blow and it's time for us to leave her
 w: 2 2 12 2 2 0 0 2 13 12 2 2 2 13 12 13
+W: I thought I heard the old man say \ Tomorrow ye will get yer pay
+W: Oh the wind was foul and the sea was high \ She shipped it green and none went by
+W: I hate to sail on this rotten tub \ No grog allowed and rotten grub
+W: We swear by rote for want of more \ But now we're through so we'll go on shore
