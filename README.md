@@ -17,3 +17,5 @@ npm run dev
 [abc.js](https://github.com/paulrosen/abcjs)
 
 [Transpose ABC](https://paulrosen.github.io/abcjs/examples/output-transpose.html)
+
+[Playback ABC as MIDI](https://abc.rectanglered.com/)
