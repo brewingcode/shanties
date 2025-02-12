@@ -4,33 +4,45 @@ T: Roll the Old Chariot Along
 %%notelabels 1
 K: Dm
 M: 4/4
-"Dm"fg | a2 af d2 fg | aaaf d2 aa | "C"g2 ge c2 ef | ggge c2 gg |
-w: We'd be al- ~ ~ right if the wind was in our sails. \
-w: We'd be al- ~ ~ right if the wind was in our sails. We'd be
-w: We'll be al- ~ ~ right if we make it round The Horn. \
-w: We'll be al-~ ~ right if we make it round The Horn. We'll be
-w: Well a nice wash bе-low would-n't do us an-y harm \
-w: Well a nice wash bе-low would-n't do us an-y harm. Well a
-w: Well a night on the town would-n't do us an-y harm \
-w: Well a night on the town would-n't do us an-y harm. Well a
-w: Oh a drop of Nelson's blood would-n't do us an-y harm Oh a drop of Nelson's blood would-n't do us an-y harm Oh a
-w: 0 12 2 2 0 12 0 12 2 2 2 0 12 2 2 12 12 2 13 2 0 12 12 12 2 13 12 12
-"Dm"a2 af d2 fg | aaaf d2 fg | "C"a2 g2 f2 e2 | "Dm"d4 f2 g2 |
-w: al- ~ ~ right if the wind was in our sails \
-w: And we'll all hang on be-hind. And we'll
-w: al- ~ ~ right if we make it round The Horn \
-w: And we'll all hang on be-hind. And we'll
-w: nice wash bе-low would-n't do us an-y harm \
+Q: 1/4=140
+fg | "Dm"a2 af d2 fg | aaaf d2
+w: We'd be all- ~ ~ right if the wind was in our sails. 
+w: We'll be all- ~ ~ right if we make it round The Horn. 
+w: Well a nice wash bе-low would-n't do us an-y harm. 
+w: Well a night on the town would-n't do us an-y harm. 
+w: Oh a drop of Nelson's blood would-n't do us an-y harm.  
+w: 0 12 2 2 0 12 0 12 2 2 2 0 12 
+aa | "C"g2 ge c2 ef | ggge c2
+w: We'd be all- ~ ~ right if the wind was in our sails. 
+w: We'll be all-~ ~ right if we make it round The Horn. 
+w: Well a nice wash bе-low would-n't do us an-y harm. 
+w: Well a night on the town would-n't do us an-y harm. 
+w: Oh a drop of Nelson's blood would-n't do us an-y harm.
+w: 2 2 12 12 2 13 2 0 12 12 12 2 13
+gg | "Dm"a2 af d2 fg | aaaf d2 
+w: We'd be all- ~ ~ right if the wind was in our sails.
+w: We'll be all- ~ ~ right if we make it round The Horn.
+w: Well a nice wash bе-low would-n't do us an-y harm.
+w: Well a night on the town would-n't do us an-y harm.
+w: Oh a drop of Nelson's blood would-n't do us an-y harm.
+w: 12 12 2 2 0 12 0 12 2 2 2 0 12 
+fg | "C"a2 g2 f2 e2 | "Dm"d4 z2
 w: And we'll all hang on be-hind. And we'll 
-w: night on the town would-n't do us an-y harm And we'll all hang on be-hind. And we'll
-w: drop of Nelson's blood would-n't do us an-y harm And we'll all hang on be-hind. And we'll
-w: 2 2 0 12 0 12 2 2 2 0 12 0 12 2 12 0 2 12 0 12
-a3 f d4 | aaaf d2 fa | "C" g3 e c4 | ggge c2 g2 |
-w: roll the old char-i-ot a-long \
-w: ~ We'll roll the old char-i-ot a-long \
-w: We'll
-w: 2 0 12 2 2 2 0 12 0 2 12 2 13 12 12 12 2 13 12
-"Dm"a3 f d4 | aaaf d2 fa | "C"a2 g2 f2 e2 | "Dm"d6 z2 |
-w: roll the old cha-r-iot a-long \
+w: 0 12 2 12 0 2 12 
+fg | "Dm"a3 f d4 | aaaf d2
+w:  And we'll roll the old char-i-ot a-long
+w: 0 12 2 0 12 2 2 2 0 12 
+fa | "C"g3 e c4 | ggge c2
+w: ~ We'll roll the old char-i-ot a-long
+w: 0 2 12 2 13 12 12 12 2 13 
+g2 | "Dm"a3 f d4 | aaaf d2
+w: We'll roll the old cha-r-iot a-long
+w: 12 2 0 12 2 2 2 0 12
+fa | "C"a2 g2 f2 e2 | "Dm"d6 z2
 w: And we'll all hang on be-hind
-w: 2 0 12 2 2 2 0 12 0 2 2 12 0 2 12
+w: 0 2 2 12 0 2 12
+W: We'd be all right if the wind was in our sails
+W: We'll be all right if we make it round The Horn
+W: Well a nice wash bеlow wouldn't do us any harm
+W: Well a night on the town wouldn't do us any harm
+W: Oh a drop of Nelson's blood wouldn't do us any harm
