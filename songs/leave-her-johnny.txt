@@ -4,34 +4,32 @@ T: Leave Her Johnny
 %%notelabels 1
 K: C
 M: 4/4
-cd | "C"e2 e2 e2 cd | e2 d2  c4 | "G"d2 d2 d3 c | "C"e2 g4 g2 |
+cd | "C"e2 e2 e2 cd | e2 d2  c4 | "G"d2 d2 d3 c | "C"e2 g4 
 w: I ~ thought I heard the _old man say \
-w: Leave her John-ny leave her To-
+w: Leave her John-ny leave her
 w: Oh the wind was foul and the sea was high \
-w: Leave her John-ny leave her She
+w: Leave her John-ny leave her
 w: I ~ hate to sail on this rot-ten tub \
-w: Leave her John-ny leave her No
+w: Leave her John-ny leave her 
 w: We ~ swear by rote for _want of more \
-w: Leave her John-ny leave her But
-w: 13 12 2 2 2 13 12 2 12 13 \
-w: 12 12 12 13 2 12 12
-"F"a2 a2 "C"g2 e2 | "G"f2 f2 "C"e2 cd | e3 e e3 c  | "G7"d2 "C"c6
-w: mor-row ye will get yer pay \
+w: Leave her John-ny leave her 
+w: 13 12 2 2 2 13 12 2 12 13 12 12 12 13 2 12
+g2 | "F"a2 a2 "C"g2 e2 | "G"f2 f2 "C"e2 cd | e3 e e3 c  | "G7"d2 "C"c6
+w: To-mor-row ye will get yer pay \
 w: and it's time for us to leave her
-w: shipped it green and none went by \
+w: She shipped it green and none went by \
 w: and it's time for us to leave her
-w: grog al-lowed and rot-ten grub \
+w: No grog a-lowed and rot-ten grub \
 w: and it's time for us to leave her
-w: now we're through so~we'll go on shore \
+w: But now we're through so~we'll go on shore \
 w: and it's time for us to leave her
-w: 2 2 12 2 0 0 2 13 12 \ 
-w: 2 2 2 13 12 13
-"G"d2 d2 d3 c | "C"e2 g4 c'b | "F"a2 a2 a3 g | "C"(ag) e4  (c'b) |
-w: Leave her John-ny leave her Oh _ leave her, John-ny leave _ her For the
-w: 12 12 12 13 2 12 1 0 2 2 2 12 2 12 2 1 0
-"F"a2 a2 "C"g2 (ee) | "G"f2 f2 "C"e2 (cd) | e3 e e3 c | "G7"d2 "C"c6 |
-w: voyage is long and the winds don't blow and it's time for us to leave her
-w: 2 2 12 2 2 0 0 2 13 12 2 2 2 13 12 13
+w: 12 2 2 12 2 0 0 2 13 12 2 2 2 13 12 13
+"G"d2 d2 d3 c | "C"e2 g4 c'b | "F"a2 a2 a3 g | "C"(ag) e4 
+w: Leave her John-ny leave her Oh _ leave her, John-ny leave _ her 
+w: 12 12 12 13 2 12 1 0 2 2 2 12 2 12 2 
+(c'b) | "F"a2 a2 "C"g2 (ee) | "G"f2 f2 "C"e2 (cd) | e3 e e3 c | "G7"d2 "C"c6 |
+w: For the voyage is long and the winds don't blow and it's time for us to leave her
+w: 1 0 2 2 12 2 2 0 0 2 13 12 2 2 2 13 12 13
 W: I thought I heard the old man say \ Tomorrow ye will get yer pay
 W: Oh the wind was foul and the sea was high \ She shipped it green and none went by
 W: I hate to sail on this rotten tub \ No grog allowed and rotten grub
