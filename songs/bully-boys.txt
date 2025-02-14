@@ -20,7 +20,11 @@ w: But now we re-turn in the most ro-yal quar-ters, row me bul-ly boys row
 w: It's a long, ~ long way from the gruel and the stocks, row me bul-ly boys row
 w: And a bar-rel of rum for the shan- ~ ty man, row me bul-ly boys row
 w: And now we re-turn and so lock up your daugh-ters, row me bul-ly boys row
-W: And we sailed away in the roughest of water / But now we return in the most royal quarters
-W: See, now, how we feast on pheasants by a flock /  It's a long, long way from the gruel and the stocks
-W: A wee dram of whiskey for every man  / And a barrel of rum for the shanty man
-W: And we sailed away in the roughest of water / And now we return and so lock up your daughters
+W: And we sailed away in the roughest of water 
+W: / But now we return in the most royal quarters
+W: See, now, how we feast on pheasants by a flock 
+W: / It's a long, long way from the gruel and the stocks
+W: A wee dram of whiskey for every man 
+W: / And a barrel of rum for the shanty man
+W: And we sailed away in the roughest of water 
+W: / And now we return and so lock up your daughters
