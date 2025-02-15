@@ -28,9 +28,3 @@ w: 13? 13? 2 0? 0? 12 12 12 2 0 0 12 2 12 1 13
 "Ab"c4 c3 A | "Eb"BB G2 G3 G | "G"G2 F2 E2 D2 | "Cm"C6 z2 |
 w: One day the ton-guin is done we'll take our leave and go
 w: 13? 13? 2 0? 0? 12 12 12 12 0 1 12 13
-W: There once was a ship that put to sea, the name of the ship was the Billy o Tea. \ The winds blew up, her bow dipped down. Oh  blow my bully boys blow.
-W: She had not been two weeks from shore, when down on her a right whale bore. \ The captain called all hands and swore: "We'll take that whale in tow".
-W: Before the boat had hit the water, the whale's tail came up and caught her. \ All hands to the side, harpooned and fought her, when she dived down below.
-W: No line was cut, no whale was freed, The captain's mind was not of greed. \ But he belonged to the Whaleman's creed. She took that ship in tow.
-W: For forty days or even more, The line went slack then tight once more. \ All boats were lost, there were only four, but still that whale did go.
-W: As far as I've heard, the fight's still on The line's not cut and the whale's not gone. \ The Wellerman makes his regular call To encourage the captain crew and all.
