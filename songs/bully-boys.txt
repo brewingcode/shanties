@@ -5,17 +5,26 @@ T: Bully Boys
 %%notelabels 1
 M: 6/8
 K: C
-E F "C"G G G F E "F"F F F F E D "C"E E E E D C "G7"D
+Q: 1/4=140
+EF | "C"G2 G GF E | "F"F2 F/F/ FE D | "C"E2 E/E/ E D C | "G7"D4 
 w: And it's row me bul-ly boys we're in a hur-ry boys we've got a long way to go
-G, G, "C"G, C C C D E "F"F E D D "G7"G E F E D "C"C
+G,G, | "C"G, CC C DE | "F" FE D D3 | "G7"G2 E FE D | "C"C4
 w: And we'll sing and we'll dance and bid fare-well to France, row me bul-ly boys row
-G, G, C C C D E "F"F E D D C "C"E E E D C "G7"D
+G,G, | "C"C2 CC D E | "F"FE D DC z | "C"E2 E ED C | "G7"D4
 w: And we sailed a-way in the rough-est of wa-ter, row me bul-ly boys row
 w: See, now, how we feast on phea-sants by a flock, ~ row me bul-ly boys row
 w: A wee dram of whis-key for e-ver-y man, ~ row me bul-ly boys row
 w: And we sailed a-way in the rough-est of wa-ter, row me bul-ly boys row
-E G"C" G G G F E "F"F E D D C "G7"G E F E D "C"C
+EG- | "C" G G GG FE | "F"F ED D C2 | "G7"G2 E FE D | "C"C4 z
 w: But now we re-turn in the most ro-yal quar-ters, row me bul-ly boys row
 w: It's a long, ~ long way from the gruel and the stocks, row me bul-ly boys row
 w: And a bar-rel of rum for the shan- ~ ty man, row me bul-ly boys row
 w: And now we re-turn and so lock up your daugh-ters, row me bul-ly boys row
+W: And we sailed away in the roughest of water 
+W: / But now we return in the most royal quarters
+W: See, now, how we feast on pheasants by a flock 
+W: / It's a long, long way from the gruel and the stocks
+W: A wee dram of whiskey for every man 
+W: / And a barrel of rum for the shanty man
+W: And we sailed away in the roughest of water 
+W: / And now we return and so lock up your daughters

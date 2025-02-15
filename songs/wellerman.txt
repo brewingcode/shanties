@@ -7,7 +7,7 @@ M: 4/4
 L: 1/8
 K: Eb
 G2 | "Cm"C2 CC C2 E2 | G2 G2 G3 G | "Fm"A2 F2 F2 AB | "Cm"c2 G2 G3 G |
-w:There once was a ship that put to sea, the name of~the ship was the Billy o Tea. The
+w: There once was a ship that put to sea, the name of~the ship was the Billy o Tea. The
 w: She had not ~ been two weeks from shore, when down on her a ~ right whale bore. The
 w: Be-fore the ~ boat had hit the water, the whale's tail came up ~ and caught her. All
 w: No line was ~ cut, no whale was freed, The cap-tain's mind was ~ not of greed. But
