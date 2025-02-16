@@ -1,25 +1,35 @@
-X:6184
 T:South Australia
-O:england
+%%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
 M:4/4
-C:
-S:Digital Folk Tradition Database
-N:hacked DigiTrad SongWright code
-A:Adderbury
-R:Reel
-%P:A(AB)$^4$
-P:A(AB)4
-%:WWW:no
-%:abc2mtex:no
 K:C
-I:speed 400
-P:A
-G2 | E2    G2  G2   G2 | A2    G2   G4       | A2    G2 G4    | A2   G2 G2
+P:Part A
+V:1
+G2 | "" E2    G2  G2   G2 | A2    G2   G4       | "F" A2   "C" G2 G4    | "F" A2   "C" G2 G2
 w: In   South Aus-tral-ia   I     was  born.      Heave a-way     Haul a-way
-zF | E2    G2  G2   E2 | D2    E2   C2    CD | E2    G2 G3 E  | D4      C2 ||
+V:2
+z2 | z8  | z8 | A2    G2 G4    | A2   G2 G2
+w:  Heave a-way     Haul a-way
+V:1
+zF | "C" E2    G2  G2   E2 | "G7" D2    E2  "C" C2    CD | E2    G2 G3 E  | "G" D4  "C"    C2 ||
 w: In   South Aus-tral-ia  'round Cape Horn, We are bound for South Aus-tral-ia.
-P:B
-z2 | c3     c  A2  c2 |  A2    G2   G4       | A2    G2 G4    | A2   G2 G4 |
+V:2
+z2 | z8 | z8| E2    G2 G3 E  | D4      C2 ||
+w: bound for South Aus-tral-ia.
+P:Part B
+z2 | "C" c3     c  A2  c2 |  A2    "F" G2  "C" G4       | "F" A2   "C" G2 G4    | "F" A2  "C"  G2 G4 |
 w:      Heave  a-way, you   rol-ling   kings.     Heave a-way,     haul a-way
-c3     c  A2  c2 |  A2    G2   G2    CD | E2    G2 G3 E  | D4      C2 ||
+c3     c  A2  c2 |  A2    G2   G2    CD | E2    G2 G3 E  | "G" D4     "C" C2 ||
 w:      Heave  a-way, you'll hear me sing:  We are bound for South Aus-tral-ia.
+W: I see my wife standing on the quay
+W: The tears do start as she waves to me.
+W: 
+W: I'll tell you the truth and I'll tell you no lie;
+W: If I don't love that girl I hope I may die.
+W: 
+W: And now I'm bound for a foreign strand,
+W: With a bottle of whisky in my hand.
+W: 
+W: I'll drink a glass to the foreign shore
+W: And one to the girl that I adore.
