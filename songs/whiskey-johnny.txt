@@ -1,0 +1,8 @@
+% Generated more or less automatically by swtoabc by Erich Rickheit KSC
+X:1
+T:Whiskey Johnny
+M:4/4
+L:1/4
+K:F
+ F A F C| F A F2| F A3| F A2 c| B3/2 A/2 G F| E G C2| F A c3/2 c/2|\
+ A F3|
