@@ -6,15 +6,22 @@ M:3/4
 L:1/8
 Q:1/4=110
 K:Edor
-P: Verse
 BA | "Em" B2 E2 (EF) | "Bm" ED B,2 (B,C) | "D" D2 (AG) (ED) | "Em" E4
 w:~ My friends and com-pan-i-ons, ~ come ~ join me ~ in ~ rhyme
+w: Here-'s a health to the wee ~ ~ lass that I love ~ so ~ well
+w: ~ Our ship lies at ~ an- ~ chor, she is rea-d-y to ~ dock
 (EF) | "Em" G2 A2 B2 | "G" (ed) B2 (AB) | "Em" B2 E2 (FE) | "D" D4
 w: Come ~ lift up your vo-i-ces in chor-us with ~ ~ mine
+w: For her beaut-y in I-re-land, there is none ~ can ex-cel
+w: ~ I wish her safe land-~ ing with-~ out an-y ~ shock
 (EF) | "Em" G2 A2 B2 | "G" (ed) B2 (AB) | "Em" B2 E2 ((3EDC) | "D" D4
 w: Come ~ lift up your vo-i-ces, all ~ grief to ~ re- ~ ~frain
+w: There's a smile upon her count-e-nance as she sits up-on my ~ knee
+w: and if ev-er I should ~ meet you ~ by land or by ~ sea
 BA | "Em" B2 E2 (EF) | "Bm" (ED) B,2 (B,C) | "D" D2 (AG) (ED) | "Em" E4 ||
 w: For we may or might ~ ne -ver all ~ meet ~ here ~ a-gain
+w: ~ Sure there is no one in in this wide world as hap- ~ py as me
+w: ~ I will al-ways ~ re- ~ mem-ber ~ your kind- ~ ness to me
 P: Chorus
 BA | "Em" B2 E2 (EF) | "Bm" ED B,2 (B,C) | "D" D2 (AG) (ED) | "Em" E4
 w: So here's a health to the com-pan-y and ~ one to ~ my ~ lass
@@ -24,17 +31,3 @@ w: Let-'s drink and be mer-ry ~ all ~ out of one ~ glass
 w: Let-'s drink and be mer-ry, ~ all ~ grief to re- ~ ~ frain
 BA | "Em" B2 E2 (EF) | "Bm" (ED) B,2 (B,C) | "D" D2 (AG) (ED) | "Em" E4 ||
 w: For we may or might ~ ne -ver all ~ meet ~ here ~ a-gain
-W:My friends and companions, come join me in rhyme
-W:Come lift up your voices in chorus with mine
-W:Come lift up your voices, all grief to refrain
-W:For we may or might never all meet here again
-W:
-W:Here's a health to the wee lass that I love so well
-W:For her beauty in Ireland, there is none can excel
-W:There's a smile upon her countenance as she sits upon my knee
-W:Sure there's is no one in in this wide world as happy as me
-W:
-W:Our ship lies at anchor, she is ready to dock
-W:I wish her safe landing without any shock
-W:and if ever I should meet you by land or by sea
-W:I will always remember your kindness to me
