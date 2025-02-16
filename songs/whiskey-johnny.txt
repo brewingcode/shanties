@@ -7,16 +7,16 @@ M:4/4
 L:1/4
 K:C
 V:1
-"C"C E C3/2 G,/| C E C2| C E3| C E3 |
+"C"C D C3/2 A,/| C D C2| C E3| C E3 |
 w: Whisk-ey is the life of man Whisk-ey, John-ny!
 V:2
-z4 | z4 | C E3| C E3 |
+z4 | z4 | A, C3| A, C3 |
 w: Whisk-ey, John-ny!
 V:1
-"G7"F3/2 E/2 D C| B, D G,2| C E G3/2 G/2| E C2 C/|
+"F"C3/2 D/2 C A,| C D C2| "G7"C D E3/2 E/ | E D C2 |
 w: I'll drink whisk-ey while I can Whisk-ey for my John-ny Oh!
 V:2
-z4 | z4 | C E G3/2 G/2| E C2 C/|
+z4 | z4 | C D E3/2 E/ | E D C2 |
 w: Whisk-ey for my John-ny Oh!
 W: Oh whiskey straight and whiskey strong,
 W: Give me some whiskey and I'll sing you a song
