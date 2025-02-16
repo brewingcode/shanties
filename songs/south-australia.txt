@@ -1,29 +1,25 @@
-X:1
+X:6184
 T:South Australia
+O:england
 M:4/4
 C:
-S:Holy Gr'Ale
-N:
+S:Digital Folk Tradition Database
+N:hacked DigiTrad SongWright code
 A:Adderbury
-O:
 R:Reel
 %P:A(AB)$^4$
 P:A(AB)4
-%:
-%:
-K:G
+%:WWW:no
+%:abc2mtex:no
+K:C
 I:speed 400
 P:A
-   d2 | B2    d2  d2   d2 | e2    d2   d4         | e2    d2 d4    | e2   d2 d2
-w: In   South Aus-tral-ia   I     was  born.        Heave a-way!     Haul a-way!
-w: The  on-ly    thing that grieves my mind,        Heave a-way!     Haul a-way!
-w: In   South Aus-tral-ia   Sky-lab    fell,        Heave a-way!     Haul a-way!
-   d2 | B2    d2  d2   B2 | A2    B2   G2   GA    | B3    c  d2 B2 | A4    G2 ||
-w: In   South Aus-tral-ia  'round Cape Horn, We're_ bound for South Aus-tral-ia.
-w: Is~to leave Miss Nan-cy Blair's be-hind.  We're_ bound for South Aus-tral-ia.
-w: *    Eight-y mil-lion    shot  to  hell!  We're_ bound for South Aus-tral-ia.
+G2 | E2    G2  G2   G2 | A2    G2   G4       | A2    G2 G4    | A2   G2 G2
+w: In   South Aus-tral-ia   I     was  born.      Heave a-way     Haul a-way
+zF | E2    G2  G2   E2 | D2    E2   C2    CD | E2    G2 G3 E  | D4      C2 ||
+w: In   South Aus-tral-ia  'round Cape Horn, We are bound for South Aus-tral-ia.
 P:B
-   z2 | g3     g  e2   g2 | e2    d2   d4         | e2    d2 d4    | e2 d2 d4 |
-w:      Haul   a-way, you   rol-ling   kings.       Heave a-way,     haul a-way!
-        g3     g  e2   g2 | e2    d2   B2    G2   | B3    c  d2 B2 | A4    G2 ||
-w:      Haul   a-way, you'll hear me   sing:  We're bound for South Aus-tral-ia.
+z2 | c3     c  A2  c2 |  A2    G2   G4       | A2    G2 G4    | A2   G2 G4 |
+w:      Heave  a-way, you   rol-ling   kings.     Heave a-way,     haul a-way
+c3     c  A2  c2 |  A2    G2   G2    CD | E2    G2 G3 E  | D4      C2 ||
+w:      Heave  a-way, you'll hear me sing:  We are bound for South Aus-tral-ia.
