@@ -1,13 +1,13 @@
-T:Health to the Company
+T: Health to the Company
 %%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
-M:3/4
-L:1/8
-Q:1/4=110
-K:Edor
+M: 3/4
+L: 1/8
+Q: 1/4=110
+K: Edor
 BA | "Em" B2 E2 (EF) | "Bm" ED B,2 (B,C) | "D" D2 (AG) (ED) | "Em" E4
-w:~ My friends and com-pan-i-ons, ~ come ~ join me ~ in ~ rhyme
+w: ~ My friends and com-pan-i-ons, ~ come ~ join me ~ in ~ rhyme
 w: Here-'s a health to the wee ~ ~ lass that I love ~ so ~ well
 w: ~ Our ship lies at ~ an- ~ chor, she is rea-d-y to ~ dock
 (EF) | "Em" G2 A2 B2 | "G" (ed) B2 (AB) | "Em" B2 E2 (FE) | "D" D4

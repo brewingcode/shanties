@@ -1,23 +1,23 @@
-T:South Australia
+T: South Australia
 %%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
-M:4/4
-K:C
-P:Part A
-V:1
+M: 4/4
+K: C
+P: Part A
+V: 1
 G2 | "" E2    G2  G2   G2 | A2    G2   G4       | "F" A2   "C" G2 G4    | "F" A2   "C" G2 G2
 w: In   South Aus-tral-ia   I     was  born.      Heave a-way     Haul a-way
-V:2
+V: 2
 z2 | z8  | z8 | A2    G2 G4    | A2   G2 G2
 w:  Heave a-way     Haul a-way
-V:1
+V: 1
 zF | "C" E2    G2  G2   E2 | "G7" D2    E2  "C" C2    CD | E2    G2 G3 E  | "G" D4  "C"    C2 ||
 w: In   South Aus-tral-ia  'round Cape Horn, We are bound for South Aus-tral-ia.
-V:2
+V: 2
 z2 | z8 | z8| E2    G2 G3 E  | D4      C2 ||
 w: bound for South Aus-tral-ia.
-P:Part B
+P: Part B
 z2 | "C" c3     c  A2  c2 |  A2    "F" G2  "C" G4       | "F" A2   "C" G2 G4    | "F" A2  "C"  G2 G4 |
 w:      Heave  a-way, you   rol-ling   kings.     Heave a-way,     haul a-way
 c3     c  A2  c2 |  A2    G2   G2    CD | E2    G2 G3 E  | "G" D4     "C" C2 ||
