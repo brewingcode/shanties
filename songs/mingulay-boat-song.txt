@@ -1,0 +1,39 @@
+T: Mingulay Boat Song
+%%vocalfont times 10
+%%notecolors 1
+%%notelabels 1
+M: 3/4
+Q: 1/4=140
+K: D
+P: Chorus
+"A7"A2 B1 | "D"d3 d3 | a2 f f2 e | d3
+w: Heave her ho, boys, let her go, ~ boys
+a2 f | "A7"e3 e2 d |"F#m"f e d "G"B3 | B3
+w: Swing her head round in-to the wea-ther ~
+"A7"A2 B | "D"d3 d3 | a2 f f2 e | d3
+w: Heave her ho, boys, let her go, boys
+a2 f | "A7"e3 e2 d | f2 e "G"d3-|d3
+w: Sail-ing home-ward to Min-gu-lay
+P: Verse
+"A7"A2 B | "D"d3 d3 | "A7"e d e "D"f3 | "A7"A3 
+w: What care we, though, whi-te the Minch is?
+A2 B | "Bm"d3 d3 |"A7"e d e "Bm"f3 | "F#7"e3
+w: What care we, boys, for win-dy weath-er? ~
+f2 e | "G"d3 d3 | "A7"e d e "D"f3 | A3
+w: When we know that e-ver-y inch is
+"A7"A2 B|"D"d3 A2 f | "A7"e2 d "D"d3|]
+w: Sail-ing home-ward to Min-gu-lay
+W: What care we, though, white the Minch is?
+W: What care we, boys, for windy weather?
+W: When we know that every inch is
+W: Sailing homeward to Mingulay
+W: 
+W: Wives are waiting by the pier head
+W: Gazing seaward from the heather
+W: Bring her round, boys, then we'll anchor
+W: 'Ere the sun sets on Mingulay
+W: 
+W: Ships return now, heavy laden
+W: Mothers holdin' bairns a-cryin'
+W: They'll return yet when the sun sets
+W: Sailing homeward to Mingulay
