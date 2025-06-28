@@ -5,29 +5,29 @@ T: Health to the Company
 M: 3/4
 L: 1/8
 Q: 1/4=110
-K: Edor
-BA | "Em" B2 E2 (EF) | "Bm" ED B,2 (B,C) | "D" D2 (AG) (ED) | "Em" E4
-w: ~ My friends and com-pan-i-ons, ~ come ~ join me ~ in ~ rhyme
+K: Ador
+ed | "Am" e2 A2 (AB) | "Em" AG E2 (EF) | "G" G2 (dc) (AG) | "Am" A4
+w: ~ Kind friends and com-pan-i-ons, ~ come ~ join me ~ in ~ rhyme
 w: Here-'s a health to the wee ~ ~ lass that I love ~ so ~ well
 w: ~ Our ship lies at ~ an- ~ chor, she is rea-d-y to ~ dock
-(EF) | "Em" G2 A2 B2 | "G" (ed) B2 (AB) | "Em" B2 E2 (FE) | "D" D4
+(AB) | "Am" c2 d2 e2 | "C" (ag) e2 (de) | "Am" e2 A2 (BA) | "G" G4
 w: Come ~ lift up your vo-i-ces in chor-us with ~ ~ mine
 w: For her beaut-y in I-re-land, there is none ~ can ex-cel
 w: ~ I wish her safe land-~ ing with-~ out an-y ~ shock
-(EF) | "Em" G2 A2 B2 | "G" (ed) B2 (AB) | "Em" B2 E2 ((3EDC) | "D" D4
+(AB) | "Am" c2 d2 e2 | "C" (ag) e2 (de) | "Am" e2 A2 ((3AGF) | "G" G4
 w: Come ~ lift up your vo-i-ces, all ~ grief to ~ re- ~ ~frain
 w: There's a smile upon her count-e-nance as she sits up-on my ~ knee
 w: and if ev-er I should ~ meet you ~ by land or by ~ sea
-BA | "Em" B2 E2 (EF) | "Bm" (ED) B,2 (B,C) | "D" D2 (AG) (ED) | "Em" E4 ||
+ed | "Am" e2 A2 (AB) | "Em" (AG) E2 (EF) | "G" G2 (dc) (AG) | "Am" A4 ||
 w: For we may or might ~ ne -ver all ~ meet ~ here ~ a-gain
 w: ~ Sure there is no one in in this wide world as hap- ~ py as me
 w: ~ I will al-ways ~ re- ~ mem-ber ~ your kind- ~ ness to me
 P: Chorus
-BA | "Em" B2 E2 (EF) | "Bm" ED B,2 (B,C) | "D" D2 (AG) (ED) | "Em" E4
+ed | "Am" e2 A2 (AB) | "Em" AG E2 (EF) | "G" G2 (dc) (AG) | "Am" A4
 w: So here's a health to the com-pan-y and ~ one to ~ my ~ lass
-(EF) | "Em" G2 A2 B2 | "G" (ed) B2 (AB) | "Em" B2 E2 (FE) | "D" D4
+(AB) | "Am" c2 d2 e2 | "C" (ag) e2 (de) | "Am" e2 A2 (BA) | "G" G4
 w: Let-'s drink and be mer-ry ~ all ~ out of one ~ glass
-(EF) | "Em" G2 A2 B2 | "G" (ed) B2 (AB) | "Em" B2 E2 ((3EDC) | "D" D4
+(AB) | "Am" c2 d2 e2 | "C" (ag) e2 (de) | "Am" e2 A2 ((3AGF) | "G" G4
 w: Let-'s drink and be mer-ry, ~ all ~ grief to re- ~ ~ frain
-BA | "Em" B2 E2 (EF) | "Bm" (ED) B,2 (B,C) | "D" D2 (AG) (ED) | "Em" E4 ||
+ed | "Am" e2 A2 (AB) | "Em" (AG) E2 (EF) | "G" G2 (dc) (AG) | "Am" A4 ||
 w: For we may or might ~ ne -ver all ~ meet ~ here ~ a-gain
