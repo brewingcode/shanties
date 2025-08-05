@@ -9,19 +9,19 @@ P: Chorus
 "D"D2 E1 | "G"G3 G3 | d2 B (B2 A) | G3
 w: Heave her ho, boys, let her go, ~ boys
 d2 B | "D"A3 A2 G | (B A G) "C"E3 | E3
-w: Swing her head round in-to the wea-ther ~
+w: Swing her head round in-to ~  the wea-ther
 "D"D2 E | "G"G3 G3 | d2 B B2 A | G3
-w: Heave her ho, boys, let her go, boys
-d2 B | "D"A3 A2 G | (B2 A G3) | "G" G3 G3
+w: Heave her ho, boys, let her go, ~ boys
+d2 B | "D"A3 A2 G | (B2 A "G"G3) |
 w: Sail-ing home-ward to Min-gu-lay
 P: Verse
-"D"D2 E | "G"G3 G3 | "D"A G A "G"B3 | "D"D3 
+"D"D2 E1 | "G"G3 G3 | d2 B (B2 A) | G3
 w: What care we, though, whi-te the Minch is?
-D2 E | "Em"G3 G3 |"D"A G A "Em"B3 | "B7"A3
-w: What care we, boys, for win-dy weath-er? ~
-B2 A | "C"G3 G3 | "D"A G A "G"B3 | D3
+d2 B | "D"A3 A2 G | (B A G) "C"E3 | E3
+w: What care we, boys, for win-dy ~ weath-er?
+"D"D2 E | "G"G3 G3 | d2 B B2 A | G3
 w: When we know that e-ver-y inch is
-"D"D2 E|"G"G3 D2 B | "D"A2 G "G"G3|]
+d2 B | "D"A3 A2 G | (B2 A "G"G3) |
 w: Sail-ing home-ward to Min-gu-lay
 W: What care we, though, white the Minch is?
 W: What care we, boys, for windy weather?
