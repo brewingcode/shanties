@@ -4,24 +4,24 @@ T: Mingulay Boat Song
 %%notelabels 1
 M: 3/4
 Q: 1/4=140
-K: D
+K: G
 P: Chorus
-"A7"A2 B1 | "D"d3 d3 | a2 f (f2 e) | d3
+"D7"D2 E1 | "G"G3 G3 | d2 B (B2 A) | G3
 w: Heave her ho, boys, let her go, ~ boys
-a2 f | "A7"e3 e2 d | (f e d) "G"B3 | B3
+d2 B | "D7"A3 A2 G | (B A G) "C"E3 | E3
 w: Swing her head round in-to the wea-ther ~
-"A7"A2 B | "D"d3 d3 | a2 f f2 e | d3
+"D7"D2 E | "G"G3 G3 | d2 B B2 A | G3
 w: Heave her ho, boys, let her go, boys
-a2 f | "A7"e3 e2 d | (f2 e d3) | "D" d3 d3
+d2 B | "D7"A3 A2 G | (B2 A G3) | "G" G3 G3
 w: Sail-ing home-ward to Min-gu-lay
 P: Verse
-"A7"A2 B | "D"d3 d3 | "A7"e d e "D"f3 | "A7"A3 
+"D7"D2 E | "G"G3 G3 | "D7"A G A "G"B3 | "D7"D3 
 w: What care we, though, whi-te the Minch is?
-A2 B | "Bm"d3 d3 |"A7"e d e "Bm"f3 | "F#7"e3
+D2 E | "Em"G3 G3 |"D7"A G A "Em"B3 | "B7"A3
 w: What care we, boys, for win-dy weath-er? ~
-f2 e | "G"d3 d3 | "A7"e d e "D"f3 | A3
+B2 A | "C"G3 G3 | "D7"A G A "G"B3 | D3
 w: When we know that e-ver-y inch is
-"A7"A2 B|"D"d3 A2 f | "A7"e2 d "D"d3|]
+"D7"D2 E|"G"G3 D2 B | "D7"A2 G "G"G3|]
 w: Sail-ing home-ward to Min-gu-lay
 W: What care we, though, white the Minch is?
 W: What care we, boys, for windy weather?
