@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": "./songs-to-json && pug-pack src",
+        "build": "./songs-to-json && pug-pack src && cp Songbook.pdf dist && cp qr-code.svg dist",
         "scaleL": "coffee src/transform.coffee scaleL",
         "dev": "nodemon -w src -w songs -i src/songs.json -i src/by-title.json -e '*' -x npm run build"
     },
