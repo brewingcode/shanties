@@ -71,6 +71,9 @@ append body
         span &nbsp;-&gt;&nbsp;
         span#toKey
     .noprint
+        p The Songbook PDF can be found at <a href="Songbook.pdf">this link</a>, or via this QR code:
+        img(src="qr-code.svg" alt="https://brewingcode.github.io/shanties/Songbook.pdf" width="200" height="200")
+    .noprint
         a(href="https://github.com/brewingcode/shanties/commit/" + src['GIT_HEAD'])= src['GIT_HEAD']
     script.
         var songs = !{JSON.stringify(src['songs.json'])};
