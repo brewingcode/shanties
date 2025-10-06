@@ -1,0 +1,37 @@
+X:1
+T:Windy Old Weather
+B:Singing Together, Autumn 1973, BBC Publications
+F:http://www.folkinfo.org/songs
+M:6/8     %Meter
+L:1/8     %
+K:C
+E | "C"G3/2A/G ECC |"F" ABA D3 |
+w:As we were a-fish-ing off Hais-bor-ough light,
+"G" B,DF BBA | "G7" GAF "C" E
+w:Shoot-ing and haul-ing and trawl-ing all night,
+"C" EF |G3/2A/G E C2 |"F"A3/2B/A F D2 |
+w: It was win-dy old weath-er, stor-my old weath-er,
+"G" B,DF B2 A | "G7" GF3/2B,/ "C" D C2 |]
+w:When the wind blows, we all pull to-geth-er.
+W:As we were a-fishing off Haisborough light,
+W:Shooting and hauling and trawling all night,
+W:
+W:(Chorus)
+W:It was windy old weather, stormy old weather,
+W:When the wind blows, we all pull together.
+W:
+W:We sighted a herring, the king of the sea,
+W:Says "Now, old skipper, you cannot catch me."
+W:
+W:We sighted a mackeral with stripes on his back,
+W:"Time, now, old skipper, to shift your main tack."
+W:
+W:We sighted a conger as long as a mile.
+W:"Wind's blowing easterly," he said with a smile.
+W:
+W:We sighted a plaice that had spots on his side,
+W:Says "Now, old skipper, these seas you won't ride."
+W:
+W:I think what the fishes are saying is right.
+W:We'll haul in our nets and we'll make for the Light.
+
