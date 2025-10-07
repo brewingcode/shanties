@@ -1,43 +1,23 @@
-From Liverpool to Frisco, a-roving I went
-And to stay in that country was my good intent
-But drinking strong whiskey like other damn fools
-Well I soon got transported back to Liverpool
-
-{Chorus}
-And it's roll, (Roll!) roll bullies, roll!
-Them Liverpool judies have got us in tow
-
-For forty-two days we were hungry and sore
-And the wind was against us and the waves they did roar
-Off Battery Point we dropped anchor at last
-With our jibboom hove in and the canvas all fast
-
-{Chorus}
-
-The boardinghouse master was off in a trice
-He was cursing and promising all that was nice
-Well, one old fat crimp, he got cottoned to me
-And says he, "You're a fool, lad, to follow the sea."
-
-{Chorus}
-
-Says he, "There's a job and it's waiting for you —
-Get boatloads of liquor and there's not much to do.
-Oh, what do you say, lad, and will you jump to?"
-And says I, "You old bastard, I'm damned if I do."
-
-{Chorus}
-
-But the best of intentions they never get far
-After forty-two days knockin' back at the bar
-Well, he bought me some liquor, and what do you think?
-Well, the dirty old bastard put drugs in my drink!
-
-{Chorus}
-
-So come all you young sailors, take warning by me
-Keep an eye on your liquor when the whiskey is free
-And pay no attention to runner or whore
-Or your heart will be sick and your head will be sore
-
-{Chorus x2} 
+T: Liverpool Judies
+K: G
+M: 6/8
+G2 | DD G2 G2 | G2 F2 G2 | A2 B2 c2 | d4 dc | B2 A2 B2 | c2 A2 F2 |
+w: From Li-ver-pool to Fris-co, a-rov-ing I went, for to stay in that coun-try it
+w: A sm-art Yank-ee pack-et lies out in the bay, A- _ wait-ing a fair wind to
+w: Oh he-re comes the mate in a hell of a stew. He is look-ing for work for us
+w: And now  we are haul-in' a-way on the line, When I think of it now, sure we
+w: Here's a health to the Cap-tain where-ever he may be, A _ buck-o on land and a
+G2 D2 D2 | D4 c2 | B2 B2 B2 | B2 D2 B2 | c2 A2 F2 | G4 (GA) |
+w: was my in-tent. But drink-ing strong whis-key, like o-ther damn fools, I _
+w: get un-der way. With all of her sai-lors so sick and so sore, they'd _
+w: sai-lors to do. Oh it's "Fore tops'l hal-yards!" he loud-ly does roar, and .
+w: had a good time. Them sea-boys box-haul-in' them yards all a-round, for to
+w: bul-ly at sea. But as for the chief mate, the dir-ty ol' brute, We _
+B2 B2 B2 | c2 A2 F2 | G2 D2 E2 | F2 G2 E2 | (D6 | D4) z2 |
+w: soon was trans-por-ted back to Li-ver-pool. And it's row,
+w: drunk all their whis-key and can't get no more. And it's row,
+w: "Lay a-loft Pad-dy, ye son o' a whore!" And it's row,
+w: beat that flash pack-et called Tha-tcher Mac-Gowan. And it's row,
+w: hope when he dies straight to hell he'll sky-hoot. And it's row,
+A2 B2 c2 | d4 c2 | B2 A2 B2 | c2 A2 F2 | G2 B2 A2 | G6 |
+w: row, bul-lies, row! Them Li-ver-pool ju-die's have got us in tow.
