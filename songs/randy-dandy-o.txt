@@ -2,11 +2,11 @@ T: Randy Dandy-O
 %%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
-K: Eb
+K: C
 M: 6/8
 L: 1/16
 Q: 1/4=140
-"Eb"e4 ee d3ed2 | c3dc2 G6 | "Bb"c6 d6 | c4 B2 G4 GA |
+"Am"c4 cc B3cB2 | A3BA2 E6 | A6 "G"B6 | "Am"A4 G2 E4 EF |
 w: Now we are read-dy to sail for the Horn, \
 w: Way hey roll and go Our _
 w: Man the stout caps-'n and heave with a will \
@@ -19,8 +19,7 @@ w: Soon we'll be warp-ing her out through the locks \
 w: Way hey roll and go Where the
 w: Come breast the bar bull-ies heave with a will \
 w: Way hey roll and go Oh _
-w: 2 2 2 12 2 12 13 12 13 12 13 12 13 123 12 12 2
-"Eb"B3cB2 B2A2G2 | "Bb"F2F2F2 B,4 EF | "Gm"G3AG2 G4 F2 | "Cm"E4 C2 C6 |
+"C"G3AG2 G2F2E2 | "G"D2D2D2 G,4 CD | "Am"E3FE2 E4 D2 | "Em"C4 A,2 "Am"A,6 |
 w: boots an' our clothes, boys, are all in the pawn \
 w: To me rol-lick-in' ran-dy dan-dy O
 w: soon we'll be driv-in' a-way up the hill \
@@ -33,15 +32,12 @@ w: pret-ty young girls all come down in their frocks \
 w: To me rol-lick-in' ran-dy dan-dy O
 w: soon we'll be roll-ing her down through the bay \
 w: To me rol-lick-in' ran-dy dan-dy O
-w: 123 13 123 123 2 12 0 0 0 123 2 0 12 2 12 12 0 2 13 13
-"Eb"e4 e2 d4 d2 | c4 c2 G6 | "Bb"c6 d6 | c4 B2 G4 G2 | 
+"Am"c4 c2 B4 B2 | A4 A2 E6 | A6 "G"B6 | "Am"A4 G2 E4 E2 | 
 w: Heave a pawl oh heave a-way \
 w: Way hey roll and go The
-w: 2 2 12 12 13 13 12 13 12 13 123 12 12
-"Eb"B3cB2 B2A2G2 | "Bb"F2F2F2 B,4  EF | "Gm"G3AG2 G4 F2 | "Cm"E4 C2 C6 |
+"C"G3AG2 G2F2E2 | "G"D2D2D2 G,4  CD | "Am"E3FE2 E4 D2 | "Em"C4 A,2 "Am"A,6 |
 w: an-chor's on board and the \
 w: cab-le's all stored To me rol-lick-ing ran-dy dan-dy O
-w: 123 13 123 123 2 12 0 0 0 123 2 0 12 2 12 12 0 2 13 13
 W: Now we are ready to sail for the Horn 
 W: \ Our boots an' our clothes, boys, are all in the pawn
 W: Man the stout caps'n and heave with a will 
