@@ -1,19 +1,20 @@
+T: Lifeboat Prayer
 K: D
 L: 1/8
 %%notelabels 1
-A A F | D G A F | D G A F | D E F E | 
+"D" A A F D "G" G A "D" F D "G" G A "D" F D "A" E F E  
 w: Those who ven-ture on the sea to ply their trade up-on the deep
 w: When the call for res-cue comes, from those in per-il on this day
 w: We must go where we are called, through wind and rain through wave  and foam
 w: We~are but leaves be-fore the wind, we are but men in love with life
-A A A F | D G A E | D G G F | E D E D | C D
+"D" A A A F D "G" G A "D" F D "G" G G "D" F E D "A7" E D C "D" D
 w: They sail with-in fates count-en-ance, and pray their gen _ tle lives _ to keep
 w: No mat-ter how the storms may roll, we can-not turn _ our heads _ aw-ay
 w: Tis not for gl-ory, nor for gold, we bring poor sai _  lors safe--ly home
 w: We are a feared as an-y man, to ven-ture gainst _ the oce--an's strife
-C C D E C D E F G G G F D E E F E
+"A" C C D E C "D" D E F "G" G G G "D" F D "A" E E F E
 w: And should I be be-set by gale, let me not drink the bit-ter-est cup
-C C D E C D E F G G G F E D C D E F
+"A" C C D E C "D" D E F "G" G G G "D" F "A" E D C "D"D E F
 w: Yet if the wind and wave pre-vail, let not the deep swal-low me up
-G G G F E D C D
+"G" G G G "D" F "A7" E D C "D"D
 w: Let not the deep swall-low me up
