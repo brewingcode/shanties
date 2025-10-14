@@ -1,0 +1,52 @@
+T: Barrett's Privateers
+K: C
+L: 1/8
+%%notelabels 1
+C3 E | "C" G2 G2 "F" FF E2 | "G"DD D2 "C"C2 GG | "C"GG3 "Dm (F?)"A2 A2 | "C"G2 G2 | "G"D4 z2 A2 |
+w: Oh, the year was se-ven-teen sev-en-ty eight, how I wish I was in Sher-brooke now! A
+"C" cc c2 "F"B2 A2 | "G"G2 (ED) "C"C2 CD | EE E2 DC C2 | E2 G "F"A3 F2 | "C"E2 "G"D2 "C"C2 z2 |
+w: let-ter of marque came from the _ king to the scum-mi-est ves-sel I've e-ver seen, God damn them all!
+"C"E2 G2 "F"A2 A2 | "G"G3 G "F"A2 BB | "C"cG G2 "F"A2 F2 | "C"E2 "G"D2 | "C"C2 z2 G2 B2 | "F"c4 z GAB |
+w: I was told we'd cruise the seas for A-mer-i-can gold, we'd fire no guns. Shed no tears, now I'm a bro-kenman on a
+"C"c2 G2 "F"A2 GF | "C"EE G2 "F"A3 A | "Dm (F?)"A3 G F2 E2 | "G"(GE) D2 "C"C4 |
+w: bro-ken man on a Hal-i-fax pier, the last of Bar-rett's pri- _ va-teers.
+W: Well, Elcid Barrett cried the town
+W: How I wish I was in Sherbrooke now
+W: For twenty brave men, all fishermen, who
+W: Would make for him the Antelope's crew
+W:   (chorus) "God damn them all..."
+W: The Antelope sloop was a sickening sight
+W: How I wish I was in Sherbrooke now
+W: She'd a list to the port and her sails in rags
+W: And the cook in the scuppers with the staggers and jags
+W:   (chorus)
+W: On the King's birth-day we put to sea
+W: How I wish I was in Sherbrooke now
+W: We were ninety-one days to Mon-tego Bay
+W: Pumping like madmen all the way
+W:   (chorus)
+W: On the ninety-sixth day we sailed again
+W: How I wish I was in Sherbrooke now
+W: When a bloody great Yankee hove in sight
+W: With our cracked four-pounders we made to fight
+W:   (chorus)
+W: The Yankee lay low down with gold
+W: How I wish I was in Sherbrooke now
+W: She was broad and fat and loose in stays
+W: But to catch her took the Antelope two whole days
+W:   (chorus)
+W: Then at great length we stood two cables away
+W: How I wish I was in Sherbrooke now
+W: Oour cracked four-pounders made an awful din
+W: But with one fat ball the Yank stove us in
+W:   (chorus)
+W: The Antelope shook and pitched on her side
+W: How I wish I was in Sherbrooke now
+W: Barrett was smashed like a bowl of eggs
+W: And the main-truck carried off both me legs
+W:   (chorus)
+W: So here I lay in me twenty-third year
+W: How I wish I was in Sherbrooke now
+W: It's been six years since we sailed away
+W: And I just made Halifax yesterday
+W:   (chorus)
