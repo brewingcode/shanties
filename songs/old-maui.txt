@@ -1,0 +1,6 @@
+BB | e2 e2 ^d2 BB | g2 fe f2 (ba) | (gf) e2 f2 de | e5 BB |
+e2 ee ^d2 BB | g2 (fe) f2 (ba) | g2 e2 f2 de | e4 g2 a2 |
+b2 b2 b2 ag | a2 a2 a2 gf | g2 g2 g2 e2 | 
+f5 BB | e2 ee ^d2 BB | g2 fe f2 ba | g3 e f2 (de) |
+e4 g2 a2 | b3 b b2 (ag) | a3 a a2 ba | g3 g g2 (ef) | f5 B2 |
+e2 e2 ^d2 BB | g2 (fe) f2 ba | g3 ef2 (de) | e8
