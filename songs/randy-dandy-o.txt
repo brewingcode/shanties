@@ -19,7 +19,7 @@ w: Soon we'll be warp-ing her out through the locks \
 w: Way hey roll and go Where the
 w: Come breast the bar bull-ies heave with a will \
 w: Way hey roll and go Oh _
-"C"G3AG2 G2F2E2 | "G"D2D2D2 G,4 CD | "Am"E3FE2 E4 D2 | "Em"C4 A,2 "Am"A,6 |
+"C"G3AG2 G2F2E2 | "G"D2D2D2 D4 CD | "Am"E3FE2 E4 D2 | "E7"C4 A,2 "Am"A,6 |
 w: boots an' our clothes, boys, are all in the pawn \
 w: To me rol-lick-in' ran-dy dan-dy O
 w: soon we'll be driv-in' a-way up the hill \
@@ -32,10 +32,10 @@ w: pret-ty young girls all come down in their frocks \
 w: To me rol-lick-in' ran-dy dan-dy O
 w: soon we'll be roll-ing her down through the bay \
 w: To me rol-lick-in' ran-dy dan-dy O
-"Am"c4 c2 B4 B2 | A4 A2 E6 | A6 "G"B6 | "Am"A4 G2 E4 E2 | 
+"Am"c4 c2 B4 B2 | A4 A2 E6 | A6 "G"B6 | "Am"A4 G2 E4 EF | 
 w: Heave a pawl oh heave a-way \
 w: Way hey roll and go The
-"C"G3AG2 G2F2E2 | "G"D2D2D2 G,4  CD | "Am"E3FE2 E4 D2 | "Em"C4 A,2 "Am"A,6 |
+"C"G3AG2 G2F2E2 | "G"D2D2D2 D4 CD | "Am"E3FE2 E4 D2 | "E7"C4 A,2 "Am"A,6 |
 w: an-chor's on board and the \
 w: cab-le's all stored To me rol-lick-ing ran-dy dan-dy O
 W: Now we are ready to sail for the Horn 
