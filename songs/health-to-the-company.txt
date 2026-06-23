@@ -5,29 +5,37 @@ T: Health to the Company
 M: 3/4
 L: 1/8
 Q: 1/4=110
-K: Ador
-ed | "Am" e2 A2 (AB) | "Em" AG E2 (EF) | "G" G2 (dc) (AG) | "Am" A4
-w: ~ Kind friends and com-pan-i-ons, ~ come ~ join me ~ in ~ rhyme
-w: Here-'s a health to the wee ~ ~ lass that I love ~ so ~ well
-w: ~ Our ship lies at ~ an- ~ chor, she is rea-d-y to ~ dock
-(AB) | "Am" c2 d2 e2 | "C" (ag) e2 (de) | "Am" e2 A2 (BA) | "G" G4
-w: Come ~ lift up your vo-i-ces in chor-us with ~ ~ mine
-w: For her beaut-y in I-re-land, there is none ~ can ex-cel
-w: ~ I wish her safe land-~ ing with-~ out an-y ~ shock
-(AB) | "Am" c2 d2 e2 | "C" (ag) e2 (de) | "Am" e2 A2 ((3AGF) | "G" G4
-w: Come ~ lift up your vo-i-ces, all ~ grief to ~ re- ~ ~frain
-w: There's a smile upon her count-e-nance as she sits up-on my ~ knee
-w: and if ev-er I should ~ meet you ~ by land or by ~ sea
-ed | "Am" e2 A2 (AB) | "Em" (AG) E2 (EF) | "G" G2 (dc) (AG) | "Am" A4 ||
-w: For we may or might ~ ne -ver all ~ meet ~ here ~ a-gain
-w: ~ Sure there is no one in in this wide world as hap- ~ py as me
-w: ~ I will al-ways ~ re- ~ mem-ber ~ your kind- ~ ness to me
-P: Chorus
-ed | "Am" e2 A2 (AB) | "Em" AG E2 (EF) | "G" G2 (dc) (AG) | "Am" A4
-w: So here's a health to the com-pan-y and ~ one to ~ my ~ lass
-(AB) | "Am" c2 d2 e2 | "C" (ag) e2 (de) | "Am" e2 A2 (BA) | "G" G4
-w: Let-'s drink and be mer-ry ~ all ~ out of one ~ glass
-(AB) | "Am" c2 d2 e2 | "C" (ag) e2 (de) | "Am" e2 A2 ((3AGF) | "G" G4
-w: Let-'s drink and be mer-ry, ~ all ~ grief to re- ~ ~ frain
-ed | "Am" e2 A2 (AB) | "Em" (AG) E2 (EF) | "G" G2 (dc) (AG) | "Am" A4 ||
-w: For we may or might ~ ne -ver all ~ meet ~ here ~ a-gain
+K: Am
+P: Verse
+e>d | "Am" e2 A2 B2 | "Em" A2 (GE3) G | "G" G2 d2 {c}B2 | "Am" A4
+w: Kind ~ friends and com-pan-i-ons, come join me in rhyme
+(A>B) | "Am" c2 d2 e2 | "C" (a>g) e3 d | "Am" e2 A2 B2 | "G" {A}G4
+w: Come ~ lift up your voi- ~ ces in chor-us with mine
+(A>B) | "Am" c2 d2 e2 | "C" (a>g) e3 d | "Am" e2 A2 B2 | "G" {A}G4
+w: Come ~ lift up your vo-i-ces, all grief to re- frain
+e>d | "Am" e2 A2 B2 | "Em" A2 (GE3) G | "G" G2 d2 {c}B2 | "Am" A4
+w: For we may or might ne -ver all meet here a-gain
+W:
+W: Chorus
+W:
+W: So here's a health to the company and one to my lass
+W: Let us drink and be merry, all out of one glass
+W: Let us drink and be merry, all grief to refrain
+W: For we may or might never all meet here again
+W:
+W: [chorus]
+W:
+W: Here's a health to the wee lass that I love so well
+W: For her beauty in Ireland, there is none can excel
+W: There's a smile upon her countenance as she sits on my knee
+W: Sure there's no one in this wide world as happy as me
+W:
+W: [chorus]
+W:
+W: Our ship lies at anchor, she's ready to dock
+W: I wish her safe landing, without any shock
+W: And if ever I should meet you by land or by sea
+W: I will always remember your kindness to me
+W:
+W: [chorus]
+W:
