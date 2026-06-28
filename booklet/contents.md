@@ -1,0 +1,27 @@
+---
+type: page
+title: Contents
+---
+
+<h1 class="contents-title">Contents</h1>
+
+<ul class="toc">
+<li><span class="toc-name">All For Me Grog</span><span class="toc-dots"></span><span class="toc-page">4</span></li>
+<li><span class="toc-name">Bully Boys</span><span class="toc-dots"></span><span class="toc-page">6</span></li>
+<li><span class="toc-name">Bully in the Alley</span><span class="toc-dots"></span><span class="toc-page">8</span></li>
+<li><span class="toc-name">Drunken Sailor</span><span class="toc-dots"></span><span class="toc-page">10</span></li>
+<li><span class="toc-name">Health to the Company</span><span class="toc-dots"></span><span class="toc-page">12</span></li>
+<li><span class="toc-name">Joli Rouge</span><span class="toc-dots"></span><span class="toc-page">14</span></li>
+<li><span class="toc-name">Leave Her Johnny</span><span class="toc-dots"></span><span class="toc-page">16</span></li>
+<li><span class="toc-name">Randy Dandy O</span><span class="toc-dots"></span><span class="toc-page">18</span></li>
+<li><span class="toc-name">Roll the Old Chariot Along</span><span class="toc-dots"></span><span class="toc-page">20</span></li>
+<li><span class="toc-name">Wellerman</span><span class="toc-dots"></span><span class="toc-page">22</span></li>
+</ul>
+
+<h2 class="warn-title">Warning</h2>
+
+<p>These shanties are a product of their time,<br>some may represent regressive views.</p>
+
+<p>This shanty songbook strives to ride the line between<br>authentic but also not problematic. We did our best.</p>
+
+<p class="colophon">June 2025, Version 3</p>

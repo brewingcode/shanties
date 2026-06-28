@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea Shanties</title>
+<style>
+:root {
+  --page-w: 5.5in;
+  --page-h: 8.5in;
+  --m-inner: 0.75in;
+  --m-outer: 0.5in;
+  --m-top: 0.6in;
+  --m-bottom: 0.6in;
+  --pn-size: 9pt;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #f0f0f0; }
+.page {
+  position: relative;
+  width: var(--page-w);
+  height: var(--page-h);
+  overflow: hidden;
+  background: #fff;
+}
+.page-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 11pt;
+  line-height: 1.4;
+  color: #111;
+}
+.page.verso .page-content { padding: var(--m-top) var(--m-inner) var(--m-bottom) var(--m-outer); }
+.page.recto .page-content { padding: var(--m-top) var(--m-outer) var(--m-bottom) var(--m-inner); }
+.page-content :first-child { margin-top: 0; }
+.page-content h1, .page-content h2, .page-content h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.2;
+}
+.page-content img { max-width: 100%; }
+.page-number {
+  position: absolute;
+  bottom: calc(var(--m-bottom) / 2);
+  font-size: var(--pn-size);
+  color: #555;
+}
+.page.verso .page-number { left: var(--m-outer); }
+.page.recto .page-number { right: var(--m-outer); }
+.page.blank .page-content { visibility: hidden; }
+/* Sea Shanties — songbook styling, appended after markdown-booklet's base CSS.
+   url() paths resolve relative to the OUTPUT html file (this CSS is inlined),
+   so build into this folder and keep fonts/ and img/ as siblings. */
+
+/* Primitive display font for titles. Drop the font file at fonts/ and
+   uncomment. Falls back to a blackletter-ish serif until then. */
+/*
+@font-face {
+  font-family: "Primitive";
+  src: url("fonts/Primitive.woff2") format("woff2"),
+       url("fonts/Primitive.ttf") format("truetype");
+  font-display: swap;
+}
+*/
+
+:root {
+  --ink: #111;
+  --chord: #8a8a8a;
+  --rule: #333;
+}
+
+/* ---- Cover ------------------------------------------------------------- */
+.cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cover-title {
+  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
+  font-weight: 400;
+  font-size: 56pt;
+  line-height: 1.02;
+  margin-top: 0.25in;
+}
+.cover-art {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cover-art img { max-height: 4in; max-width: 80%; }
+.cover-art-placeholder {
+  width: 2.6in;
+  height: 3.2in;
+  border: 1px dashed #bbb;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: italic 10pt/1.3 Georgia, serif;
+  text-align: center;
+}
+.cover-byline {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13pt;
+  margin-bottom: 0.5in;
+}
+.cover-byline p { margin: 0.06in 0; }
+
+/* ---- Contents ---------------------------------------------------------- */
+.contents-title {
+  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
+  font-weight: 400;
+  font-size: 30pt;
+  margin: 0 0 0.25in;
+}
+.toc { list-style: none; margin: 0 0 0.4in; padding: 0; }
+.toc li {
+  display: flex;
+  align-items: baseline;
+  font-size: 12pt;
+  margin: 0.07in 0;
+}
+.toc-name { white-space: nowrap; }
+.toc-dots {
+  flex: 1 1 auto;
+  border-bottom: 2px dotted #9a9a9a;
+  margin: 0 0.08in;
+  position: relative;
+  top: -0.18em;
+}
+.toc-page { white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+.warn-title {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0.3in 0 0.1in;
+}
+.contents .version { margin-top: 0.5in; color: #444; }
+.colophon {
+  margin-top: 0.5in;
+  color: #444;
+  font-size: 11pt;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---- Song pages -------------------------------------------------------- */
+.song-title {
+  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
+  font-weight: 400;
+  font-size: 26pt;
+  line-height: 1.1;
+  margin: 0 0 0.18in;
+}
+.song-credit {
+  font: italic 11pt/1.2 Georgia, serif;
+  color: #555;
+  margin: -0.12in 0 0.14in;
+}
+
+.chorus {
+  border: 1.5px dashed var(--rule);
+  padding: 0.16in 0.2in 0.12in;
+  margin: 0 0 0.18in;
+}
+.cue {
+  border: 1.5px dashed var(--rule);
+  padding: 0.05in 0.2in;
+  margin: 0.16in 0;
+}
+.label,
+.cue {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 10pt;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.label { margin-bottom: 0.12in; }
+
+.verse { margin: 0 0 0.14in; }
+.verse p,
+.chorus p { margin: 0 0 0.03in; }
+
+/* Call/response: the response refrain sits indented and italic. */
+.refrain {
+  font-style: italic;
+  padding-left: 0.32in;
+  color: #1a1a1a;
+}
+
+/* Chorded lines: chords float above the lyric. A segment begins at a chord
+   and the chord is absolutely positioned over the segment's first letter. */
+.cl {
+  position: relative;
+  padding-top: 0.62em;
+  margin: 0 0 0.04in;
+  line-height: 1.4;
+}
+.cl .seg { position: relative; }
+.cl .chd {
+  position: absolute;
+  top: -0.62em;
+  left: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--chord);
+  white-space: nowrap;
+}
+
+
+@page { size: 11in 8.5in; margin: 0; }
+.sheet {
+  display: flex;
+  flex-direction: row;
+  width: 11in;
+  height: 8.5in;
+  margin: 0 auto 0.25in;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  page-break-after: always;
+  break-after: page;
+}
+.sheet:last-child { page-break-after: auto; break-after: auto; }
+@media print {
+  body { background: #fff; }
+  .sheet { margin: 0; box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<div class="sheet" data-sheet="0" data-side="front"><div class="page verso blank" data-page="24"><div class="page-content"></div></div><div class="page recto" data-page="1"><div class="page-content"><div class="cover">
+  <div class="cover-title">Sea<br>Shanties</div>
+  <div class="cover-art">
+    <!-- Cover illustration to come. Drop it at img/cover.png and swap in:
+    <img src="img/cover.png" alt="Sea serpent"> -->
+    <div class="cover-art-placeholder">cover illustration<br>to be added</div>
+  </div>
+  <div class="cover-byline">
+    <p>A songbook prepared by</p>
+    <p>Chris Glein and Alex Deakin</p>
+  </div>
+</div>
+</div></div></div>
+<div class="sheet" data-sheet="0" data-side="back"><div class="page verso blank" data-page="2"><div class="page-content"></div></div><div class="page recto" data-page="23"><div class="page-content"><div class="verse">
+<p>Before the boat had hit the water,</p>
+<p>the whale's tail came up and caught her.</p>
+<p>All hands to the side, harpooned and fought her,</p>
+<p>when she dived down below.</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>No line was cut, no whale was freed,</p>
+<p>The captain's mind was not of greed.</p>
+<p>But he belonged to the Whaleman's creed.</p>
+<p>She took that ship in tow.</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>For forty days or even more,</p>
+<p>The line went slack then tight once more.</p>
+<p>All boats were lost, there were only four,</p>
+<p>but still that whale did go.</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>As far as I've heard, the fight's still on</p>
+<p>The line's not cut and the whale's not gone.</p>
+<p>The Wellerman makes his regular call</p>
+<p>To encourage the captain crew and all.</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">23</span></div></div>
+<div class="sheet" data-sheet="1" data-side="front"><div class="page verso" data-page="22"><div class="page-content"><h1 class="song-title">Wellerman</h1>
+<div class="verse">
+<p>There once was a ship that put to sea,</p>
+<p>the name of the ship was the Billy o Tea.</p>
+<p>The winds blew hard, her bow dipped down.</p>
+<p>Oh blow my bully boys blow.</p>
+</div>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg"><span class="chd">Ab</span>Soon may the </span><span class="seg"><span class="chd">Eb</span>Wellerman come</span></p>
+<p class="cl"><span class="seg">to </span><span class="seg"><span class="chd">Fm</span>bring us sugar and tea and </span><span class="seg"><span class="chd">Cm</span>rum</span></p>
+<p class="cl"><span class="seg"><span class="chd">Ab</span>One day the </span><span class="seg"><span class="chd">Eb</span>tonguin is done</span></p>
+<p class="cl"><span class="seg">we'll </span><span class="seg"><span class="chd">G</span>take our leave and </span><span class="seg"><span class="chd">Cm</span>go</span></p>
+</div>
+<div class="verse">
+<p>She'd not been two weeks from shore,</p>
+<p>when down on her a right whale bore.</p>
+<p>The captain called all hands and swore</p>
+<p>"We'll take that whale in tow".</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">22</span></div><div class="page recto" data-page="3"><div class="page-content"><h1 class="contents-title">Contents</h1>
+<ul class="toc">
+<li><span class="toc-name">All For Me Grog</span><span class="toc-dots"></span><span class="toc-page">4</span></li>
+<li><span class="toc-name">Bully Boys</span><span class="toc-dots"></span><span class="toc-page">6</span></li>
+<li><span class="toc-name">Bully in the Alley</span><span class="toc-dots"></span><span class="toc-page">8</span></li>
+<li><span class="toc-name">Drunken Sailor</span><span class="toc-dots"></span><span class="toc-page">10</span></li>
+<li><span class="toc-name">Health to the Company</span><span class="toc-dots"></span><span class="toc-page">12</span></li>
+<li><span class="toc-name">Joli Rouge</span><span class="toc-dots"></span><span class="toc-page">14</span></li>
+<li><span class="toc-name">Leave Her Johnny</span><span class="toc-dots"></span><span class="toc-page">16</span></li>
+<li><span class="toc-name">Randy Dandy O</span><span class="toc-dots"></span><span class="toc-page">18</span></li>
+<li><span class="toc-name">Roll the Old Chariot Along</span><span class="toc-dots"></span><span class="toc-page">20</span></li>
+<li><span class="toc-name">Wellerman</span><span class="toc-dots"></span><span class="toc-page">22</span></li>
+</ul>
+<h2 class="warn-title">Warning</h2>
+<p>These shanties are a product of their time,<br>some may represent regressive views.</p>
+<p>This shanty songbook strives to ride the line between<br>authentic but also not problematic. We did our best.</p>
+<p class="colophon">June 2025, Version 3</p>
+</div><span class="page-number">3</span></div></div>
+<div class="sheet" data-sheet="1" data-side="back"><div class="page verso" data-page="4"><div class="page-content"><h1 class="song-title">All For Me Grog</h1>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg"><span class="chd">C</span>All for me grog, me jolly jolly </span><span class="seg"><span class="chd">F</span>grog</span></p>
+<p class="cl"><span class="seg"><span class="chd">C</span>All for me beer and to</span><span class="seg"><span class="chd">G</span>bacco</span></p>
+<p class="cl"><span class="seg"><span class="chd">C</span>For I spent all me tin down on South Street sipping </span><span class="seg"><span class="chd">F</span>gin</span></p>
+<p class="cl"><span class="seg"><span class="chd">C</span>And across the western ocean I must </span><span class="seg"><span class="chd">G7</span>wan</span><span class="seg"><span class="chd">C</span>der</span></p>
+</div>
+<div class="verse">
+<p>Where are me boots, me noggin', noggin' boots,</p>
+<p>They're all gone for beer and tobacco</p>
+<p>For the heels they are worn out and the toes are kicked about</p>
+<p>And the soles are looking out for better weather.</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Where is me shirt, me noggin' noggin' shirt</p>
+<p>All gone for beer and tobacco</p>
+<p>For the collar is wore out and the front is knocked about</p>
+<p>And the tail is looking out for better weather</p>
+</div>
+</div><span class="page-number">4</span></div><div class="page recto" data-page="21"><div class="page-content"><div class="verse">
+<p>Well a nice wash below wouldn't do us any harm.</p>
+<p>Well a nice wash below wouldn't do us any harm.</p>
+<p>Well a nice wash below wouldn't do us any harm.</p>
+<p class="refrain">And we'll all hang on behind.</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Well a night on the town wouldn't do us any harm.</p>
+<p>Well a night on the town wouldn't do us any harm.</p>
+<p>Well a night on the town wouldn't do us any harm.</p>
+<p class="refrain">And we'll all hang on behind.</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Oh a drop of Nelson's blood wouldn't do us any harm.</p>
+<p>Oh a drop of Nelson's blood wouldn't do us any harm.</p>
+<p>Oh a drop of Nelson's blood wouldn't do us any harm.</p>
+<p class="refrain">And we'll all hang on behind.</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">21</span></div></div>
+<div class="sheet" data-sheet="2" data-side="front"><div class="page verso" data-page="20"><div class="page-content"><h1 class="song-title">Roll the Old Chariot Along</h1>
+<div class="verse">
+<p>We'd be all right if the wind was in our sails.</p>
+<p>We'd be all right if the wind was in our sails.</p>
+<p>We'd be all right if the wind was in our sails.</p>
+<p class="refrain">And we'll all hang on behind.</p>
+</div>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg"><span class="chd">Dm</span>And we'll roll the old chariot along</span></p>
+<p class="cl"><span class="seg"><span class="chd">C</span>We'll roll the old chariot along</span></p>
+<p class="cl"><span class="seg"><span class="chd">Dm</span>We'll roll the old chariot along</span></p>
+<p class="cl refrain"><span class="seg"><span class="chd">F</span>And we'll all </span><span class="seg"><span class="chd">A7</span>hang on be</span><span class="seg"><span class="chd">Dm</span>hind</span></p>
+</div>
+<div class="verse">
+<p>We'll be all right if we make it round The Horn.</p>
+<p>We'll be all right if we make it round The Horn.</p>
+<p>We'll be all right if we make it round The Horn.</p>
+<p class="refrain">And we'll all hang on behind.</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">20</span></div><div class="page recto" data-page="5"><div class="page-content"><div class="cue">Chorus</div>
+<div class="verse">
+<p>I'm sick in the head and I haven't been to bed,</p>
+<p>Since first I came ashore from me slumber,</p>
+<p>For I spent all me dough on me ladies don't you know</p>
+<p>Far across the western ocean I must wander</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">5</span></div></div>
+<div class="sheet" data-sheet="2" data-side="back"><div class="page verso" data-page="6"><div class="page-content"><h1 class="song-title">Bully Boys</h1>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg">And it's </span><span class="seg"><span class="chd">C</span>row me bully boys we're in a </span><span class="seg"><span class="chd">F</span>hurry boys</span></p>
+<p class="cl"><span class="seg"><span class="chd">C</span>we've got a long way to </span><span class="seg"><span class="chd">G7</span>go</span></p>
+<p class="cl"><span class="seg">And we'll </span><span class="seg"><span class="chd">C</span>sing and we'll dance and bid farewell to </span><span class="seg"><span class="chd">F</span>France</span></p>
+<p class="cl"><span class="seg"><span class="chd">G7</span>row me bully boys </span><span class="seg"><span class="chd">C</span>row</span></p>
+</div>
+<div class="verse">
+<p>And we sailed away in the roughest of water,</p>
+<p class="refrain">row me bully boys row</p>
+<p>But now we return in the most royal quarters,</p>
+<p class="refrain">row me bully boys row</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>See, now, how we feast on pheasants by a flock,</p>
+<p class="refrain">row me bully boys row</p>
+<p>It's a long, long way from the gruel and the stocks,</p>
+<p class="refrain">row me bully boys row</p>
+</div>
+</div><span class="page-number">6</span></div><div class="page recto" data-page="19"><div class="page-content"><div class="cue">Chorus</div>
+<div class="verse">
+<p>Heave away, bullies, ye parish rigged bums</p>
+<p class="refrain">Way hey roll and go</p>
+<p>Take your hands from your pockets and don't suck your thumbs</p>
+<p class="refrain">To me rollickin' randy dandy O</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>We're outward bound for Vallipo Bay</p>
+<p class="refrain">Way hey roll and go</p>
+<p>Get crackin', me lads, it's a hell of a way!</p>
+<p class="refrain">To me rollickin' randy dandy O</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Soon we'll be warping her out through the locks</p>
+<p class="refrain">Way hey roll and go</p>
+<p>Where the pretty young girls all come down in their frocks</p>
+<p class="refrain">To me rollickin' randy dandy O</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Come breast the bar bullies heave with a will</p>
+<p class="refrain">Way hey roll and go</p>
+<p>Oh soon we'll be rolling her down through the bay</p>
+<p class="refrain">To me rollickin' randy dandy O</p>
+</div>
+</div><span class="page-number">19</span></div></div>
+<div class="sheet" data-sheet="3" data-side="front"><div class="page verso" data-page="18"><div class="page-content"><h1 class="song-title">Randy Dandy O</h1>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg"><span class="chd">Eb</span>Heave a pawl oh heave a way</span></p>
+<p class="cl refrain"><span class="seg"><span class="chd">Bb</span>Way hey roll and go</span></p>
+<p class="cl"><span class="seg"><span class="chd">Eb</span>The anchor's on board and the cable's all </span><span class="seg"><span class="chd">Bb</span>stored</span></p>
+<p class="cl refrain"><span class="seg"><span class="chd">Gm</span>To me rollickin' </span><span class="seg"><span class="chd">Cm</span>randy dandy O</span></p>
+</div>
+<div class="verse">
+<p>Now we are ready to sail for the Horn</p>
+<p class="refrain">Way hey roll and go</p>
+<p>Our boots an' our clothes, boys, are all in the pawn</p>
+<p class="refrain">To me rollickin' randy dandy O</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Man the stout caps'n and heave with a will</p>
+<p class="refrain">Way hey roll and go</p>
+<p>For soon we'll be drivin' away up the hill</p>
+<p class="refrain">To me rollickin' randy dandy O</p>
+</div>
+</div><span class="page-number">18</span></div><div class="page recto" data-page="7"><div class="page-content"><div class="cue">Chorus</div>
+<div class="verse">
+<p>A wee dram of whiskey for every man,</p>
+<p class="refrain">row me bully boys row</p>
+<p>And a barrel of rum for the shanty man,</p>
+<p class="refrain">row me bully boys row</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>And we sailed away in the roughest of water,</p>
+<p class="refrain">row me bully boys row</p>
+<p>And now we return and so lock up your daughters,</p>
+<p class="refrain">row me bully boys row</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">7</span></div></div>
+<div class="sheet" data-sheet="3" data-side="back"><div class="page verso" data-page="8"><div class="page-content"><h1 class="song-title">Bully in the Alley</h1>
+<div class="verse">
+<p>Sally is the girl that I love dearly,</p>
+<p class="refrain">way hey bully in the alley</p>
+<p>Sally is the girl that I spliced nearly,</p>
+<p class="refrain">bully down in shinbone al&mdash;</p>
+</div>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg"><span class="chd">G</span>So help me ba ba bully in the alley,</span></p>
+<p class="cl refrain"><span class="seg"><span class="chd">C</span>way hey </span><span class="seg"><span class="chd">G</span>bully in the </span><span class="seg"><span class="chd">D</span>alley</span></p>
+<p class="cl"><span class="seg"><span class="chd">G</span>So help me ba ba bully in the alley,</span></p>
+<p class="cl refrain"><span class="seg"><span class="chd">C</span>bully down in </span><span class="seg"><span class="chd">G</span>shinbone </span><span class="seg"><span class="chd">D7</span>al</span><span class="seg"><span class="chd">G</span>&mdash;</span></p>
+</div>
+<div class="verse">
+<p>Seven long years I've courted Sally</p>
+<p class="refrain">way hey bully in the alley</p>
+<p>All she did was dilly and dally,</p>
+<p class="refrain">bully down in shinbone al&mdash;</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">8</span></div><div class="page recto" data-page="17"><div class="page-content"><div class="cue">Chorus</div>
+<div class="verse">
+<p>I hate to sail on this rotten tub</p>
+<p class="refrain">Leave her Johnny leave her</p>
+<p>No grog allowed and rotten grub</p>
+<p class="refrain">And it's time for us to leave her</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>We swear by rote for want of more</p>
+<p class="refrain">Leave her Johnny leave her</p>
+<p>But now we're through so we'll go on shore</p>
+<p class="refrain">And it's time for us to leave her</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">17</span></div></div>
+<div class="sheet" data-sheet="4" data-side="front"><div class="page verso" data-page="16"><div class="page-content"><h1 class="song-title">Leave Her Johnny</h1>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg"><span class="chd">G</span>Leave her Johnny </span><span class="seg"><span class="chd">C</span>leave her</span></p>
+<p class="cl refrain"><span class="seg">Oh </span><span class="seg"><span class="chd">F</span>leave her Johnny </span><span class="seg"><span class="chd">C</span>leave her</span></p>
+<p class="cl"><span class="seg">For the </span><span class="seg"><span class="chd">F</span>voyage is </span><span class="seg"><span class="chd">C</span>long and the </span><span class="seg"><span class="chd">G</span>winds don't </span><span class="seg"><span class="chd">C</span>blow</span></p>
+<p class="cl refrain"><span class="seg"><span class="chd">C</span>And it's time for us to </span><span class="seg"><span class="chd">G7</span>leave </span><span class="seg"><span class="chd">C</span>her</span></p>
+</div>
+<div class="verse">
+<p>I thought I heard the old man say</p>
+<p class="refrain">Leave her Johnny leave her</p>
+<p>Tomorrow ye will get yer pay</p>
+<p class="refrain">And it's time for us to leave her</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Oh the wind was foul and the sea was high</p>
+<p class="refrain">Leave her Johnny leave her</p>
+<p>She shipped it green and none went by</p>
+<p class="refrain">And it's time for us to leave her</p>
+</div>
+</div><span class="page-number">16</span></div><div class="page recto" data-page="9"><div class="page-content"><div class="verse">
+<p>Sally Brown I took a notion</p>
+<p class="refrain">way hey bully in the alley</p>
+<p>To sail across this wide damn ocean,</p>
+<p class="refrain">bully down in shin-bone al&mdash;</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Well I'll leave Sal and I'll go sailin'</p>
+<p class="refrain">way hey bully in the alley</p>
+<p>Leave my gal and I'll go whalin',</p>
+<p class="refrain">bully down in shinbone al&mdash;</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">9</span></div></div>
+<div class="sheet" data-sheet="4" data-side="back"><div class="page verso" data-page="10"><div class="page-content"><h1 class="song-title">Drunken Sailor</h1>
+<div class="verse">
+<p>What will we do with a drunken sailor?</p>
+<p>What will we do with a drunken sailor?</p>
+<p>What will we do with a drunken sailor?</p>
+<p class="refrain">Early in the morning!</p>
+</div>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg"><span class="chd">Dm</span>Way hey and up she rises</span></p>
+<p class="cl"><span class="seg"><span class="chd">C</span>Way hey and up she rises</span></p>
+<p class="cl"><span class="seg"><span class="chd">Dm</span>Way hey and up she rises</span></p>
+<p class="cl refrain"><span class="seg"><span class="chd">F</span>Early in the </span><span class="seg"><span class="chd">C</span>morn</span><span class="seg"><span class="chd">Dm</span>ing!</span></p>
+</div>
+<div class="verse">
+<p>Shave his belly with a rusty razor</p>
+<p>Shave his belly with a rusty razor</p>
+<p>Shave his belly with a rusty razor</p>
+<p class="refrain">Early in the morning!</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">10</span></div><div class="page recto" data-page="15"><div class="page-content"><div class="verse">
+<p>She's called the Dreadnought Cider, she's proper and she's fine</p>
+<p>And when the day is over sure I wish that she were mine</p>
+<p>Or in the dark of winter, or on a summer's eve</p>
+<p>&hellip;One hand giveth and the other does receive.</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>So turn your sails over and bring her hard to port</p>
+<p>Find that little star and fly straight into the North</p>
+<p>The wild sun upon your back the wind a-blowing free</p>
+<p>&hellip;You're rolling up the river boys to old Chicoutimi.</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>So you can have a Magners and pour it over ice</p>
+<p>Or you can have a Strongbow if it's sadness that you like</p>
+<p>Or join us up the river and we'll set your heart aglow</p>
+<p>&hellip;And how you'll feel when the real cider starts to flow.</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">15</span></div></div>
+<div class="sheet" data-sheet="5" data-side="front"><div class="page verso" data-page="14"><div class="page-content"><h1 class="song-title">Joli Rouge</h1>
+<p class="song-credit">The Dreadnoughts, 2019</p>
+<div class="verse">
+<p>From France we get the Brandy, from Martinique the rum</p>
+<p>Sweet red Cabernet from Italy does come</p>
+<p>But the fairest of them all, me boys the one to beat the day</p>
+<p>&hellip;is made from apples up the mighty Saguenay.</p>
+</div>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg"><span class="chd">Dm</span>So follow me lads&hellip; cause this </span><span class="seg"><span class="chd">Am</span>ain't no grog or ale</span></p>
+<p class="cl"><span class="seg"><span class="chd">Dm</span>One pint down you'll be </span><span class="seg"><span class="chd">C</span>swinging in the gale</span></p>
+<p class="cl"><span class="seg"><span class="chd">Dm</span>Five pints bully you'll be </span><span class="seg"><span class="chd">C</span>shaking in your </span><span class="seg"><span class="chd">F</span>shoes</span></p>
+<p class="cl"><span class="seg"><span class="chd">Dm</span>&hellip;We're half-seas </span><span class="seg"><span class="chd">C</span>over on the </span><span class="seg"><span class="chd">Dm</span>Joli Rouge.</span></p>
+</div>
+</div><span class="page-number">14</span></div><div class="page recto" data-page="11"><div class="page-content"><div class="verse">
+<p>Put him in a long boat till he's sober</p>
+<p>Put him in a long boat till he's sober</p>
+<p>Put him in a long boat till he's sober</p>
+<p class="refrain">Early in the morning!</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Stick him in a scupper with a hose-pipe bottom</p>
+<p>Stick him in a scupper with a hose-pipe bottom</p>
+<p>Stick him in a scupper with a hose-pipe bottom</p>
+<p class="refrain">Early in the morning!</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>That's what we do with a drunken sailor</p>
+<p>That's what we do with a drunken sailor</p>
+<p>That's what we do with a drunken sailor</p>
+<p class="refrain">Early in the morning!</p>
+</div>
+</div><span class="page-number">11</span></div></div>
+<div class="sheet" data-sheet="5" data-side="back"><div class="page verso" data-page="12"><div class="page-content"><h1 class="song-title">Health to the Company</h1>
+<div class="verse">
+<p>Kind friends and companions, come join me in rhyme</p>
+<p>Come lift up your voices in chorus with mine</p>
+<p>Come lift up your voices all grief to refrain</p>
+<p>For we may or might never all meet here again</p>
+</div>
+<div class="chorus">
+<div class="label">Chorus</div>
+<p class="cl"><span class="seg"><span class="chd">Am</span>Here's a health to the </span><span class="seg"><span class="chd">Em</span>company and </span><span class="seg"><span class="chd">G</span>one to my </span><span class="seg"><span class="chd">Am</span>lass</span></p>
+<p class="cl"><span class="seg"><span class="chd">Am</span>Let us drink and be </span><span class="seg"><span class="chd">C</span>merry all </span><span class="seg"><span class="chd">Am</span>out of one </span><span class="seg"><span class="chd">G</span>glass</span></p>
+<p class="cl"><span class="seg"><span class="chd">Am</span>Let us drink and be </span><span class="seg"><span class="chd">C</span>merry all </span><span class="seg"><span class="chd">Am</span>grief to re</span><span class="seg"><span class="chd">G</span>frain</span></p>
+<p class="cl"><span class="seg"><span class="chd">Am</span>For we may or might </span><span class="seg"><span class="chd">Em</span>never all </span><span class="seg"><span class="chd">G</span>meet here a</span><span class="seg"><span class="chd">Am</span>gain</span></p>
+</div>
+</div><span class="page-number">12</span></div><div class="page recto" data-page="13"><div class="page-content"><div class="verse">
+<p>Here's a health to the dear lass that I love so well</p>
+<p>For her style and her beauty, sure none can excel</p>
+<p>There's a smile on her countenance as she sits on my knee</p>
+<p>There's no man in this wide world as happy as me</p>
+</div>
+<div class="cue">Chorus</div>
+<div class="verse">
+<p>Our ship lies at anchor, she's ready to dock</p>
+<p>I wish her safe landing, without any shock</p>
+<p>If ever I should meet you by land or by sea</p>
+<p>I will always remember your kindness to me</p>
+</div>
+<div class="cue">Chorus</div>
+</div><span class="page-number">13</span></div></div>
+</body>
+</html>
