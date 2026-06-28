@@ -17,7 +17,14 @@
   --ink: #111;
   --chord: #8a8a8a;
   --rule: #333;
+  --display: "Primitive", "UnifrakturCook", "Blackletter", serif;
+  --body: "Lucida Bright", "Lucida Serif", "Georgia", "Times New Roman", serif;
 }
+
+/* Body, page numbers, chorus headers — everything but titles — in Lucida Bright. */
+.page-content { font-family: var(--body); }
+.page-content h1, .page-content h2, .page-content h3 { font-family: var(--body); }
+.page-number { font-family: var(--body); }
 
 /* ---- Cover ------------------------------------------------------------- */
 .cover {
@@ -28,7 +35,7 @@
   text-align: center;
 }
 .cover-title {
-  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
+  font-family: var(--display);
   font-weight: 400;
   font-size: 56pt;
   line-height: 1.02;
@@ -50,19 +57,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font: italic 10pt/1.3 Georgia, serif;
+  font: italic 10pt/1.3 var(--body);
   text-align: center;
 }
 .cover-byline {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
   font-size: 13pt;
   margin-bottom: 0.5in;
 }
 .cover-byline p { margin: 0.06in 0; }
 
 /* ---- Contents ---------------------------------------------------------- */
-.contents-title {
-  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
+.page-content .contents-title {
+  font-family: var(--display);
   font-weight: 400;
   font-size: 30pt;
   margin: 0 0 0.25in;
@@ -85,7 +92,7 @@
 .toc-page { white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 .warn-title {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
   font-size: 12pt;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -97,19 +104,19 @@
   margin-top: 0.5in;
   color: #444;
   font-size: 11pt;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
 }
 
 /* ---- Song pages -------------------------------------------------------- */
-.song-title {
-  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
+.page-content .song-title {
+  font-family: var(--display);
   font-weight: 400;
   font-size: 26pt;
   line-height: 1.1;
   margin: 0 0 0.18in;
 }
 .song-credit {
-  font: italic 11pt/1.2 Georgia, serif;
+  font: italic 11pt/1.2 var(--body);
   color: #555;
   margin: -0.12in 0 0.14in;
 }
@@ -126,7 +133,7 @@
 }
 .label,
 .cue {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
   font-weight: 700;
   font-size: 10pt;
   letter-spacing: 0.06em;
@@ -136,10 +143,7 @@
 
 .verse { margin: 0 0 0.14in; }
 .verse p,
-.chorus p {
-  margin: 0 0 0.03in;
-  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
-}
+.chorus p { margin: 0 0 0.03in; }
 
 /* Call/response: the response refrain sits indented and italic. */
 .refrain {
@@ -161,7 +165,7 @@
   position: absolute;
   top: -0.62em;
   left: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
   font-size: 0.7em;
   font-weight: 700;
   line-height: 1;

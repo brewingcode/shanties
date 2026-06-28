@@ -68,7 +68,14 @@ html, body { margin: 0; padding: 0; background: #f0f0f0; }
   --ink: #111;
   --chord: #8a8a8a;
   --rule: #333;
+  --display: "Primitive", "UnifrakturCook", "Blackletter", serif;
+  --body: "Lucida Bright", "Lucida Serif", "Georgia", "Times New Roman", serif;
 }
+
+/* Body, page numbers, chorus headers — everything but titles — in Lucida Bright. */
+.page-content { font-family: var(--body); }
+.page-content h1, .page-content h2, .page-content h3 { font-family: var(--body); }
+.page-number { font-family: var(--body); }
 
 /* ---- Cover ------------------------------------------------------------- */
 .cover {
@@ -79,7 +86,7 @@ html, body { margin: 0; padding: 0; background: #f0f0f0; }
   text-align: center;
 }
 .cover-title {
-  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
+  font-family: var(--display);
   font-weight: 400;
   font-size: 56pt;
   line-height: 1.02;
@@ -101,19 +108,19 @@ html, body { margin: 0; padding: 0; background: #f0f0f0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font: italic 10pt/1.3 Georgia, serif;
+  font: italic 10pt/1.3 var(--body);
   text-align: center;
 }
 .cover-byline {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
   font-size: 13pt;
   margin-bottom: 0.5in;
 }
 .cover-byline p { margin: 0.06in 0; }
 
 /* ---- Contents ---------------------------------------------------------- */
-.contents-title {
-  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
+.page-content .contents-title {
+  font-family: var(--display);
   font-weight: 400;
   font-size: 30pt;
   margin: 0 0 0.25in;
@@ -136,7 +143,7 @@ html, body { margin: 0; padding: 0; background: #f0f0f0; }
 .toc-page { white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 .warn-title {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
   font-size: 12pt;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -148,19 +155,19 @@ html, body { margin: 0; padding: 0; background: #f0f0f0; }
   margin-top: 0.5in;
   color: #444;
   font-size: 11pt;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
 }
 
 /* ---- Song pages -------------------------------------------------------- */
-.song-title {
-  font-family: "Primitive", "UnifrakturCook", "Cambria", serif;
+.page-content .song-title {
+  font-family: var(--display);
   font-weight: 400;
   font-size: 26pt;
   line-height: 1.1;
   margin: 0 0 0.18in;
 }
 .song-credit {
-  font: italic 11pt/1.2 Georgia, serif;
+  font: italic 11pt/1.2 var(--body);
   color: #555;
   margin: -0.12in 0 0.14in;
 }
@@ -177,7 +184,7 @@ html, body { margin: 0; padding: 0; background: #f0f0f0; }
 }
 .label,
 .cue {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
   font-weight: 700;
   font-size: 10pt;
   letter-spacing: 0.06em;
@@ -209,7 +216,7 @@ html, body { margin: 0; padding: 0; background: #f0f0f0; }
   position: absolute;
   top: -0.62em;
   left: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--body);
   font-size: 0.7em;
   font-weight: 700;
   line-height: 1;
@@ -241,9 +248,7 @@ html, body { margin: 0; padding: 0; background: #f0f0f0; }
 <div class="sheet" data-sheet="0" data-side="front"><div class="page verso blank" data-page="24"><div class="page-content"></div></div><div class="page recto" data-page="1"><div class="page-content"><div class="cover">
   <div class="cover-title">Sea<br>Shanties</div>
   <div class="cover-art">
-    <!-- Cover illustration to come. Drop it at img/cover.png and swap in:
-    <img src="img/cover.png" alt="Sea serpent"> -->
-    <div class="cover-art-placeholder">cover illustration<br>to be added</div>
+    <img src="cover.png" alt="Sea serpent">
   </div>
   <div class="cover-byline">
     <p>A songbook prepared by</p>
