@@ -1,6 +1,6 @@
 # Sea Shanties — booklet
 
-Source for the **Sea Shanties** songbook, built with [markdown-booklet](../../markdown-booklet) into a saddle-stitch, booklet-imposed printable HTML.
+Source for the **Sea Shanties** songbook, built with [markdown-booklet](https://github.com/chrisglein/markdown-booklet) into a saddle-stitch, booklet-imposed printable HTML.
 
 ## Layout
 
@@ -10,24 +10,22 @@ Source for the **Sea Shanties** songbook, built with [markdown-booklet](../../ma
 
 ## Build
 
-This folder is the source. The engine lives in the sibling `markdown-booklet` repo:
+This folder is the source. The engine is the `markdown-booklet` dependency in the parent `package.json`; install it once from the repo root:
 
 ```sh
-source/repos/
-  markdown-booklet/   <- the tool (dependency)
-  shanties/booklet/   <- this folder
+npm install
 ```
 
-From this folder:
+Build from the repo root:
 
 ```sh
-node ../../markdown-booklet/src/cli.js build book.yaml --out sea-shanties.html
+npm run booklet
 ```
 
 Reading-order proof (one page per page, no imposition):
 
 ```sh
-node ../../markdown-booklet/src/cli.js build book.yaml --reading --out proof.html
+npm run booklet:proof
 ```
 
 Then open `sea-shanties.html` in a Chromium-based browser and print.
