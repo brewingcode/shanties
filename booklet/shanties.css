@@ -156,14 +156,14 @@
    and the chord is absolutely positioned over the segment's first letter. */
 .cl {
   position: relative;
-  padding-top: 0.62em;
+  padding-top: 1em;
   margin: 0 0 0.04in;
   line-height: 1.4;
 }
 .cl .seg { position: relative; }
 .cl .chd {
   position: absolute;
-  top: -0.62em;
+  top: -1em;
   left: 0;
   font-family: var(--body);
   font-size: 0.7em;

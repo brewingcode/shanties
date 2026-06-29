@@ -1,50 +1,35 @@
+# Bully in the Alley
+
+Sally is the girl that I love dearly,
+> way hey bully in the alley
+Sally is the girl that I spliced nearly,
+> bully down in shinbone al—
+
+{chorus}
+[G]So help me ba ba bully in the alley,
+> [C]way hey [G]bully in the [D]alley
+[G]So help me ba ba bully in the alley,
+> [C]bully down in [G]shinbone [D7]al[G]—
+
+Seven long years I've courted Sally
+> way hey bully in the alley
+All she did was dilly and dally,
+> bully down in shinbone al—
+
+[Chorus]
+
 ---
-type: spread
-title: Bully in the Alley
----
 
-<h1 class="song-title">Bully in the Alley</h1>
+Sally Brown I took a notion
+> way hey bully in the alley
+To sail across this wide damn ocean,
+> bully down in shin-bone al—
 
-<div class="verse">
-<p>Sally is the girl that I love dearly,</p>
-<p class="refrain">way hey bully in the alley</p>
-<p>Sally is the girl that I spliced nearly,</p>
-<p class="refrain">bully down in shinbone al&mdash;</p>
-</div>
+[Chorus]
 
-<div class="chorus">
-<div class="label">Chorus</div>
-<p class="cl"><span class="seg"><span class="chd">G</span>So help me ba ba bully in the alley,</span></p>
-<p class="cl refrain"><span class="seg"><span class="chd">C</span>way hey </span><span class="seg"><span class="chd">G</span>bully in the </span><span class="seg"><span class="chd">D</span>alley</span></p>
-<p class="cl"><span class="seg"><span class="chd">G</span>So help me ba ba bully in the alley,</span></p>
-<p class="cl refrain"><span class="seg"><span class="chd">C</span>bully down in </span><span class="seg"><span class="chd">G</span>shinbone </span><span class="seg"><span class="chd">D7</span>al</span><span class="seg"><span class="chd">G</span>&mdash;</span></p>
-</div>
+Well I'll leave Sal and I'll go sailin'
+> way hey bully in the alley
+Leave my gal and I'll go whalin',
+> bully down in shinbone al—
 
-<div class="verse">
-<p>Seven long years I've courted Sally</p>
-<p class="refrain">way hey bully in the alley</p>
-<p>All she did was dilly and dally,</p>
-<p class="refrain">bully down in shinbone al&mdash;</p>
-</div>
-
-<div class="cue">Chorus</div>
-
-<!-- spread-break -->
-
-<div class="verse">
-<p>Sally Brown I took a notion</p>
-<p class="refrain">way hey bully in the alley</p>
-<p>To sail across this wide damn ocean,</p>
-<p class="refrain">bully down in shin-bone al&mdash;</p>
-</div>
-
-<div class="cue">Chorus</div>
-
-<div class="verse">
-<p>Well I'll leave Sal and I'll go sailin'</p>
-<p class="refrain">way hey bully in the alley</p>
-<p>Leave my gal and I'll go whalin',</p>
-<p class="refrain">bully down in shinbone al&mdash;</p>
-</div>
-
-<div class="cue">Chorus</div>
+[Chorus]

@@ -19,13 +19,13 @@ pages:
   - { file: cover.html, showPageNumber: false }
   - blank
   - { file: contents.md }
-  - { file: all-for-me-grog.md, type: spread }
-  - { file: bully-boys.md, type: spread }
-  - { file: bully-in-the-alley.md, type: spread }
-  - { file: drunken-sailor.md, type: spread }
-  - { file: health-to-the-company.md, type: spread }
-  - { file: joli-rouge.md, type: spread }
-  - { file: leave-her-johnny.md, type: spread }
-  - { file: randy-dandy-o.md, type: spread }
-  - { file: roll-the-old-chariot-along.md, type: spread }
-  - { file: wellerman.md, type: spread }
+  - { file: all-for-me-grog.md, type: song }
+  - { file: bully-boys.md, type: song }
+  - { file: bully-in-the-alley.md, type: song }
+  - { file: drunken-sailor.md, type: song }
+  - { file: health-to-the-company.md, type: song }
+  - { file: joli-rouge.md, type: song }
+  - { file: leave-her-johnny.md, type: song }
+  - { file: randy-dandy-o.md, type: song }
+  - { file: roll-the-old-chariot-along.md, type: song }
+  - { file: wellerman.md, type: song }

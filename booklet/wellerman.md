@@ -1,68 +1,49 @@
+# Wellerman
+
+[Cm]There once was a ship that put to sea,
+the name of the ship was the [Fm]Billy o [Cm]Tea.
+The winds blew hard, her bow dipped down.
+Oh [G]blow my bully boys [Cm]blow.
+
+{chorus}
+[Ab]Soon may the [Eb]Wellerman come
+to [Fm]bring us sugar and tea and [Cm]rum
+[Ab]One day the [Eb]tonguin is done
+we'll [G]take our leave and [Cm]go
+
+She'd not been two weeks from shore,
+when down on her a right whale bore.
+The captain called all hands and swore
+"We'll take that whale in tow".
+
+[Chorus]
+
 ---
-type: spread
-title: Wellerman
----
 
-<h1 class="song-title">Wellerman</h1>
+Before the boat had hit the water,
+the whale's tail came up and caught her.
+All hands to the side, harpooned and fought her,
+when she dived down below.
 
-<div class="verse">
-<p>There once was a ship that put to sea,</p>
-<p>the name of the ship was the Billy o Tea.</p>
-<p>The winds blew hard, her bow dipped down.</p>
-<p>Oh blow my bully boys blow.</p>
-</div>
+[Chorus]
 
-<div class="chorus">
-<div class="label">Chorus</div>
-<p class="cl"><span class="seg"><span class="chd">Ab</span>Soon may the </span><span class="seg"><span class="chd">Eb</span>Wellerman come</span></p>
-<p class="cl"><span class="seg">to </span><span class="seg"><span class="chd">Fm</span>bring us sugar and tea and </span><span class="seg"><span class="chd">Cm</span>rum</span></p>
-<p class="cl"><span class="seg"><span class="chd">Ab</span>One day the </span><span class="seg"><span class="chd">Eb</span>tonguin is done</span></p>
-<p class="cl"><span class="seg">we'll </span><span class="seg"><span class="chd">G</span>take our leave and </span><span class="seg"><span class="chd">Cm</span>go</span></p>
-</div>
+No line was cut, no whale was freed,
+The captain's mind was not of greed.
+But he belonged to the Whaleman's creed.
+She took that ship in tow.
 
-<div class="verse">
-<p>She'd not been two weeks from shore,</p>
-<p>when down on her a right whale bore.</p>
-<p>The captain called all hands and swore</p>
-<p>"We'll take that whale in tow".</p>
-</div>
+[Chorus]
 
-<div class="cue">Chorus</div>
+For forty days or even more,
+The line went slack then tight once more.
+All boats were lost, there were only four,
+but still that whale did go.
 
-<!-- spread-break -->
+[Chorus]
 
-<div class="verse">
-<p>Before the boat had hit the water,</p>
-<p>the whale's tail came up and caught her.</p>
-<p>All hands to the side, harpooned and fought her,</p>
-<p>when she dived down below.</p>
-</div>
+As far as I've heard, the fight's still on
+The line's not cut and the whale's not gone.
+The Wellerman makes his regular call
+To encourage the captain crew and all.
 
-<div class="cue">Chorus</div>
-
-<div class="verse">
-<p>No line was cut, no whale was freed,</p>
-<p>The captain's mind was not of greed.</p>
-<p>But he belonged to the Whaleman's creed.</p>
-<p>She took that ship in tow.</p>
-</div>
-
-<div class="cue">Chorus</div>
-
-<div class="verse">
-<p>For forty days or even more,</p>
-<p>The line went slack then tight once more.</p>
-<p>All boats were lost, there were only four,</p>
-<p>but still that whale did go.</p>
-</div>
-
-<div class="cue">Chorus</div>
-
-<div class="verse">
-<p>As far as I've heard, the fight's still on</p>
-<p>The line's not cut and the whale's not gone.</p>
-<p>The Wellerman makes his regular call</p>
-<p>To encourage the captain crew and all.</p>
-</div>
-
-<div class="cue">Chorus</div>
+[Chorus]
