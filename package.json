@@ -9,7 +9,7 @@
     },
     "dependencies": {
         "coffeescript": "^2.7.0",
-        "markdown-booklet": "github:chrisglein/markdown-booklet#eab1ea0268f6f26d9e20fe0f39a015a90f6cd4d9",
+        "markdown-booklet": "chrisglein/markdown-booklet",
         "mathjs": "^11.10.0",
         "nodemon": "^2.0.22",
         "pug-pack": "brewingcode/pug-pack"
