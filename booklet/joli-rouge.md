@@ -4,14 +4,14 @@
 
 From France we get the Brandy, from Martinique the rum
 Sweet red Cabernet from Italy does come
-But the fairest of them all, me boys the one to beat the day
+But the fairest of them all, me boys, the one to beat the day
 …is made from apples up the mighty Saguenay.
 
 {chorus}
 [Dm]So follow me lads… cause this [Am]ain't no grog or ale
 [Dm]One pint down you'll be [C]swinging in the gale
 [Dm]Five pints bully you'll be [C]shaking in your [F]shoes
-[Dm]…We're half-seas [C]over on the [Dm]Joli Rouge.
+[Dm]…We're half-seas [C7]over on the [Dm]Joli Rouge.
 
 ---
 

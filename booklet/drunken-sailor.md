@@ -27,9 +27,9 @@ Put him in a long boat till he's sober
 
 [Chorus]
 
-Stick him in a scupper with a hose-pipe bottom
-Stick him in a scupper with a hose-pipe bottom
-Stick him in a scupper with a hose-pipe bottom
+Stick him in a scupper with a hose-pipe on 'im
+Stick him in a scupper with a hose-pipe on 'im
+Stick him in a scupper with a hose-pipe on 'im
 > Early in the morning!
 
 [Chorus]

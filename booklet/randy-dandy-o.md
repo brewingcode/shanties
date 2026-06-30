@@ -4,7 +4,7 @@
 [Eb]Heave a pawl oh heave a way
 > [Bb]Way hey roll and go
 [Eb]The anchor's on board and the cable's all [Bb]stored
-> [Gm]To me rollickin' [Cm]randy dandy O
+> [Eb]To me rollickin' [Cm]randy dandy O
 
 Now we are ready to sail for the Horn
 > Way hey roll and go
@@ -39,4 +39,11 @@ Get crackin', me lads, it's a hell of a way!
 Soon we'll be warping her out through the locks
 > Way hey roll and go
 Where the pretty young girls all come down in their frocks
+> To me rollickin' randy dandy O
+
+[Chorus]
+
+Come breast the bar bullies heave with a will
+> Way hey roll and go
+Oh soon we'll be rolling her down through the bay
 > To me rollickin' randy dandy O

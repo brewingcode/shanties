@@ -3,7 +3,7 @@
 {chorus}
 [C]All for me grog, me jolly jolly [F]grog
 [C]All for me beer and to[G]bacco
-[C]For I spent all me tin down on South Street sipping [F]gin
+[C]For I spent all me tin down on South Street drinkin [F]gin
 [C]And across the western ocean I must [G7]wan[C]der
 
 Where are me boots, me noggin', noggin' boots,

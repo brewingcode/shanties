@@ -5,7 +5,7 @@ Source for the **Sea Shanties** songbook, built with [markdown-booklet](https://
 ## Layout
 
 - Half-letter pages (5.5 × 8.5 in), folded from Letter sheets
-- Cover → blank → contents (page 3) → ten songs, each a two-page spread starting on an even page (4, 6, 8, …)
+- Cover → blank → contents (page 3) → thirteen songs, each a two-page spread starting on an even page (4, 6, 8, …)
 - Titles in **Primitive**; everything else in **Lucida Bright** (with serif fallbacks)
 
 ## Build

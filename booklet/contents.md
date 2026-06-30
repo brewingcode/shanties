@@ -13,9 +13,12 @@ title: Contents
 <li><span class="toc-name">Health to the Company</span><span class="toc-dots"></span><span class="toc-page">12</span></li>
 <li><span class="toc-name">Joli Rouge</span><span class="toc-dots"></span><span class="toc-page">14</span></li>
 <li><span class="toc-name">Leave Her Johnny</span><span class="toc-dots"></span><span class="toc-page">16</span></li>
-<li><span class="toc-name">Randy Dandy O</span><span class="toc-dots"></span><span class="toc-page">18</span></li>
-<li><span class="toc-name">Roll the Old Chariot Along</span><span class="toc-dots"></span><span class="toc-page">20</span></li>
-<li><span class="toc-name">Wellerman</span><span class="toc-dots"></span><span class="toc-page">22</span></li>
+<li><span class="toc-name">Mingulay Boat Song</span><span class="toc-dots"></span><span class="toc-page">18</span></li>
+<li><span class="toc-name">Randy Dandy O</span><span class="toc-dots"></span><span class="toc-page">20</span></li>
+<li><span class="toc-name">Roll the Old Chariot Along</span><span class="toc-dots"></span><span class="toc-page">22</span></li>
+<li><span class="toc-name">Skipper Jan Rebec</span><span class="toc-dots"></span><span class="toc-page">24</span></li>
+<li><span class="toc-name">South Australia</span><span class="toc-dots"></span><span class="toc-page">26</span></li>
+<li><span class="toc-name">Wellerman</span><span class="toc-dots"></span><span class="toc-page">28</span></li>
 </ul>
 
 <h2 class="warn-title">Warning</h2>
@@ -24,4 +27,6 @@ title: Contents
 
 <p>This shanty songbook strives to ride the line between<br>authentic but also not problematic. We did our best.</p>
 
-<p class="colophon">June 2025, Version 3</p>
+<p class="toc-qr"><img src="qr.png" alt="QR code"></p>
+
+<p class="colophon">June 2026, Version 6</p>

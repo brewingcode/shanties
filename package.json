@@ -8,7 +8,7 @@
     },
     "devDependencies": {
         "coffeescript": "^2.7.0",
-        "markdown-booklet": "chrisglein/markdown-booklet",
+        "markdown-booklet": "github:chrisglein/markdown-booklet",
         "nodemon": "^2.0.22",
         "pug-pack": "brewingcode/pug-pack"
     },
