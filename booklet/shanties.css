@@ -79,7 +79,7 @@
   display: flex;
   align-items: baseline;
   font-size: 12pt;
-  margin: 0.07in 0;
+  margin: 0.02in 0;
 }
 .toc-name { white-space: nowrap; }
 .toc-dots {
@@ -178,7 +178,7 @@
   top: -1em;
   left: 0;
   font-family: var(--body);
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 700;
   line-height: 1;
   color: var(--chord);
