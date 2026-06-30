@@ -22,13 +22,15 @@ With our cracked four-pounders we made to fight
 
 [Chorus]
 
+---
+
 Then at length we stood two cables away
 > How I wish I was in Sherbrooke now!
 Our cracked four-pounders made an awful din
 But with one fat ball the Yank stove us in
 > God damn them all!
 
----
+[Chorus]
 
 The Antelope shook and pitched on her side
 > How I wish I was in Sherbrooke now!
