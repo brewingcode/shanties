@@ -35,7 +35,7 @@ And only takes two baths a year
 
 [Chorus]
 
-Who sleeps with four girls every night
+Who sleeps with four folks every night
 > Skipper Jan Rebec
 One up, one down, one left, one right
 > Skipper Jan Rebec
