@@ -4,6 +4,9 @@ import os, json, re
 songs = {}
 byTitle = {}
 for f in os.listdir('songs'):
+    if not re.search(r'\.txt$', f, re.I):
+        continue
+
     try:
         with open('songs/' + f) as fh:
             song = fh.read()
@@ -13,7 +16,7 @@ for f in os.listdir('songs'):
 
     songs[f] = song
 
-    m = re.search(r'^T: (.*)', song, re.MULTILINE)
+    m = re.search(r'^T:\s*(.*)', song, re.MULTILINE)
     if m:
         title = m.group(1)
         byTitle[title] = song

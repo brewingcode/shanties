@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": "./songs-to-json && pug-pack src",
+        "build": "./songs-to-json && pug-pack src && cp Songbook.pdf dist && cp qr-code.svg dist",
         "booklet": "node node_modules/markdown-booklet/src/cli.js build booklet/book.yaml --out booklet/sea-shanties.html",
         "booklet:proof": "node node_modules/markdown-booklet/src/cli.js build booklet/book.yaml --reading --out booklet/proof.html",
         "scaleL": "coffee src/transform.coffee scaleL",
