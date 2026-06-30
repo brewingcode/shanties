@@ -3,6 +3,8 @@ type: page
 title: Contents
 ---
 
+<div class="contents">
+
 <h1 class="contents-title">Contents</h1>
 
 <ul class="toc">
@@ -21,6 +23,8 @@ title: Contents
 <li><span class="toc-name">Wellerman</span><span class="toc-dots"></span><span class="toc-page">28</span></li>
 </ul>
 
+<div class="warn-block">
+
 <h2 class="warn-title">Warning</h2>
 
 <p>These shanties are a product of their time,<br>some may represent regressive views.</p>
@@ -30,3 +34,7 @@ title: Contents
 <p class="toc-qr"><img src="qr.png" alt="QR code"></p>
 
 <p class="colophon">June 2026, Version 6</p>
+
+</div>
+
+</div>
