@@ -32,10 +32,12 @@ Then open `sea-shanties.html` in a Chromium-based browser and print.
 
 ## Print settings
 
+Print from a Chromium-based browser (Chrome):
+
 - Paper: Letter, **landscape**
-- Margins: None
-- Two-sided: on, **flip on long edge**
-- Scale: 100%
+- Margins: **None**
+- Scale: **Actual Size** (100%)
+- Two-sided: **Print on both sides — flip on short edge**
 
 Fold the stack in half and staple the spine.
 
