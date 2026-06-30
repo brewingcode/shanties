@@ -20,6 +20,7 @@ pages:
   - blank
   - { file: contents.md }
   - { file: all-for-me-grog.md, type: song }
+  - { file: barretts-privateers.md, type: song }
   - { file: bully-boys.md, type: song }
   - { file: bully-in-the-alley.md, type: song }
   - { file: drunken-sailor.md, type: song }
@@ -32,4 +33,4 @@ pages:
   - { file: skipper-jan-rebec.md, type: song }
   - { file: south-australia.md, type: song }
   - { file: wellerman.md, type: song }
-  - { file: whiskey-johnny.md, type: song }
+  - { file: whiskey-johnny.md, type: song, spread: false }
