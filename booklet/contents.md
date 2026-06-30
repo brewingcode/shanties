@@ -21,6 +21,7 @@ title: Contents
 <li><span class="toc-name">Skipper Jan Rebec</span><span class="toc-dots"></span><span class="toc-page">24</span></li>
 <li><span class="toc-name">South Australia</span><span class="toc-dots"></span><span class="toc-page">26</span></li>
 <li><span class="toc-name">Wellerman</span><span class="toc-dots"></span><span class="toc-page">28</span></li>
+<li><span class="toc-name">Whiskey Johnny</span><span class="toc-dots"></span><span class="toc-page">30</span></li>
 </ul>
 
 <div class="warn-block">
