@@ -1,0 +1,36 @@
+title: "Sea Shanties"
+
+# Logical page + margins. The physical sheet is derived as two pages wide.
+config:
+  page:
+    width: 5.5in
+    height: 8.5in
+  margins:
+    inner: 0.75in
+    outer: 0.5in
+    top: 0.6in
+    bottom: 0.6in
+  signatureSize: all
+  stylesheet: shanties.css
+
+# Pages in reading order. Each entry is a file (string) or an object with
+# overrides. Type is inferred from extension/frontmatter unless set here.
+pages:
+  - { file: cover.html, showPageNumber: false }
+  - blank
+  - { file: contents.md }
+  - { file: all-for-me-grog.md, type: song }
+  - { file: barretts-privateers.md, type: song }
+  - { file: bully-boys.md, type: song }
+  - { file: bully-in-the-alley.md, type: song }
+  - { file: drunken-sailor.md, type: song }
+  - { file: health-to-the-company.md, type: song }
+  - { file: joli-rouge.md, type: song }
+  - { file: leave-her-johnny.md, type: song }
+  - { file: mingulay-boat-song.md, type: song }
+  - { file: randy-dandy-o.md, type: song }
+  - { file: roll-the-old-chariot-along.md, type: song }
+  - { file: skipper-jan-rebec.md, type: song }
+  - { file: south-australia.md, type: song }
+  - { file: wellerman.md, type: song }
+  - { file: whiskey-johnny.md, type: song, spread: false }

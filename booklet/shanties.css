@@ -1,0 +1,186 @@
+/* Sea Shanties — songbook styling, appended after markdown-booklet's base CSS.
+   url() paths resolve relative to the OUTPUT html file (this CSS is inlined),
+   so build into this folder and keep fonts/ and img/ as siblings. */
+
+/* Primitive display font for titles. Drop the font file at fonts/ and
+   uncomment. Falls back to a blackletter-ish serif until then. */
+/*
+@font-face {
+  font-family: "Primitive";
+  src: url("fonts/Primitive.woff2") format("woff2"),
+       url("fonts/Primitive.ttf") format("truetype");
+  font-display: swap;
+}
+*/
+
+:root {
+  --ink: #111;
+  --chord: #8a8a8a;
+  --rule: #333;
+  --display: "Primitive", "UnifrakturCook", "Blackletter", serif;
+  --body: "Lucida Bright", "Lucida Serif", "Georgia", "Times New Roman", serif;
+}
+
+/* Body, page numbers, chorus headers — everything but titles — in Lucida Bright. */
+.page-content { font-family: var(--body); }
+.page-content h1, .page-content h2, .page-content h3 { font-family: var(--body); }
+.page-number { font-family: var(--body); }
+
+/* ---- Cover ------------------------------------------------------------- */
+.cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cover-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 56pt;
+  line-height: 1.02;
+  margin-top: 0.25in;
+}
+.cover-art {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cover-art img { max-height: 4in; max-width: 80%; }
+.cover-art-placeholder {
+  width: 2.6in;
+  height: 3.2in;
+  border: 1px dashed #bbb;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: italic 10pt/1.3 var(--body);
+  text-align: center;
+}
+.cover-byline {
+  font-family: var(--body);
+  font-size: 13pt;
+  margin-bottom: 0.5in;
+}
+.cover-byline p { margin: 0.06in 0; }
+
+/* ---- Contents ---------------------------------------------------------- */
+.page-content .contents-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 30pt;
+  margin: 0 0 0.25in;
+}
+.toc { list-style: none; margin: 0 0 0.3in; padding: 0; }
+.toc li {
+  display: flex;
+  align-items: baseline;
+  font-size: 12pt;
+  margin: 0.02in 0;
+}
+.toc-name { white-space: nowrap; }
+.toc-dots {
+  flex: 1 1 auto;
+  border-bottom: 2px dotted #9a9a9a;
+  margin: 0 0.08in;
+  position: relative;
+  top: -0.18em;
+}
+.toc-page { white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+.warn-block {
+  font-size: 9.5pt;
+  text-align: center;
+  line-height: 1.2;
+}
+.warn-title {
+  font-family: var(--body);
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0.2in 0 0.08in;
+}
+.contents .version { margin-top: 0.5in; color: #444; }
+.colophon {
+  color: #444;
+  font-size: 9pt;
+  font-family: var(--body);
+}
+.toc-qr {
+  text-align: center;
+  margin: 0;
+}
+.toc-qr img {
+  width: 1in;
+  height: 1in;
+}
+
+/* ---- Song pages -------------------------------------------------------- */
+.page-content .song-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 26pt;
+  line-height: 1.1;
+  margin: 0 0 0.18in;
+}
+.song-credit {
+  font: italic 11pt/1.2 var(--body);
+  color: #555;
+  margin: -0.12in 0 0.14in;
+}
+
+.chorus {
+  border: 1.5px dashed var(--rule);
+  padding: 0.16in 0.2in 0.12in;
+  margin: 0 0 0.18in;
+}
+.cue {
+  border: 1.5px dashed var(--rule);
+  padding: 0.05in 0.2in;
+  margin: 0.16in 0;
+}
+.label,
+.cue {
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 10pt;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.label { margin-bottom: 0.12in; }
+
+.verse { margin: 0 0 0.14in; }
+.verse p,
+.chorus p { margin: 0 0 0.03in; }
+
+/* Call/response: the response refrain sits indented and italic. */
+.refrain {
+  font-style: italic;
+  padding-left: 0.32in;
+  color: #1a1a1a;
+}
+
+/* Chorded lines: chords float above the lyric. A segment begins at a chord
+   and the chord is absolutely positioned over the segment's first letter. */
+.cl {
+  position: relative;
+  padding-top: 1em;
+  margin: 0 0 0.04in;
+  line-height: 1.4;
+}
+.cl .seg { position: relative; }
+.cl .chd {
+  position: absolute;
+  top: -1em;
+  left: 0;
+  font-family: var(--body);
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--chord);
+  white-space: nowrap;
+}
