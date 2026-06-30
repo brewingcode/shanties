@@ -3,16 +3,15 @@
         "build": "./songs-to-json && pug-pack src && cp Songbook.pdf dist && cp qr-code.svg dist",
         "booklet": "node node_modules/markdown-booklet/src/cli.js build booklet/book.yaml --out booklet/sea-shanties.html",
         "booklet:proof": "node node_modules/markdown-booklet/src/cli.js build booklet/book.yaml --reading --out booklet/proof.html",
+        "booklet:single": "node node_modules/markdown-booklet/src/cli.js build booklet/book.yaml --single --out booklet/single.html",
         "scaleL": "coffee src/transform.coffee scaleL",
         "dev": "nodemon -w src -w songs -i src/songs.json -i src/by-title.json -e '*' -x npm run build"
     },
-    "devDependencies": {
+    "dependencies": {
         "coffeescript": "^2.7.0",
-        "markdown-booklet": "github:chrisglein/markdown-booklet",
+        "markdown-booklet": "github:chrisglein/markdown-booklet#eab1ea0268f6f26d9e20fe0f39a015a90f6cd4d9",
+        "mathjs": "^11.10.0",
         "nodemon": "^2.0.22",
         "pug-pack": "brewingcode/pug-pack"
-    },
-    "dependencies": {
-        "mathjs": "^11.10.0"
     }
 }
