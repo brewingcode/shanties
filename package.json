@@ -1,15 +1,19 @@
 {
     "scripts": {
-        "build": "./songs-to-json && pug-pack src && cp Songbook.pdf dist && cp qr-code.svg dist",
+        "postinstall": "patch-package",
+        "build": "node songs-to-json.js && pug-pack src && node -e \"const fs=require('fs');for(const f of ['Songbook.pdf','qr-code.svg'])fs.cpSync(f,'dist/'+f)\"",
         "booklet": "node node_modules/markdown-booklet/src/cli.js build booklet/book.yaml --out booklet/sea-shanties.html",
         "booklet:proof": "node node_modules/markdown-booklet/src/cli.js build booklet/book.yaml --reading --out booklet/proof.html",
+        "musicbook": "node node_modules/markdown-booklet/src/cli.js build musicbook/book.yaml --out musicbook/sea-shanties-music.html",
+        "musicbook:proof": "node node_modules/markdown-booklet/src/cli.js build musicbook/book.yaml --reading --out musicbook/proof.html",
         "scaleL": "coffee src/transform.coffee scaleL",
-        "dev": "nodemon -w src -w songs -i src/songs.json -i src/by-title.json -e '*' -x npm run build"
+        "dev": "nodemon -w src -w songs -i src/songs.json -i src/by-title.json -e \"*\" -x npm run build"
     },
     "devDependencies": {
         "coffeescript": "^2.7.0",
         "markdown-booklet": "github:chrisglein/markdown-booklet",
         "nodemon": "^2.0.22",
+        "patch-package": "^8.0.1",
         "pug-pack": "brewingcode/pug-pack"
     },
     "dependencies": {
