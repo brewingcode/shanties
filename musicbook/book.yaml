@@ -16,11 +16,12 @@ config:
 
 # Staff notation captured from the running site at
 #   ?file=<song>.txt&fullscreen=true&verses=false
-# Each song is a single page (no spreads). Order mirrors the lyrics songbook.
-# (skipper-jan-rebec is omitted — it has no ABC/staff notation on the site.)
+# Each song is a single page (no spreads). Order mirrors the lyrics songbook,
+# with Old Maui filling what was the blank second page (cover + 15 = 16 pages).
+# (skipper-jan-rebec now has ABC on master but is not included here yet.)
 pages:
   - { file: cover.html, showPageNumber: false }
-  - blank
+  - { file: old-maui.html }
   - { file: all-for-me-grog.html }
   - { file: barretts-privateers.html }
   - { file: bully-boys.html }
