@@ -8,8 +8,8 @@ config:
   margins:
     inner: 0.75in
     outer: 0.5in
-    top: 0.6in
-    bottom: 0.6in
+    top: 0.5in
+    bottom: 0.5in
   signatureSize: all
   stylesheet: shanties.css
 
