@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea Shanties — Music</title>
+<style>
+:root {
+  --page-w: 5.5in;
+  --page-h: 8.5in;
+  --m-inner: 0.75in;
+  --m-outer: 0.5in;
+  --m-top: 0.6in;
+  --m-bottom: 0.6in;
+  --pn-size: 9pt;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #f0f0f0; }
+.page {
+  position: relative;
+  width: var(--page-w);
+  height: var(--page-h);
+  overflow: hidden;
+  background: #fff;
+}
+.page-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 11pt;
+  line-height: 1.4;
+  color: #111;
+}
+.page.verso .page-content { padding: var(--m-top) var(--m-inner) var(--m-bottom) var(--m-outer); }
+.page.recto .page-content { padding: var(--m-top) var(--m-outer) var(--m-bottom) var(--m-inner); }
+.page-content :first-child { margin-top: 0; }
+.page-content h1, .page-content h2, .page-content h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.2;
+}
+.page-content img { max-width: 100%; }
+.page-number {
+  position: absolute;
+  bottom: calc(var(--m-bottom) / 2);
+  font-size: var(--pn-size);
+  color: #555;
+}
+.page.verso .page-number { left: var(--m-outer); }
+.page.recto .page-number { right: var(--m-outer); }
+.page.blank .page-content { visibility: hidden; }
+/* Sea Shanties — music (staff notation) edition.
+   Appended after markdown-booklet's base CSS. url() paths resolve relative to
+   the OUTPUT html file, so build into this folder and keep pages/ as a sibling. */
+
+:root {
+  --display: "Primitive", "UnifrakturCook", "Blackletter", serif;
+  --body: "Lucida Bright", "Lucida Serif", "Georgia", "Times New Roman", serif;
+}
+
+.page-content { font-family: var(--body); }
+
+/* ---- Staff pages ------------------------------------------------------- */
+/* Each song page is a single captured abcjs SVG (which already renders the
+   song title). Fit it within the page content box, preserving aspect ratio. */
+.staff {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.staff img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* ---- Cover ------------------------------------------------------------- */
+.cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cover-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 56pt;
+  line-height: 1.02;
+}
+.cover-sub {
+  font-family: var(--body);
+  font-size: 15pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-top: 0.2in;
+  color: #333;
+}
+.cover-byline {
+  font-family: var(--body);
+  font-size: 13pt;
+  margin-top: 0.6in;
+}
+.cover-byline p { margin: 0.06in 0; }
+
+
+@page { size: 5.5in 8.5in; margin: 0; }
+.page {
+  margin: 0 auto 0.25in;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  page-break-after: always;
+  break-after: page;
+}
+.page:last-child { page-break-after: auto; break-after: auto; }
+@media print {
+  body { background: #fff; }
+  .page { margin: 0; box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<div class="page recto" data-page="1"><div class="page-content"><div class="cover">
+  <div class="cover-title">Sea<br>Shanties</div>
+  <div class="cover-sub">Music Edition</div>
+  <div class="cover-byline">
+    <p>Staff notation for the crew</p>
+    <p>Chris Glein and Alex Deakin</p>
+  </div>
+</div>
+</div></div>
+<div class="page verso blank" data-page="2"><div class="page-content"></div></div>
+<div class="page recto" data-page="3"><div class="page-content"><div class="staff">
+  <img src="pages/all-for-me-grog.svg" alt="Staff notation for All For Me Grog">
+</div>
+</div><span class="page-number">3</span></div>
+<div class="page verso" data-page="4"><div class="page-content"><div class="staff">
+  <img src="pages/barretts-privateers.svg" alt="Staff notation for Barrett's Privateers">
+</div>
+</div><span class="page-number">4</span></div>
+<div class="page recto" data-page="5"><div class="page-content"><div class="staff">
+  <img src="pages/bully-boys.svg" alt="Staff notation for Bully Boys">
+</div>
+</div><span class="page-number">5</span></div>
+<div class="page verso" data-page="6"><div class="page-content"><div class="staff">
+  <img src="pages/bully-in-the-alley.svg" alt="Staff notation for Bully in the Alley">
+</div>
+</div><span class="page-number">6</span></div>
+<div class="page recto" data-page="7"><div class="page-content"><div class="staff">
+  <img src="pages/drunken-sailor.svg" alt="Staff notation for Drunken Sailor">
+</div>
+</div><span class="page-number">7</span></div>
+<div class="page verso" data-page="8"><div class="page-content"><div class="staff">
+  <img src="pages/health-to-the-company.svg" alt="Staff notation for Health to the Company">
+</div>
+</div><span class="page-number">8</span></div>
+<div class="page recto" data-page="9"><div class="page-content"><div class="staff">
+  <img src="pages/joli-rouge.svg" alt="Staff notation for Joli Rouge">
+</div>
+</div><span class="page-number">9</span></div>
+<div class="page verso" data-page="10"><div class="page-content"><div class="staff">
+  <img src="pages/leave-her-johnny.svg" alt="Staff notation for Leave Her Johnny">
+</div>
+</div><span class="page-number">10</span></div>
+<div class="page recto" data-page="11"><div class="page-content"><div class="staff">
+  <img src="pages/mingulay-boat-song.svg" alt="Staff notation for Mingulay Boat Song">
+</div>
+</div><span class="page-number">11</span></div>
+<div class="page verso" data-page="12"><div class="page-content"><div class="staff">
+  <img src="pages/randy-dandy-o.svg" alt="Staff notation for Randy Dandy-O">
+</div>
+</div><span class="page-number">12</span></div>
+<div class="page recto" data-page="13"><div class="page-content"><div class="staff">
+  <img src="pages/roll-the-old-chariot-along.svg" alt="Staff notation for Roll the Old Chariot Along">
+</div>
+</div><span class="page-number">13</span></div>
+<div class="page verso" data-page="14"><div class="page-content"><div class="staff">
+  <img src="pages/south-australia.svg" alt="Staff notation for South Australia">
+</div>
+</div><span class="page-number">14</span></div>
+<div class="page recto" data-page="15"><div class="page-content"><div class="staff">
+  <img src="pages/wellerman.svg" alt="Staff notation for Wellerman">
+</div>
+</div><span class="page-number">15</span></div>
+<div class="page verso" data-page="16"><div class="page-content"><div class="staff">
+  <img src="pages/whiskey-johnny.svg" alt="Staff notation for Whiskey Johnny">
+</div>
+</div><span class="page-number">16</span></div>
+</body>
+</html>
