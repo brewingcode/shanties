@@ -1,2 +1,5 @@
-GGEEB,B,E | EEDEF | GGEEAAA| AGEFDE
-EFGEB,EEE | GEFFF | GEAAAA | GEFDE
+T: Skipper Jan Rebec
+%%notelabels 1 
+K: Eb
+"Eb"GGGEB,"Bb"CE "Eb"E EE"F"DEF "Eb"GGEE"Bb"AAA| A"Eb"GE"F"FD"Eb"E
+EFGEB,EEE | GE"F"FFF | "Eb"GE"Bb"AAAA | "Eb"GE"F"FD"Eb"E
