@@ -1,0 +1,56 @@
+/* Sea Shanties — music (staff notation) edition.
+   Appended after markdown-booklet's base CSS. url() paths resolve relative to
+   the OUTPUT html file, so build into this folder and keep pages/ as a sibling. */
+
+:root {
+  --display: "Primitive", "UnifrakturCook", "Blackletter", serif;
+  --body: "Lucida Bright", "Lucida Serif", "Georgia", "Times New Roman", serif;
+}
+
+.page-content { font-family: var(--body); }
+
+/* ---- Staff pages ------------------------------------------------------- */
+/* Each song page is a single captured abcjs SVG (which already renders the
+   song title). Fit it within the page content box, preserving aspect ratio. */
+.staff {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.staff img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* ---- Cover ------------------------------------------------------------- */
+.cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cover-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 56pt;
+  line-height: 1.02;
+}
+.cover-sub {
+  font-family: var(--body);
+  font-size: 15pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-top: 0.2in;
+  color: #333;
+}
+.cover-byline {
+  font-family: var(--body);
+  font-size: 13pt;
+  margin-top: 0.6in;
+}
+.cover-byline p { margin: 0.06in 0; }

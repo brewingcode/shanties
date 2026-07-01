@@ -1,0 +1,67 @@
+diff --git a/node_modules/pug-pack/lib/build.coffee b/node_modules/pug-pack/lib/build.coffee
+index da9318b..359c63a 100644
+--- a/node_modules/pug-pack/lib/build.coffee
++++ b/node_modules/pug-pack/lib/build.coffee
+@@ -66,13 +66,18 @@ module.exports = self =
+ 
+         out
+ 
++      # compile :coffeescript blocks with our bundled compiler, so the build
++      # doesn't depend on pug hoisting jstransformer-coffeescript to top-level
++      coffeescript: (text, options) ->
++        coffeescript.compile text
++
+   # replacement for path.parse(), but in the context of this module
+   parsename: (f) ->
+     parts = path.parse f
+     parts.ext = parts.ext.replace /^\./, ''
+     parts.absfile = path.resolve self.vars.basedir, f
+     parts.absdir = path.resolve self.vars.basedir
+-    parts.srcname = parts.absfile.replace(new RegExp(parts.absdir, 'i'), '').replace(/^\//, '')
++    parts.srcname = path.relative(parts.absdir, parts.absfile).split(path.sep).join('/')
+     self.vars.files[parts.srcname] = parts.absfile
+     parts
+ 
+@@ -176,23 +181,33 @@ module.exports = self =
+   # 1, for example
+   crawl: (rootDir, skipPug) ->
+     self.vars.basedir = path.resolve rootDir
++    gitOpts = { cwd: self.vars.basedir }
++
++    walkFiles = (dir) ->
++      results = []
++      for entry in fs.readdirSync dir
++        full = path.join dir, entry
++        if fs.statSync(full).isDirectory()
++          results = results.concat walkFiles full
++        else
++          results.push full
++      results
+ 
+-    execAsync("cd '#{self.vars.basedir}' && git rev-parse --short HEAD").then (stdout) =>
++    execAsync("git rev-parse --short HEAD", gitOpts).then (stdout) =>
+       self.vars.src.GIT_HEAD = stdout.toString().trim()
+-    .catch ->
++    .catch =>
+       self.vars.src.GIT_HEAD = null
+-
+-    if head = self.vars.src.GIT_HEAD
+-      execAsync("cd '#{self.vars.basedir}' && git tag --points-at #{head}").then (stdout) =>
++    .then =>
++      return unless head = self.vars.src.GIT_HEAD
++      execAsync("git tag --points-at #{head}", gitOpts).then (stdout) =>
+         self.vars.src.GIT_TAGS = stdout.toString().split('\n').filter (s) -> s.match(/\S/)
+-      .catch ->
++      .catch =>
+         self.vars.src.GIT_TAGS = []
+-
+-    execAsync("find '#{self.vars.basedir}' -type f -print0").then (stdout) =>
++    .then =>
+       pug_files = []
+       other_files = []
+ 
+-      stdout.split('\0').forEach (f) =>
++      walkFiles(self.vars.basedir).forEach (f) =>
+         return unless f
+         { name, ext, srcname } = self.parsename f
+         if name.match(/^_/)
