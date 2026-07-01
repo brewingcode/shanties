@@ -2,17 +2,17 @@
 
 *Stan Rogers, 1976*
 
-[C]Oh, the year was seventeen seventy-[G]eight
-> [C]How I wish I was in Sherbrooke now!
-A [C]letter of marque came [F]from the [G]king
-To the [C]scummiest vessel I've [G]ever seen
-> [C]God damn them all!
+[C]Oh, the year was [F]seventeen [G]seventy-[C]eight
+> [C]How I wish I [F]was in [C]Sherbrooke [G]now!
+A [F]letter of marque came [G]from the [C]king
+To the scummiest vessel I've ever [F]seen
+> God [C]damn [G]them [C]all!
 
 {chorus}
-[C]I was told we'd cruise the seas for A[F]merican [G]gold
-We'd [F]fire no guns, shed no [C]tears
-Now I'm a [C]broken man on a [F]Halifax pier
-The [Dm]last of [G]Barrett's priva[C]teers
+[C]I was [F]told we'd [G]cruise the [F]seas for A[C]merican [F]gold
+We'd [C]fire [G]no [C]guns, shed no [F]tears
+Now I'm a [C]broken [F]man on a [C]Halifax [F]pier
+The last of Barrett's [G7]priva[C]teers
 
 On the ninety-sixth day we sailed again
 > How I wish I was in Sherbrooke now!

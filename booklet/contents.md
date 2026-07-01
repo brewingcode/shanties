@@ -17,12 +17,13 @@ title: Contents
 <li><span class="toc-name">Joli Rouge</span><span class="toc-dots"></span><span class="toc-page">16</span></li>
 <li><span class="toc-name">Leave Her Johnny</span><span class="toc-dots"></span><span class="toc-page">18</span></li>
 <li><span class="toc-name">Mingulay Boat Song</span><span class="toc-dots"></span><span class="toc-page">20</span></li>
-<li><span class="toc-name">Randy Dandy O</span><span class="toc-dots"></span><span class="toc-page">22</span></li>
-<li><span class="toc-name">Roll the Old Chariot Along</span><span class="toc-dots"></span><span class="toc-page">24</span></li>
-<li><span class="toc-name">Skipper Jan Rebec</span><span class="toc-dots"></span><span class="toc-page">26</span></li>
-<li><span class="toc-name">South Australia</span><span class="toc-dots"></span><span class="toc-page">28</span></li>
-<li><span class="toc-name">Wellerman</span><span class="toc-dots"></span><span class="toc-page">30</span></li>
-<li><span class="toc-name">Whiskey Johnny</span><span class="toc-dots"></span><span class="toc-page">32</span></li>
+<li><span class="toc-name">Old Maui</span><span class="toc-dots"></span><span class="toc-page">22</span></li>
+<li><span class="toc-name">Randy Dandy O</span><span class="toc-dots"></span><span class="toc-page">24</span></li>
+<li><span class="toc-name">Roll the Old Chariot Along</span><span class="toc-dots"></span><span class="toc-page">26</span></li>
+<li><span class="toc-name">Skipper Jan Rebec</span><span class="toc-dots"></span><span class="toc-page">28</span></li>
+<li><span class="toc-name">South Australia</span><span class="toc-dots"></span><span class="toc-page">30</span></li>
+<li><span class="toc-name">Wellerman</span><span class="toc-dots"></span><span class="toc-page">32</span></li>
+<li><span class="toc-name">Whiskey Johnny</span><span class="toc-dots"></span><span class="toc-page">34</span></li>
 </ul>
 
 <div class="warn-block">
