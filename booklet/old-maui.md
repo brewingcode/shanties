@@ -1,15 +1,15 @@
 # Old Maui
 
-It's a [Em]damn tough life full of toil and [B]strife, we [G]whalermen under[D]go
-And we [Em]don't give a damn when the gale is [B]done, how [G]hard the winds did [D]blow
+It's a [Em]damn tough [B]life full of [G]toil and [D]strife, we [Em]whalermen [B]under[Em]go
+And we [Em]don't give a [B]damn when the [G]gale is [D]done, how [Em]hard the [B]winds did [Em]blow
 For we're [G]homeward bound from the [D]Arctic ground, with a [Em]good ship taut and [B]free
-And we [Em]don't give a damn when we drink our [B]rum, with the [G]girls of old [D]Maui
+And we [Em]don't give a [B]damn when we [G]drink our [D]rum, with the [Em]girls of [B]old Mau[Em]i
 
 {chorus}
-[Em]Rolling down to old [G]Maui, me [D]boys
-[Em]Rolling down to old [B]Maui
-We're [Em]homeward bound from the [G]Arctic [D]ground
-[Em]Rolling down to old [B]Maui
+[Em]Rolling [G]down to old Mau[D]i, me boys
+Rolling [Em]down to old Mau[B]i
+We're [Em]homeward [B]bound from the [G]Arctic [D]ground
+Rolling [Em]down to [B]old Mau[Em]i
 
 Once more we sail with a Northerly gale, through the ice and wind and rain
 Them coconut fronds, the tropical shores, we soon shall see again
