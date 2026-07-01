@@ -16,9 +16,9 @@ Them coconut fronds, the tropical shores, we soon shall see again
 For six hellish months we passed away on the cold Kamchatka sea
 But now we're bound from the Arctic ground, rolling down to old Maui
 
-[Chorus]
-
 ---
+
+[Chorus]
 
 Once more we sail the Northerly gale, towards our island home
 Our whaling done, our mainmast sprung, and we ain't got far to roam
