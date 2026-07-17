@@ -1,6 +1,5 @@
 T: Old Maui
 K: G
-%%notelabels 1
 P: Verse
 BB | "Em"e2 e2 "B"^d2 BB | "G"g2 fe "D"f2 (ba) | "Em"(gf) e2 "B"f2 de | "Em"e4 BB |
 w:It's a damn tough life full of toil and ~ strife we ~ wha-ler-men un-der - go, and we

@@ -1,8 +1,5 @@
 X: 1
 T: Joli Rouge
-%%vocalfont times 10
-%%notecolors 1
-%%notelabels 1
 M: 6/8
 K: Dm
 "Dm" D3 [F2A] [FA] | "Am" A,3 [C3E] | "Dm" D3 [F2A] [FA] | "Am" A,3 [C3E] | "Dm" D3 [F2A] [FA] | "Am" A,3 [C3EG] |

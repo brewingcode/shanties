@@ -1,7 +1,4 @@
 T: Leave Her Johnny
-%%vocalfont times 10
-%%notecolors 1
-%%notelabels 1
 K: C
 M: 4/4
 cd | "C"e2 e2 e2 cd | e2 d2  c4 | "G"d2 d2 d3 c | "C"e2 g4 

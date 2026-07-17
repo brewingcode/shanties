@@ -1,7 +1,6 @@
 T: Lifeboat Prayer
 K: D
 L: 1/8
-%%notelabels 1
 "D" A3A F3 D "G" G3 A "D" F3 D "G" G3 A "D" FE D "A" E3 F E3  
 w: Those who ven-ture on the sea to ply their trade _ up-on the deep
 w: When the call for res-cue comes, from those in per- _ il on this day

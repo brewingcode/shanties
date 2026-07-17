@@ -1,7 +1,6 @@
 T: Barrett's Privateers
 K: C
 L: 1/8
-%%notelabels 1
 P: Verse
 C3 E | "C" G2 G2 "F" FF E2 | "G"DD D2 "C"C2 GG | GG3 "F"A2 A2 | "C"G2 G2 | "G"D4 z2 A2 |
 w: Oh, the year was se-ven-teen sev-en-ty eight, how I wish I was in Sher-brooke now! A

@@ -1,7 +1,4 @@
 T: Drunken Sailor
-%%vocalfont times 10
-%%notecolors 1
-%%notelabels 1
 K: Dm
 M: 4/4
 "Dm"a2 aa a2  aa | a2 d2 f2 a2 | "C"g2 gg g2 gg | g2 c2 e2 g2 |

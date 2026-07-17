@@ -1,6 +1,4 @@
 T: We Wish You a Merry Christmas
-%%notelabels 1
-%%notecolors 1
 L: 1/8
 G2 | "C"c2 cd cB | "F"A2 A2 A2 | "D7"d2 de dc | "G"B2 G2 G2 |
 "E"e2 ef ed | "Am"c2 A2 "C"GG | "F"A2 d2 "G"B2 | "C"c4 G2 |

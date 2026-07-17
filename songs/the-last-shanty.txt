@@ -1,8 +1,5 @@
 X: 1
 T: The Last Shanty
-%%vocalfont times 10
-%%notecolors 1
-%%notelabels 1
 K: A
 F E "D"D D D E D A, A, D D D E D
 w: Well me fa-ther oft-en told me when I was just a lad

@@ -1,7 +1,5 @@
 X: 1
 T: Mario Bros. Theme
-%%notecolors 1
-%%notelabels 1
 M: 4/4
 L: 1/16
 K: G

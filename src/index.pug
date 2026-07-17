@@ -7,74 +7,339 @@ append head
     script: include bootstrap.bundle.min.js
     style: include bootstrap.min.css
     style.
-        #abc {
-            resize: both;
-            height: 10em;
-            width: 100%;
-            font-family: monospace;
+        :root { --radius: 8px }
+        * { box-sizing: border-box }
+        body {
+            margin: 0;
+            color: #212529;
+            background: var(--page-bg);
+            /* ---- theme: soft (default) ---- */
+            --bar-bg: #f1f3f5;
+            --bar-border: #dfe3e9;
+            --bar-shadow: 0 1px 3px rgba(16,24,40,.10), 0 1px 2px rgba(16,24,40,.06);
+            --track-bg: #e4e6ec;
+            --seg-fg: #5b636f;
+            --seg-active-bg: #1a73e8;
+            --seg-active-fg: #ffffff;
+            --seg-active-shadow: 0 1px 2px rgba(26,115,232,.35);
+            --btn-bg: #ffffff;
+            --btn-fg: #495159;
+            --btn-border: #d3d8de;
+            --btn-hover-bg: #f1f3f6;
+            --accent: #1a73e8;
+            --primary-fg: #ffffff;
+            --page-bg: #ffffff;
+            --edit-bg: #f1f3f5;
+            --edit-fg: #2a2f36;
+            --ta-bg: #ffffff;
+            --ta-fg: #24292f;
+            --ta-border: #d3d8de;
+            --link: #1a63d6;
+            --muted: #6b727c;
         }
-        body { padding: 1em }
-        #paper { width: 100% }
-        .item {
-            margin-left: 1em;
-            white-space: nowrap;
+        body.theme-nautical {
+            --bar-bg: #12314f;
+            --bar-border: #0f2a45;
+            --bar-shadow: 0 2px 8px rgba(0,0,0,.30);
+            --track-bg: #1b466c;
+            --seg-fg: #cdd9e5;
+            --seg-active-bg: #e7b24a;
+            --seg-active-fg: #14293d;
+            --seg-active-shadow: none;
+            --btn-bg: #173d61;
+            --btn-fg: #cdd9e5;
+            --btn-border: #2a557d;
+            --btn-hover-bg: #1d4a70;
+            --accent: #e7b24a;
+            --primary-fg: #14293d;
+            --page-bg: #ffffff;
+            --edit-bg: #12314f;
+            --edit-fg: #cdd9e5;
+            --ta-bg: #0a1f33;
+            --ta-fg: #e8eef4;
+            --ta-border: #2a557d;
+            --link: #8fc0ff;
+            --muted: #9fb3c6;
         }
 
-        button { margin-right: 1ex }
+        /* ---- docked top bar ---- */
+        #toolbar {
+            position: sticky; top: 0; z-index: 1020;
+            display: flex; flex-wrap: wrap; align-items: center; gap: .45rem;
+            padding: .5rem .8rem;
+            background: var(--bar-bg);
+            border-bottom: 1px solid var(--bar-border);
+            box-shadow: var(--bar-shadow);
+        }
+        #stage { padding: 1rem .9rem 4rem }
+        #paper { width: 100% }
+        .item { white-space: nowrap }
+        #verses { display: none; margin-top: 1rem }
+        #verses p { margin-bottom: .8rem }
+        /* staff hidden: keep #paper width (abcjs is responsive) but collapse its
+           height. abcjs sets an inline padding-bottom aspect-ratio -> !important. */
+        body.no-staff #paper { height: 0 !important; padding-bottom: 0 !important; overflow: hidden }
+        body.no-staff #verses { display: block }
+
+        /* ---- buttons ---- */
+        #toolbar .btn {
+            display: inline-flex; align-items: center; gap: .35rem;
+            font-size: .82rem; line-height: 1;
+            padding: .36rem .6rem;
+            color: var(--btn-fg);
+            background: var(--btn-bg);
+            border: 1px solid var(--btn-border);
+            border-radius: var(--radius);
+            box-shadow: none;
+        }
+        #toolbar .btn:hover:not(.active):not(.disabled) { background: var(--btn-hover-bg); color: var(--btn-fg) }
+        #toolbar .btn:focus, #toolbar .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; box-shadow: none }
+        #toolbar .btn-primary {
+            color: var(--primary-fg); background: var(--accent);
+            border-color: var(--accent); font-weight: 600;
+        }
+        #toolbar .btn-primary:hover { color: var(--primary-fg); background: var(--accent); filter: brightness(.96) }
+        #toolbar #songLabel {
+            display: inline-block; max-width: 42vw;
+            overflow: hidden; text-overflow: ellipsis;
+            white-space: nowrap; vertical-align: bottom;
+        }
+
+        /* ---- segmented toggle groups (soft grey track) ---- */
+        #toolbar .btn-group-toggle {
+            background: var(--track-bg);
+            border-radius: var(--radius);
+            padding: 3px;
+            gap: 3px;
+        }
+        #toolbar .btn-group-toggle .btn {
+            border: none !important;
+            margin: 0 !important;
+            border-radius: calc(var(--radius) - 3px) !important;
+            background: var(--btn-bg);
+            color: var(--seg-fg);
+        }
+        #toolbar .btn-group-toggle .btn:hover:not(.active):not(.disabled) { background: var(--btn-hover-bg); color: var(--seg-fg) }
+        #toolbar .btn-group-toggle .btn.active {
+            background: var(--seg-active-bg);
+            color: var(--seg-active-fg);
+            box-shadow: var(--seg-active-shadow);
+        }
+        #toolbar .btn-group-toggle .btn.disabled { opacity: .4 }
+
+        #toolbar .dropdown-menu { max-height: 60vh; overflow-y: auto }
+        #key-menu { min-width: 7rem }
+
+        /* ---- line-art icons ---- */
+        .ico {
+            width: 18px; height: 18px; flex: 0 0 auto;
+            fill: none; stroke: currentColor; stroke-width: 1.7;
+            stroke-linecap: round; stroke-linejoin: round;
+            vertical-align: -3px;
+        }
+
+        /* ---- docked, collapsible bottom edit bar ---- */
+        #advanced {
+            position: fixed; left: 0; right: 0; bottom: 0; z-index: 1030;
+            background: var(--edit-bg); color: var(--edit-fg);
+            border-top: 2px solid var(--accent);
+            box-shadow: 0 -4px 18px rgba(16,24,40,.16);
+            max-height: 80vh; overflow-y: auto;
+        }
+        #advanced .adv-header {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: .5rem; padding: .5rem .9rem;
+            cursor: pointer; user-select: none;
+            font-size: .85rem; font-weight: 600;
+        }
+        #advanced .adv-title { display: inline-flex; align-items: center; gap: .45rem }
+        #advanced .adv-chevron { transition: transform .18s ease; opacity: .8 }
+        #advanced.open .adv-chevron { transform: rotate(180deg) }
+        #advBody { display: none; padding: 0 .9rem .9rem }
+        #advanced.open #advBody { display: block }
+        #advBody > * { margin-bottom: .7rem }
+        #advBody a { color: var(--link) }
+        #advBody #warnings { color: var(--muted); font-family: monospace; font-size: .85rem; margin-bottom: 0 }
+        #advBody .adv-version { color: var(--muted); font-size: .8rem; margin: .2rem 0 0 }
+        #abc {
+            resize: vertical; height: 9em; width: 100%;
+            font-family: monospace; font-size: .85rem;
+            background: var(--ta-bg); color: var(--ta-fg);
+            border: 1px solid var(--ta-border); border-radius: 6px;
+            padding: .5rem .6rem;
+        }
 
         @media print {
             .noprint { display: none !important }
+            #stage { padding: 0 }
         }
 
 append body
-    #paper
-    .noprint.d-flex.flex-wrap.align-items-center
-        .item
-            span Enter some &nbsp;
-            a(href="https://github.com/brewingcode/shanties/blob/master/README.md" target="_blank") ABC notation
-        .item
-            span or &nbsp;
-            .dropdown.d-inline-block
-                button.btn.dropdown-toggle(type="button" id="songFile" data-toggle="dropdown") Pick a song
-                .dropdown-menu(aria-labelledby="songFile")
-                    - var keys = Object.keys(src['by-title.json'])
-                    - keys.sort()
-                    each k in keys
-                        a.dropdown-item(href="#")= k
-        .item
-            span or &nbsp;
-            a(href="https://github.com/brewingcode/shanties/tree/master/songs")
-                svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
-                    path(d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z")
-                span &nbsp;add a song
+    //- inline Bootstrap-icons style glyph (no extra deps): pass an array of {d, fr?}
+    mixin bi(paths)
+        svg.bi(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false")
+            each p in paths
+                if p.fr
+                    path(fill-rule=p.fr d=p.d)
+                else
+                    path(d=p.d)
 
-    .noprint: textarea#abc(spellcheck="false")
-    .noprint: #warnings
-    .noprint#settings
-        label
-            span Show lyrics
-            input#show-lyrics(type="checkbox" checked)
-        span &nbsp;&nbsp;&nbsp;
-        label
-            span Show trumpet fingering
-            input#show-trumpet(type="checkbox")
-        span &nbsp;&nbsp;&nbsp;
-        label
-            span Show guitar tab
-            input#show-gtab(type="checkbox")
-        span &nbsp;&nbsp;&nbsp;
-        label
-            span Transpose:
-            input#transpose(type="number" min="-24" max="24" step="1" value="0")
-        span &nbsp;
-        span#fromKey
-        span &nbsp;-&gt;&nbsp;
-        span#toKey
-    .noprint
-        p The Songbook PDF can be found at <a href="Songbook.pdf">this link</a>, or via this QR code:
-        img(src="qr-code.svg" alt="https://brewingcode.github.io/shanties/Songbook.pdf" width="200" height="200")
-    .noprint
-        a(href="https://github.com/brewingcode/shanties/commit/" + src['GIT_HEAD'])= src['GIT_HEAD']
+    //- monochrome line-art icon referencing the sprite below
+    mixin icon(id)
+        svg.ico(viewBox="0 0 24 24" aria-hidden="true" focusable="false")
+            use(href="#i-" + id)
+
+    //- apply the saved colour theme early to avoid a flash of the default
+    script.
+        try { document.body.classList.add('theme-' + (localStorage.getItem('shanties-theme') || 'soft')); } catch (e) {}
+
+    //- line-art icon sprite
+    svg(width="0" height="0" style="position:absolute" aria-hidden="true")
+        defs
+            symbol#i-note(viewBox="0 0 24 24")
+                path(d="M9 18V5l12-2v13")
+                circle(cx="6" cy="18" r="3")
+                circle(cx="18" cy="16" r="3")
+            symbol#i-book(viewBox="0 0 24 24")
+                path(d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20")
+                path(d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z")
+            symbol#i-staff(viewBox="0 0 24 24")
+                path(d="M3 6h18M3 10h18M3 14h18M3 18h18")
+                circle(cx="8" cy="10" r="1.5" fill="currentColor" stroke="none")
+                circle(cx="15" cy="14" r="1.5" fill="currentColor" stroke="none")
+            symbol#i-palette(viewBox="0 0 24 24")
+                path(d="M12 2a10 10 0 1 0 0 20 1.7 1.7 0 0 0 1.7-1.7 1.7 1.7 0 0 0-.45-1.15 1.7 1.7 0 0 1 1.25-2.85H17a5 5 0 0 0 5-5c0-4.42-4.48-8-10-8z")
+                circle(cx="7.5" cy="11" r="1.15" fill="currentColor" stroke="none")
+                circle(cx="12" cy="7.5" r="1.15" fill="currentColor" stroke="none")
+                circle(cx="16.5" cy="11" r="1.15" fill="currentColor" stroke="none")
+            symbol#i-type(viewBox="0 0 24 24")
+                path(d="M4 7V4h16v3")
+                path(d="M9 20h6")
+                path(d="M12 4v16")
+            symbol#i-mic(viewBox="0 0 24 24")
+                rect(x="9" y="2" width="6" height="12" rx="3")
+                path(d="M5 10v2a7 7 0 0 0 14 0v-2")
+                path(d="M12 19v3")
+                path(d="M8 22h8")
+            symbol#i-trumpet(viewBox="0 0 24 24")
+                path(d="M2 10.5h13l5-3v9l-5-3H2z")
+                path(d="M6 10.5V8M9.5 10.5V8M13 10.5V8")
+            symbol#i-guitar(viewBox="0 0 24 24")
+                circle(cx="8" cy="16" r="5.3")
+                circle(cx="8" cy="16" r="1.5" fill="currentColor" stroke="none")
+                path(d="M11.9 12.2 18 6.1")
+                path(d="M16.4 4.3l3.3 3.3-1.7 1.7-3.3-3.3z")
+            symbol#i-arrows(viewBox="0 0 24 24")
+                path(d="M8 21V4M4 8l4-4 4 4")
+                path(d="M16 3v17M12 16l4 4 4-4")
+            symbol#i-contrast(viewBox="0 0 24 24")
+                circle(cx="12" cy="12" r="9")
+                path(d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none")
+            symbol#i-pencil(viewBox="0 0 24 24")
+                path(d="M12 20h9")
+                path(d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z")
+            symbol#i-chevron(viewBox="0 0 24 24")
+                path(d="M6 15l6-6 6 6")
+
+    #toolbar.noprint.d-flex.flex-wrap.align-items-center
+        //- Song picker (primary action)
+        .dropdown
+            button.btn.btn-primary.dropdown-toggle#songFile(type="button" data-toggle="dropdown" title="Choose a song")
+                +icon('note')
+                span#songLabel Pick a song
+            .dropdown-menu#song-menu(aria-labelledby="songFile")
+                - var keys = Object.keys(src['by-title.json'])
+                - keys.sort()
+                each k in keys
+                    a.dropdown-item(href="#")= k
+
+        //- Songbook PDF / QR (grouped with song selection)
+        button.btn.btn-sm#songbookBtn(type="button" data-toggle="modal" data-target="#songbookModal" title="Songbook PDF & QR code")
+            +icon('book')
+
+        //- Staff + note options
+        .btn-group.btn-group-toggle.btn-group-sm#staffToggles(data-toggle="buttons")
+            label.btn.active(title="Show the music staff")
+                input#show-staff(type="checkbox" checked autocomplete="off")
+                +icon('staff')
+                span Staff
+            label.btn.active(title="Color notes by pitch")
+                input#show-notecolors(type="checkbox" checked autocomplete="off")
+                +icon('palette')
+                span Color
+            label.btn.active(title="Label notes with letter names")
+                input#show-notelabels(type="checkbox" checked autocomplete="off")
+                +icon('type')
+                span Labels
+
+        //- Lyrics & instrument layers
+        .btn-group.btn-group-toggle.btn-group-sm#viewToggles(data-toggle="buttons")
+            label.btn.active(title="Show lyrics")
+                input#show-lyrics(type="checkbox" checked autocomplete="off")
+                +icon('mic')
+                span Lyrics
+            label.btn(title="Show trumpet fingering")
+                input#show-trumpet(type="checkbox" autocomplete="off")
+                +icon('trumpet')
+                span Trumpet
+            label.btn(title="Show guitar tab")
+                input#show-gtab(type="checkbox" autocomplete="off")
+                +icon('guitar')
+                span Guitar
+
+        //- Transpose: pick the destination key (offset shown)
+        .dropdown.ml-auto
+            button.btn.btn-sm.dropdown-toggle#keyBtn(type="button" data-toggle="dropdown" title="Transpose: choose a key")
+                +icon('arrows')
+                span#keyLabel Key: –
+            .dropdown-menu.dropdown-menu-right#key-menu(aria-labelledby="keyBtn")
+
+        //- Colour theme
+        .dropdown#themeWrap
+            button.btn.btn-sm.dropdown-toggle#themeBtn(type="button" data-toggle="dropdown" title="Color theme")
+                +icon('contrast')
+            .dropdown-menu.dropdown-menu-right#theme-menu(aria-labelledby="themeBtn")
+                a.dropdown-item(href="#" data-theme="soft") Soft
+                a.dropdown-item(href="#" data-theme="nautical") Nautical
+
+    #stage
+        #paper
+        #verses
+
+    #advanced.noprint
+        .adv-header#advToggle
+            span.adv-title
+                +icon('pencil')
+                span Edit ABC notation
+            svg.ico.adv-chevron(viewBox="0 0 24 24" aria-hidden="true" focusable="false")
+                use(href="#i-chevron")
+        #advBody
+            .item
+                span Enter some 
+                a(href="https://github.com/brewingcode/shanties/blob/master/README.md" target="_blank") ABC notation
+                span , or 
+                a(href="https://github.com/brewingcode/shanties/tree/master/songs")
+                    +bi([{d:'M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z'}])
+                    span  add a song
+            textarea#abc(spellcheck="false")
+            #warnings
+            .adv-version
+                span version 
+                a(href="https://github.com/brewingcode/shanties/commit/" + src['GIT_HEAD'])= src['GIT_HEAD']
+
+    //- Songbook PDF + QR code dialog
+    #songbookModal.modal.fade.noprint(tabindex="-1" role="dialog" aria-labelledby="songbookModalLabel" aria-hidden="true")
+        .modal-dialog.modal-dialog-centered(role="document")
+            .modal-content
+                .modal-header
+                    h5.modal-title#songbookModalLabel Songbook
+                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+                .modal-body.text-center
+                    p Download the printable songbook: <a href="Songbook.pdf" target="_blank">Songbook.pdf</a>
+                    p.text-muted or scan to open it on another device:
+                    img(src="qr-code.svg" alt="Songbook.pdf QR code" width="200" height="200")
+
     script.
         var songs = !{JSON.stringify(src['songs.json'])};
         var byTitle = !{JSON.stringify(src['by-title.json'])};
@@ -96,7 +361,59 @@ append body
                 else
                     k.root
 
+            CHROMATIC = ['C', 'D♭', 'D', 'E♭', 'E', 'F', 'G♭', 'G', 'A♭', 'A', 'B♭', 'B']
+            prevStep = 0
+            origPc = null
+            currentSong = ''
+
+            keyToPc = (name) ->
+                return null unless name
+                base = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 }
+                pc = base[name.charAt(0)]
+                return null unless pc?
+                pc += 1 if name.indexOf('#') >= 0 or name.indexOf('♯') >= 0
+                pc -= 1 if name.indexOf('♭') >= 0
+                ((pc % 12) + 12) % 12
+
+            updateKeyLabel = ->
+                k = displayKey() or '–'
+                k += " (#{if prevStep > 0 then '+' else ''}#{prevStep})" unless prevStep is 0
+                $('#keyLabel').text "Key: #{k}"
+                $('#key-menu .dropdown-item').each ->
+                    $(this).toggleClass 'active', +$(this).attr('data-offset') is prevStep
+
+            buildKeyMenu = ->
+                menu = $('#key-menu').empty()
+                return unless origPc?
+                for d in [-5..6]
+                    pc = (((origPc + d) % 12) + 12) % 12
+                    label = CHROMATIC[pc]
+                    label += " (#{if d > 0 then '+' else ''}#{d})" unless d is 0
+                    $('<a class="dropdown-item" href="#"></a>')
+                        .attr('data-offset', d)
+                        .text(label)
+                        .appendTo menu
+                updateKeyLabel()
+
+            esc = (s) -> $('<div>').text(s).html()
+
+            renderVerses = (song) ->
+                para = []
+                html = ''
+                flush = ->
+                    if para.length
+                        html += "<p>#{para.join('<br>')}</p>"
+                        para = []
+                for line in song.split(/\n/)
+                    m = line.match /^\s*W:(.*)$/
+                    continue unless m
+                    text = m[1].replace(/^\s/, '').replace(/\s+$/, '')
+                    if text is '' then flush() else para.push esc(text)
+                flush()
+                $('#verses').html html
+
             setSong = (song) ->
+                currentSong = song
                 s = song
                     .split /\n/
                     .filter (line) ->
@@ -104,20 +421,24 @@ append body
                             lyrics = m[1]
                             if lyrics.match /^[\s\d\?]+$/
                                 # all digits are trumpet fingering, keep those
-                                return $('#show-trumpt').is(':checked')
+                                return $('#show-trumpet').is(':checked')
                             else 
                                 return $('#show-lyrics').is(':checked')
                         else
                             return true
                     .join('\n')
-                window.editor.editarea.setString s
+                directives = '%%vocalfont times 10\n'
+                directives += '%%notecolors 1\n' if $('#show-notecolors').is(':checked')
+                directives += '%%notelabels 1\n' if $('#show-notelabels').is(':checked')
+                window.editor.editarea.setString directives + s
+                renderVerses song
                 document.title = Object.entries(byTitle)
                     .find ([k,v]) -> v is song
                     ?.at(0) or 'YEEAAARGH'
+                prevStep = 0
                 setTimeout ->
-                    k = displayKey()
-                    $('#fromKey').text(k)
-                    $('#toKey').text(k)
+                    origPc = keyToPc displayKey()
+                    buildKeyMenu()
                 , 500
 
             updateUrl = (title) ->
@@ -125,41 +446,37 @@ append body
                 params.set 'title', title
                 window.history.replaceState {}, '', "#{window.location.pathname}?#{params}"
 
-            addEditButton = ->
-                $('#settings > button').remove()
-                $('#settings').prepend """
-                    <button type="button" class="btn btn-primary btn-sm">Edit</button>"""
-                $('#settings > button').on 'click', (e) ->
-                    $(e.target).remove()
-                    $('#abc').prop('disabled', false)
-                        .focus()
-                        .on 'blur', (e) ->
-                            $('#abc').prop 'disabled', true
-                            addEditButton()
-
             window.onload = ->
-                prevStep = 0
                 window.editor = new ABCJS.Editor 'abc',
                     canvas_id: 'paper',
                     warnings_id: 'warnings'
                     abcjsParams: abcjsParams
 
-                $('.dropdown-menu a').click ->
-                    setSong byTitle[$(this).text()]
-                    updateUrl $(this).text()
+                $('#song-menu a.dropdown-item').click (e) ->
+                    e.preventDefault()
+                    title = $(this).text()
+                    setSong byTitle[title]
+                    $('#songLabel').text title
+                    updateUrl title
 
-                $('#transpose').on 'change', ->
-                    tv = +$('#transpose').val()
-                    $('#fromKey').text $('#toKey').text()
+                $('#key-menu').on 'click', '.dropdown-item', (e) ->
+                    e.preventDefault()
+                    tv = +$(this).attr('data-offset')
+                    return if tv is prevStep
                     newTunes = ABCJS.strTranspose $('#abc').val(), window.editor.tunes, tv - prevStep
-                    window.editor.editarea.setString(newTunes)
+                    window.editor.editarea.setString newTunes
                     prevStep = tv
-                    setTimeout ->
-                        $('#toKey').text displayKey()
-                    , 500
+                    setTimeout updateKeyLabel, 500
 
-                $('#show-lyrics, #show-trumpet').on 'change', ->
-                    setSong byTitle[document.title]
+                $('#show-lyrics, #show-trumpet, #show-notecolors, #show-notelabels').on 'change', ->
+                    setSong currentSong
+
+                $('#show-staff').on 'change', ->
+                    on_ = $(this).is(':checked')
+                    $('body').toggleClass 'no-staff', not on_
+                    $('#show-notecolors, #show-notelabels')
+                        .prop('disabled', not on_)
+                        .closest('label').toggleClass 'disabled', not on_
 
                 $('#show-gtab').on 'change', ->
                     window.editor.paramChanged {
@@ -167,21 +484,42 @@ append body
                         tablature: if $(this).is(':checked')
                             [{
                                 instrument: "guitar",
-                                label: "Guitar (%T)",
+                                label: "",
                                 tuning: ["E,", "A,", "D", "G", "B", "e"],
                             }]
                     }
+
+                $('#advToggle').on 'click', ->
+                    $('#advanced').toggleClass 'open'
+
+                applyTheme = (name) ->
+                    name = if name is 'nautical' then 'nautical' else 'soft'
+                    $('body').removeClass('theme-soft theme-nautical').addClass "theme-#{name}"
+                    try
+                        localStorage.setItem 'shanties-theme', name
+                    $('#theme-menu .dropdown-item').each ->
+                        $(this).toggleClass 'active', $(this).attr('data-theme') is name
+
+                saved = 'soft'
+                try
+                    saved = localStorage.getItem('shanties-theme') or 'soft'
+                applyTheme saved
+
+                $('#theme-menu a.dropdown-item').click (e) ->
+                    e.preventDefault()
+                    applyTheme $(this).attr('data-theme')
 
                 params = new URLSearchParams(window.location.search)
                 file = params.get('file')
                 title = params.get('title')
                 if file and songs[file]
                     setSong songs[file]
+                    $('#songLabel').text(document.title) unless document.title is 'YEEAAARGH'
                 else if title and byTitle[title]
                     setSong byTitle[title]
+                    $('#songLabel').text title
                 else
-                    setSong "%%notelabels 1\nB c d e | ff | c'd' | EE E | =D^D"
+                    setSong "B c d e | ff | c'd' | EE E | =D^D"
 
-                if navigator.userAgent.match /i(Pad|Phone)/i
-                    $('#abc').prop 'disabled', true
-                    addEditButton()
+                if params.get('advanced') is 'true'
+                    $('#advanced').addClass 'open'

@@ -1,5 +1,4 @@
 T: Row Row Row Your Boat
-%%vocalfont times 10
 K: C
 M: 6/8
 | C3 C3 | C2 D E3 | E2 D E2 F | G6 |

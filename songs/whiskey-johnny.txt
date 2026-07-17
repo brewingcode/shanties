@@ -1,8 +1,5 @@
 X: 1
 T: Whiskey Johnny
-%%vocalfont times 10
-%%notecolors 1
-%%notelabels 1
 M: 4/4
 L: 1/4
 K: A
