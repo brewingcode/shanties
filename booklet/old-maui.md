@@ -1,3 +1,7 @@
+---
+key: Em
+---
+
 # Old Maui
 
 It's a [Em]damn tough [B]life full of [G]toil and [D]strife,

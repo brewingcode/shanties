@@ -1,0 +1,173 @@
+diff --git a/node_modules/markdown-booklet/src/render.js b/node_modules/markdown-booklet/src/render.js
+index 5da5418..727c059 100644
+--- a/node_modules/markdown-booklet/src/render.js
++++ b/node_modules/markdown-booklet/src/render.js
+@@ -80,12 +80,13 @@ function renderSource(source) {
+     case PageType.SONG: {
+       const id = `song-${++spreadCounter}`;
+       const parts = song.splitPages(source.content || '');
++      const songOpts = { key: meta.key };
+       if (meta.spread === false) {
+         // Single-page song: flows like a normal page (no forced spread).
+         return [
+           {
+             type: PageType.SONG,
+-            html: song.parsePage(parts.join('\n---\n')),
++            html: song.parsePage(parts.join('\n---\n'), songOpts),
+             showPageNumber,
+             startOn,
+           },
+@@ -100,14 +101,14 @@ function renderSource(source) {
+       return [
+         {
+           type: PageType.SONG,
+-          html: song.parsePage(parts[0]),
++          html: song.parsePage(parts[0], songOpts),
+           showPageNumber,
+           spreadId: id,
+           spreadRole: 'left',
+         },
+         {
+           type: PageType.SONG,
+-          html: song.parsePage(parts.slice(1).join('\n---\n')),
++          html: song.parsePage(parts.slice(1).join('\n---\n'), songOpts),
+           showPageNumber,
+           spreadId: id,
+           spreadRole: 'right',
+diff --git a/node_modules/markdown-booklet/src/song.js b/node_modules/markdown-booklet/src/song.js
+index eba96d9..4f19223 100644
+--- a/node_modules/markdown-booklet/src/song.js
++++ b/node_modules/markdown-booklet/src/song.js
+@@ -24,8 +24,81 @@ function esc(text) {
+     .replace(/>/g, '&gt;');
+ }
+ 
++// --- Key-aware chord analysis -------------------------------------------
++// Given a song key, each chord is tagged with its scale degree (1-7) and its
++// Roman numeral, so the stylesheet can color it by harmonic function. Purely
++// additive: chords still render verbatim, and without a key they stay plain.
++const NOTE_PC = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 };
++const SCALE_LETTERS = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
++const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'];
++const MAJOR_STEPS = [0, 2, 4, 5, 7, 9, 11];
++const MINOR_STEPS = [0, 2, 3, 5, 7, 8, 10];
++
++function pitchClass(note) {
++  let pc = NOTE_PC[note[0]];
++  if (pc === undefined) return null;
++  for (let i = 1; i < note.length; i += 1) {
++    if (note[i] === '#') pc += 1;
++    else if (note[i] === 'b') pc -= 1;
++  }
++  return ((pc % 12) + 12) % 12;
++}
++
++function parseKey(key) {
++  const m = /^([A-G])([#b]?)\s*(m|min|minor)?$/.exec(String(key || '').trim());
++  if (!m) return null;
++  return { letter: m[1], pc: pitchClass(m[1] + m[2]), minor: !!m[3] };
++}
++
++/** Analyze a chord symbol against a key. Returns { degree, roman } or null. */
++function analyzeChord(symbol, key) {
++  const parsedKey = parseKey(key);
++  if (!parsedKey) return null;
++  const m = /^([A-G])([#b]?)(.*)$/.exec(symbol);
++  if (!m) return null;
++  const [, rootLetter, rootAcc, rest] = m;
++
++  let quality = 'maj';
++  if (/^(m(?!aj)|min)/.test(rest)) quality = 'min';
++  else if (/^(dim|\u00B0)/i.test(rest)) quality = 'dim';
++  else if (/^(aug|\+)/.test(rest)) quality = 'aug';
++
++  const steps = parsedKey.minor ? MINOR_STEPS : MAJOR_STEPS;
++  const tonicIdx = SCALE_LETTERS.indexOf(parsedKey.letter);
++  const rootIdx = SCALE_LETTERS.indexOf(rootLetter);
++  const degIdx = (((rootIdx - tonicIdx) % 7) + 7) % 7;
++  const diatonicPc = (parsedKey.pc + steps[degIdx]) % 12;
++  const acc = (((pitchClass(rootLetter + rootAcc) - diatonicPc + 6) % 12) + 12) % 12 - 6;
++  const accStr = acc > 0 ? '\u266F'.repeat(acc) : acc < 0 ? '\u266D'.repeat(-acc) : '';
++
++  let numeral = ROMAN[degIdx];
++  if (quality === 'min' || quality === 'dim') numeral = numeral.toLowerCase();
++  if (quality === 'dim') numeral += '\u00B0';
++  else if (quality === 'aug') numeral += '+';
++  const ext = (rest.match(/\d+/) || [''])[0];
++
++  return { degree: degIdx + 1, roman: accStr + numeral + ext };
++}
++
++/** Markup for one chord: a plain `.chd`, or a degree-tagged pill + numeral. */
++function chordMarkup(chord, opts) {
++  const key = opts && opts.key;
++  if (key) {
++    const info = analyzeChord(chord, key);
++    if (info) {
++      return (
++        `<span class="chd deg-${info.degree}">` +
++        `<span class="chd-name">${esc(chord)}</span>` +
++        `<span class="chd-rn">${esc(info.roman)}</span>` +
++        `</span>`
++      );
++    }
++  }
++  return `<span class="chd">${esc(chord)}</span>`;
++}
++
+ /** Convert inline [C] markers into chord-over-lyric segments. */
+-function chordHtml(text) {
++function chordHtml(text, opts) {
+   if (!text.includes('[')) return esc(text);
+   const tokens = text.split(/(\[[^\]]+\])/);
+   let html = '';
+@@ -35,7 +108,7 @@ function chordHtml(text) {
+     if (chord === null) {
+       if (buffer) html += `<span class="seg">${esc(buffer)}</span>`;
+     } else {
+-      html += `<span class="seg"><span class="chd">${esc(chord)}</span>${esc(buffer)}</span>`;
++      html += `<span class="seg">${chordMarkup(chord, opts)}${esc(buffer)}</span>`;
+     }
+     buffer = '';
+   };
+@@ -53,20 +126,20 @@ function chordHtml(text) {
+ }
+ 
+ /** Render one lyric line. Chorus lines are always `cl`; refrains are italic. */
+-function lyricLine(line, inChorus) {
++function lyricLine(line, inChorus, opts) {
+   const refrain = line.startsWith('>');
+   const text = (refrain ? line.replace(/^>\s?/, '') : line).trim();
+   const chorded = text.includes('[');
+   const classes = [];
+   if (inChorus || chorded) classes.push('cl');
+   if (refrain) classes.push('refrain');
+-  const body = chorded || inChorus ? chordHtml(text) : esc(text);
++  const body = chorded || inChorus ? chordHtml(text, opts) : esc(text);
+   const cls = classes.length ? ` class="${classes.join(' ')}"` : '';
+   return `<p${cls}>${body}</p>`;
+ }
+ 
+ /** Parse one page of song text into HTML blocks. */
+-function parsePage(text) {
++function parsePage(text, opts) {
+   const lines = text.replace(/\s+$/, '').split(/\r?\n/);
+   const blocks = [];
+   let i = 0;
+@@ -87,14 +160,14 @@ function parsePage(text) {
+       i += 1;
+       const rows = [];
+       while (i < lines.length && lines[i].trim()) {
+-        rows.push(lyricLine(lines[i].trim(), true));
++        rows.push(lyricLine(lines[i].trim(), true, opts));
+         i += 1;
+       }
+       blocks.push(`<div class="chorus"><div class="label">Chorus</div>${rows.join('')}</div>`);
+     } else {
+       const rows = [];
+       while (i < lines.length && lines[i].trim() && !/^\{chorus\}$/i.test(lines[i].trim())) {
+-        rows.push(lyricLine(lines[i].trim(), false));
++        rows.push(lyricLine(lines[i].trim(), false, opts));
+         i += 1;
+       }
+       blocks.push(`<div class="verse">${rows.join('')}</div>`);

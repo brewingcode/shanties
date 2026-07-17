@@ -5,7 +5,7 @@ T: Wellerman
 %%notelabels 1
 M: 4/4
 L: 1/8
-K: Eb
+K: Cm
 G2 | "Cm"C2 CC C2 E2 | G2 G2 G3 G | "Fm"A2 F2 F2 AB | "Cm"c2 G2 G3 G |
 w: There once was a ship that put to sea, the name of~the ship was the Billy o Tea. The
 w: She had not ~ been two weeks from shore, when down on her a ~ right whale bore. The

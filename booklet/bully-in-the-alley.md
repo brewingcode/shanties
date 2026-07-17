@@ -1,3 +1,7 @@
+---
+key: G
+---
+
 # Bully in the Alley
 
 Sally is the girl that I love dearly,

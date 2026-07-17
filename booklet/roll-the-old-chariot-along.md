@@ -1,3 +1,7 @@
+---
+key: Dm
+---
+
 # Roll the Old Chariot Along
 
 We'd be all right if the wind was in our sails.

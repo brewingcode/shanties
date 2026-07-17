@@ -19,6 +19,15 @@
   --rule: #333;
   --display: "Primitive", "UnifrakturCook", "Blackletter", serif;
   --body: "Lucida Bright", "Lucida Serif", "Georgia", "Times New Roman", serif;
+
+  /* Harmonic-function colors, keyed by scale degree (1-7), in rainbow order. */
+  --deg1: #d62828; /* tonic       I   - red    */
+  --deg2: #e8720c; /* supertonic  ii  - orange */
+  --deg3: #d19a00; /* mediant     III - yellow */
+  --deg4: #2a9d3a; /* subdominant IV  - green  */
+  --deg5: #2564d6; /* dominant    V   - blue   */
+  --deg6: #544ee1; /* submediant  vi  - indigo */
+  --deg7: #8338ec; /* subtonic    vii - violet */
 }
 
 /* Body, page numbers, chorus headers — everything but titles — in Lucida Bright. */
@@ -189,19 +198,43 @@
    and the chord is absolutely positioned over the segment's first letter. */
 .cl {
   position: relative;
-  padding-top: 1em;
-  margin: 0 0 0.04in;
+  padding-top: 1.0em;
+  margin: 0 0 0.06in;
   line-height: 1.4;
 }
 .cl .seg { position: relative; }
 .cl .chd {
   position: absolute;
-  top: -1em;
+  bottom: 100%;               /* sit fully above the lyric, never overlapping */
   left: 0;
+  margin-bottom: 0.14em;
   font-family: var(--body);
   font-size: 0.8em;
   font-weight: 700;
+  font-style: normal;         /* stay upright even over italic refrain lyrics */
   line-height: 1;
   color: var(--chord);
   white-space: nowrap;
+}
+
+/* Key-aware chords (Option 6): an outlined pill in the chord's harmonic-function
+   color, with its Roman numeral to the right in the same color. The Roman
+   numeral keeps the encoding legible when printed in grayscale. */
+.cl .chd.deg-1 { --fn: var(--deg1); }
+.cl .chd.deg-2 { --fn: var(--deg2); }
+.cl .chd.deg-3 { --fn: var(--deg3); }
+.cl .chd.deg-4 { --fn: var(--deg4); }
+.cl .chd.deg-5 { --fn: var(--deg5); }
+.cl .chd.deg-6 { --fn: var(--deg6); }
+.cl .chd.deg-7 { --fn: var(--deg7); }
+.cl .chd .chd-name {
+  color: var(--fn, var(--chord));
+  border: 1px solid var(--fn, var(--chord));
+  border-radius: 0.28em;
+  padding: 0.02em 0.28em;
+}
+.cl .chd .chd-rn {
+  margin-left: 0.15em;
+  font-size: 0.7em;
+  color: var(--fn, var(--chord));
 }

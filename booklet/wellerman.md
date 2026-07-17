@@ -1,8 +1,12 @@
+---
+key: Cm
+---
+
 # Wellerman
 
 There [Cm]once was a ship that put to sea,
 the [Fm]name of the ship was the [Cm]Billy o Tea.
-The winds blew hard, her bow dipped down.
+The [Cm]winds blew hard, her bow dipped down.
 Oh [G]blow my bully boys [Cm]blow.
 
 {chorus}

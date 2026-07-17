@@ -1,3 +1,7 @@
+---
+key: C
+---
+
 # Barrett's Privateers
 
 *Stan Rogers, 1976*

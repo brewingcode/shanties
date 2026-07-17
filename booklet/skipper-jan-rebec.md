@@ -1,3 +1,7 @@
+---
+key: Eb
+---
+
 # Skipper Jan Rebec
 
 [Eb]Who's the king of the [Ab]fighting [Eb]Dutch

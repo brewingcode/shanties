@@ -1,3 +1,7 @@
+---
+key: G
+---
+
 # Mingulay Boat Song
 
 {chorus}

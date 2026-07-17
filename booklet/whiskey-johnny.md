@@ -1,3 +1,7 @@
+---
+key: A
+---
+
 # Whiskey Johnny
 
 [E]Whiskey is the life of man

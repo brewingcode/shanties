@@ -1,3 +1,7 @@
+---
+key: E
+---
+
 # South Australia
 
 [E]In South Australia I was born

@@ -1,3 +1,7 @@
+---
+key: Dm
+---
+
 # Drunken Sailor
 
 What will we do with a drunken sailor?

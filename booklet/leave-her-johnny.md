@@ -1,3 +1,7 @@
+---
+key: C
+---
+
 # Leave Her Johnny
 
 I [C]thought I heard the old man say

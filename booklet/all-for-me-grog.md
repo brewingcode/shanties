@@ -1,3 +1,7 @@
+---
+key: C
+---
+
 # All For Me Grog
 
 {chorus}

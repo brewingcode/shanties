@@ -1,3 +1,7 @@
+---
+key: Am
+---
+
 # Randy Dandy O
 
 Now we are ready to sail for the Horn

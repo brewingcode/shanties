@@ -2,7 +2,7 @@ T: Randy Dandy-O
 %%vocalfont times 10
 %%notecolors 1
 %%notelabels 1
-K: C
+K: Am
 M: 6/8
 L: 1/16
 Q: 1/4=140
