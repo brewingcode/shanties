@@ -1,0 +1,38 @@
+title: "Sea Shanties — Music"
+
+# Logical page + margins, matching the lyrics songbook so the two fold alike.
+# The physical sheet is derived as two pages wide.
+config:
+  page:
+    width: 5.5in
+    height: 8.5in
+  margins:
+    inner: 0.75in
+    outer: 0.5in
+    top: 0.6in
+    bottom: 0.6in
+  signatureSize: all
+  stylesheet: music.css
+
+# Staff notation captured from the running site at
+#   ?file=<song>.txt&fullscreen=true&verses=false
+# Each song is a single page (no spreads). Order mirrors the lyrics songbook,
+# with Old Maui filling what was the blank second page (cover + 15 = 16 pages).
+# (skipper-jan-rebec now has ABC on master but is not included here yet.)
+pages:
+  - { file: cover.html, showPageNumber: false }
+  - { file: old-maui.html }
+  - { file: all-for-me-grog.html }
+  - { file: barretts-privateers.html }
+  - { file: bully-boys.html }
+  - { file: bully-in-the-alley.html }
+  - { file: drunken-sailor.html }
+  - { file: health-to-the-company.html }
+  - { file: joli-rouge.html }
+  - { file: leave-her-johnny.html }
+  - { file: mingulay-boat-song.html }
+  - { file: randy-dandy-o.html }
+  - { file: roll-the-old-chariot-along.html }
+  - { file: south-australia.html }
+  - { file: wellerman.html }
+  - { file: whiskey-johnny.html }

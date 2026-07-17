@@ -22,6 +22,8 @@ append head
 
         button { margin-right: 1ex }
 
+        body.fullscreen .noprint { display: none !important }
+
         @media print {
             .noprint { display: none !important }
         }
@@ -54,6 +56,10 @@ append body
         label
             span Show lyrics
             input#show-lyrics(type="checkbox" checked)
+        span &nbsp;&nbsp;&nbsp;
+        label
+            span Show verses
+            input#show-verses(type="checkbox" checked)
         span &nbsp;&nbsp;&nbsp;
         label
             span Show trumpet fingering
@@ -100,13 +106,16 @@ append body
                 s = song
                     .split /\n/
                     .filter (line) ->
-                        if m = line.match /^\s*w:(.*)/i
+                        if m = line.match /^\s*w:(.*)/
                             lyrics = m[1]
                             if lyrics.match /^[\s\d\?]+$/
-                                # all digits are trumpet fingering, keep those
-                                return $('#show-trumpt').is(':checked')
+                                # all digits are trumpet fingering
+                                return $('#show-trumpet').is(':checked')
                             else 
                                 return $('#show-lyrics').is(':checked')
+                        else if line.match /^\s*W:/
+                            # W: lines are the extended verses below the music
+                            return $('#show-verses').is(':checked')
                         else
                             return true
                     .join('\n')
@@ -158,7 +167,7 @@ append body
                         $('#toKey').text displayKey()
                     , 500
 
-                $('#show-lyrics, #show-trumpet').on 'change', ->
+                $('#show-lyrics, #show-verses, #show-trumpet').on 'change', ->
                     setSong byTitle[document.title]
 
                 $('#show-gtab').on 'change', ->
@@ -173,6 +182,17 @@ append body
                     }
 
                 params = new URLSearchParams(window.location.search)
+
+                isFalse = (v) -> v? and v.toLowerCase() in ['false', '0', 'no', 'off']
+                isTrue = (v) -> v? and v.toLowerCase() in ['true', '1', 'yes', 'on']
+
+                if isTrue params.get('fullscreen')
+                    $('body').addClass 'fullscreen'
+                if isFalse params.get('lyrics')
+                    $('#show-lyrics').prop 'checked', false
+                if isFalse params.get('verses')
+                    $('#show-verses').prop 'checked', false
+
                 file = params.get('file')
                 title = params.get('title')
                 if file and songs[file]

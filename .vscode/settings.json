@@ -1,0 +1,25 @@
+{
+    // Workspace-level auto-approve list. Lives in the repo so it roams across
+    // all machines via git. Per-machine overrides go in %APPDATA%\Code\User\settings.json.
+    //
+    // Design rule: ONLY read-only / stdout-only cmdlets and a CLOSED, enumerated
+    // list of helper scripts may auto-approve. Nothing that writes to disk,
+    // executes an arbitrary script block, or names an unknown script belongs here.
+    //
+    // See .github/skills/_shared/scripts/README.md for the rationale and full mechanism.
+    "chat.tools.terminal.autoApprove": {
+        // --- Read-only inspection (no side effects) ---
+        "Test-Path": true,
+        "Get-Item": true,
+        "Get-ItemProperty": true,
+        "Get-Date": true,
+        // --- Read-only data shaping (stdout only; no -FilePath/-Path writes,
+        //     no script-block execution) ---
+        "Group-Object": true,
+        "ConvertFrom-Json": true,
+        "ConvertTo-Json": true,
+        "ConvertFrom-Csv": true,
+        "ConvertTo-Csv": true,
+        "Out-String": true,
+    }
+}
