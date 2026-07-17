@@ -19,6 +19,10 @@
   --rule: #333;
   --display: "Primitive", "UnifrakturCook", "Blackletter", serif;
   --body: "Lucida Bright", "Lucida Serif", "Georgia", "Times New Roman", serif;
+
+  /* Corner lozenge for the chorus/cue frame: a fixed 8px ink diamond, placed at
+     each corner in a ::before overlay. Colour tracks --rule (hard-coded %23333). */
+  --lozenge: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path d='M4 0 8 4 4 8 0 4Z' fill='%23333'/></svg>");
 }
 
 /* Body, page numbers, chorus headers — everything but titles — in Lucida Bright. */
@@ -150,14 +154,38 @@
   margin: -0.12in 0 0.14in;
 }
 
+/* Chorus/cue frame — the "engraver's double rule": a 1px inner border and a 1px
+   outline separated by a 2px gap, with an ink lozenge bridging each corner. Both
+   rules are real lines (border + outline) so the frame is identical on every box
+   size and prints crisply; the corner diamonds ride a ::before overlay. */
+.chorus,
+.cue {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid var(--rule);
+  outline: 1px solid var(--rule);
+  outline-offset: 2px;
+}
+.chorus::before,
+.cue::before {
+  content: "";
+  position: absolute;
+  inset: -6px;                 /* centres each 8px lozenge on the inner-rule corner */
+  pointer-events: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  background:
+    var(--lozenge) left top / 8px 8px no-repeat,
+    var(--lozenge) right top / 8px 8px no-repeat,
+    var(--lozenge) left bottom / 8px 8px no-repeat,
+    var(--lozenge) right bottom / 8px 8px no-repeat;
+}
 .chorus {
-  border: 1.5px dashed var(--rule);
-  padding: 0.1in;
-  margin: 0 0 0.18in;
+  padding: 0.08in 0.1in;
+  margin: 0 0 0.2in;
 }
 .cue {
-  border: 1.5px dashed var(--rule);
-  padding: 0.05in 0.1in;
+  padding: 0.03in 0.1in;
   margin: 0.16in 0;
 }
 .label,
